@@ -13,6 +13,19 @@ technologies = {
 	@1945 = 18
 	@1946 = 20
 
+	sturm = { #Unlocked in Swiss Focus SWI_mountaneer_paratroopers
+
+		research_cost = 1
+
+		allow = {
+			always = no
+		}
+
+		enable_subunits = {
+			sturm
+		}
+
+	}
 	infantry_weapons = {
 
 		enable_equipments = {

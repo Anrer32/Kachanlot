@@ -1333,8 +1333,8 @@ technologies = {
 			armor_plate_large
 		}
 		
-		research_cost = 0.25
-		start_year = 1936
+		research_cost = 1
+		start_year = 1939
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1381,8 +1381,8 @@ technologies = {
 			hmg_defense_turret_2x
 		}
 		
-		research_cost = 0.7
-		start_year = 1936
+		research_cost = 1
+		start_year = 1939
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1427,7 +1427,7 @@ technologies = {
 			aircraft_cannon_1_2x
 		}
 		
-		research_cost = 0.7
+		research_cost = 1
 		start_year = 1939
 
 		folder = {
@@ -1485,7 +1485,7 @@ technologies = {
 			cannon_defense_turret_2x
 		}
 		
-		research_cost = 0.7
+		research_cost = 1.5
 		start_year = 1943
 
 		folder = {
@@ -1534,7 +1534,7 @@ technologies = {
 			cannon_defense_turret_2x
 		}
 		
-		research_cost = 1
+		research_cost = 2
 		start_year = 1945
 
 		folder = {
@@ -1734,7 +1734,7 @@ technologies = {
 				PROJECT = sp_air_axial_jet_engine	
 			}
 		}		
-		research_cost = 0.75
+		research_cost = 1.5
 		start_year = 1940
 
 		folder = {
@@ -1802,7 +1802,7 @@ technologies = {
 			engine_4_6x	
 		}
 		
-		research_cost = 0.75
+		research_cost = 1.5
 		start_year = 1944
 
 		folder = {
@@ -1862,7 +1862,7 @@ technologies = {
 			drop_tanks
 		}
 		
-		research_cost = 0.33
+		research_cost = 1
 		start_year = 1936
 
 		folder = {
@@ -1926,7 +1926,7 @@ technologies = {
 			flying_boat_large
 		}
 		
-		research_cost = 0.33
+		research_cost = 1
 		start_year = 1936
 
 		folder = {

@@ -1,0 +1,8 @@
+﻿l_russian:
+ vnr_cve_dummy: "Эскортный авианосец"
+ # ENG
+ ENG_carrier_equipment_cve: "Атакующий Класс"
+ # USA
+ USA_carrier_equipment_cve: "Касабланка Класс"
+ # JAP
+ JAP_carrier_equipment_cve: "Читосэ Класс"

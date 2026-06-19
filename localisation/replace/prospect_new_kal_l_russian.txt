@@ -1,0 +1,2 @@
+l_russian:
+ develop_birmingen_steel: "Расширение железодобывающих компаний"

@@ -71,14 +71,25 @@ technologies = {
 			heavy_armor
 		}
 		on_research_complete_limit = {
+			NOT = {	has_template_containing_unit = light_armor }
+			NOT = {	has_template_containing_unit = heavy_armor }
+			NOT = {	has_template_containing_unit = medium_armor }
 		}
 		on_research_complete = {
-		    hidden_effect = {
-				every_country = {
-					if = {
-						limit = { is_in_faction_with = ROOT }
-						set_technology = { gwtank_chassis = 1 }
+			hidden_effect = {
+				if = {
+					limit = {
+						has_tech = motorised_infantry
 					}
+
+					load_oob = "unlock_tanks_mot"
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = motorised_infantry }
+					}
+
+					load_oob = "unlock_tanks"
 				}
 			}
 
@@ -114,10 +125,7 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 100
-				original_tag = KUW
-			}
+
 			modifier = {
 				factor = 2
 				is_major = yes
@@ -161,16 +169,37 @@ technologies = {
 		}
 
 		on_research_complete_limit = {
-
+			NOT = {	has_template_containing_unit = light_armor }
+			NOT = {	has_template_containing_unit = heavy_armor }
+			NOT = {	has_template_containing_unit = medium_armor }
 		}
 		on_research_complete = {
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
-		    hidden_effect = {
-				every_country = {
-						limit = { is_in_faction_with = ROOT }
-						set_technology = { basic_light_tank_chassis = 1 }
+			hidden_effect = {
+				if = {
+					limit = {
+						has_tech = motorised_infantry
+					}
+
+					load_oob = "unlock_tanks_mot"
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = motorised_infantry }
+					}
+
+					load_oob = "unlock_tanks"
+				}
+
+				if = { #Italian templates
+					limit = {
+						original_tag = ITA
+						has_completed_focus = ITA_italian_tankettes
+					}
+					ITA_add_improved_light_tank_templates = yes
 				}
 			}
+
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 
 		path = {
@@ -206,10 +235,6 @@ technologies = {
 			modifier = {
 				factor = 1.1
 				date > 1939.1.1
-			}
-			modifier = {
-				factor = 100
-				original_tag = KUW
 			}
 		}
 
@@ -294,10 +319,7 @@ technologies = {
 				factor = 1.1
 				date > 1938.1.1
 			}
-			modifier = {
-				factor = 100
-				original_tag = KUW
-			}
+
 			modifier = {
 				factor = 1.1
 				date > 1939.1.1
@@ -337,12 +359,6 @@ technologies = {
 					#icon = "GFX_ITA_improved_light_tank_medium"
 				}
 			}
-		    hidden_effect = {
-				every_country = {
-						limit = { is_in_faction_with = ROOT }
-						set_technology = { improved_light_tank_chassis = 1 }
-				}
-			}
 		}
 
 		categories = {
@@ -361,14 +377,7 @@ technologies = {
 		enable_equipments = {
 			amphibious_tank_chassis_1
 		}
-		on_research_complete = {
-		    hidden_effect = {
-				every_country = {
-						limit = { is_in_faction_with = ROOT }
-						set_technology = { amphibious_tank_chassis = 1 }
-				}
-			}
-		}
+
 		enable_subunits = {
 			amphibious_armor
 		}
@@ -401,6 +410,10 @@ technologies = {
 				}
 			}
 			modifier = {
+				factor = 0.1
+				original_tag = GER #germany should never bother with this
+			}
+			modifier = {
 				OR = {
 					original_tag = USA
 					original_tag = JAP
@@ -414,11 +427,6 @@ technologies = {
 					}
 				}
 				factor = 0
-			}
-			modifier = {
-				factor = 100
-				original_tag = KUW
-				has_completed_focus = armor_effort
 			}
 		}
 
@@ -437,14 +445,7 @@ technologies = {
 		enable_equipment_modules = {
 			amphibious_drive
 		}
-		on_research_complete = {
-		    hidden_effect = {
-				every_country = {
-						limit = { is_in_faction_with = ROOT }
-						set_technology = { amphibious_drive = 1 }
-				}
-			}
-		}
+
 		enable_equipments = {
 			light_tank_amphibious_chassis_0
 			medium_tank_amphibious_chassis_0
@@ -483,8 +484,12 @@ technologies = {
 				factor = 2
 			}
 			modifier = {
-				factor = 1000
-				original_tag = KUW
+				not = {
+					any_controlled_state = {
+						is_coastal = yes
+					}
+				}
+				factor = 0
 			}
 		}
 
@@ -498,14 +503,7 @@ technologies = {
 	}
 
 	advanced_light_tank_chassis = { #Leopard
-		on_research_complete = {
-		    hidden_effect = {
-				every_country = {
-						limit = { is_in_faction_with = ROOT }
-						set_technology = { advanced_light_tank_chassis = 1 }
-				}
-			}
-		}
+
 		enable_equipments = {
 			light_tank_chassis_3
 			light_tank_destroyer_chassis_3
@@ -571,17 +569,32 @@ technologies = {
 		enable_subunits = {
 			medium_armor
 		}
-		
+
+		on_research_complete_limit = {
+			NOT = {	has_template_containing_unit = light_armor }
+			NOT = {	has_template_containing_unit = heavy_armor }
+			NOT = {	has_template_containing_unit = medium_armor }
+		}
 		on_research_complete = {
-		    hidden_effect = {
-				every_country = {
-						limit = { is_in_faction_with = ROOT }
-						set_technology = { basic_medium_tank_chassis = 1 }
+			hidden_effect = {
+				if = {
+					limit = {
+						has_tech = motorised_infantry
+					}
+
+					load_oob = "unlock_tanks_mot"
+				}
+				if = {
+					limit = {
+						NOT = { has_tech = motorised_infantry }
+					}
+
+					load_oob = "unlock_tanks"
 				}
 			}
+
 			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
-
 
 		path = {
 			leads_to_tech = improved_medium_tank_chassis
@@ -617,11 +630,6 @@ technologies = {
 			modifier = {
 				factor = 1.1
 				date > 1942.1.1
-			}
-			modifier = {
-				tag = JOR
-				factor = 100
-				has_tech = gwtank_chassis
 			}
 
 			modifier = {
@@ -706,12 +714,6 @@ technologies = {
 		}
 
 		on_research_complete = {
-		    hidden_effect = {
-				every_country = {
-						limit = { is_in_faction_with = ROOT }
-						set_technology = { improved_medium_tank_chassis = 1 }
-					}
-				}
 			if = { #Italian templates
 				limit = {
 					original_tag = ITA
@@ -777,7 +779,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 3
+			factor = 2
 
 			modifier = {
 				factor = 2
@@ -796,12 +798,9 @@ technologies = {
 			}
 
 			modifier = {
-				factor = 2
+				factor = 3
 				tag = SOV
-			}
-			modifier = {
-				tag = JOR
-				factor = 100
+				date > 1940.3.1
 			}
 
 			modifier = {
@@ -871,12 +870,6 @@ technologies = {
 		}
 
 		on_research_complete = {
-		    hidden_effect = {
-				every_country = {
-						limit = { is_in_faction_with = ROOT }
-						set_technology = { advanced_medium_tank_chassis = 1 }
-					}
-				}
 			if = { #Italian templates
 				limit = {
 					original_tag = ITA
@@ -943,10 +936,7 @@ technologies = {
 				factor = 1.2
 				date > "1944.1.1"
 			}
-			modifier = {
-				tag = PAL
-				factor = 100
-			}
+
 			modifier = {
 				factor = 1.2
 				date > "1945.1.1"
@@ -959,7 +949,7 @@ technologies = {
 			modifier = {
 				factor = 5.0
 				tag = GER
-				date > "1943.1.1"
+				date > "1942.6.1"
 				has_completed_focus = GER_expand_kummersdorfs_capacity
 				has_tech_bonus = {
 				    category = cat_medium_armor
@@ -970,7 +960,7 @@ technologies = {
 				factor = 6
 				# Comet was designed and entered production in 1943-1944
 				tag = ENG
-				date > 1943.9.1
+				date > 1943.6.1
 			}
 		}
 
@@ -983,11 +973,7 @@ technologies = {
 		special_project_specialization = { specialization_land }
 	}
 
-	main_battle_tank_chassis = {
-	
-		allow = {
-			date > 1941.01.01
-		}
+	main_battle_tank_chassis = { #E-50
 
 		enable_equipments = {
 			modern_tank_chassis_1
@@ -998,14 +984,7 @@ technologies = {
 		enable_subunits = {
 			modern_armor
 		}
-		on_research_complete = {
-		    hidden_effect = {
-				every_country = {
-						limit = { is_in_faction_with = ROOT }
-						set_technology = { main_battle_tank_chassis = 1 }
-				}
-			}
-		}
+
 		research_cost = 2.5
 		start_year = 1945
 
@@ -1064,15 +1043,28 @@ technologies = {
 		}
 
 		on_research_complete_limit = {
-
+			NOT = {	has_template_containing_unit = light_armor }
+			NOT = {	has_template_containing_unit = heavy_armor }
+			NOT = {	has_template_containing_unit = medium_armor }
 		}
 		on_research_complete = {
-		    hidden_effect = {
-				every_country = {
-						limit = { is_in_faction_with = ROOT }
-						set_technology = { basic_heavy_tank_chassis = 1 }
+			hidden_effect = {
+				if = {
+					limit = {
+						has_tech = motorised_infantry
 					}
+
+					load_oob = "unlock_tanks_mot"
 				}
+				if = {
+					limit = {
+						NOT = { has_tech = motorised_infantry }
+					}
+
+					load_oob = "unlock_tanks"
+				}
+			}
+
 			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 
@@ -1090,7 +1082,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 0.8
 
 			modifier = {
 				factor = 1.2
@@ -1107,9 +1099,12 @@ technologies = {
 				date > "1939.1.1"
 			}
 			modifier = {
-				tag = PAL
-				factor = 100
-				has_tech = gwtank_chassis
+				tag = FRA
+				factor = 3
+			}
+			modifier = {
+				tag = SOV
+				factor = 5
 			}
 			modifier = {
 				tag = JAP
@@ -1165,12 +1160,6 @@ technologies = {
 				}
 				ITA_add_improved_heavy_tank_templates = yes
 			}
-		    hidden_effect = {
-				every_country = {
-						limit = { is_in_faction_with = ROOT }
-						set_technology = { improved_heavy_tank_chassis = 1 }
-					}
-			}
 		}
 
 		ai_will_do = {
@@ -1195,16 +1184,16 @@ technologies = {
 				date > "1944.1.1"
 			}
 			modifier = {
+				tag = SOV
+				factor = 5
+			}
+			modifier = {
 				factor = 5.0
 				tag = GER
 				has_completed_focus = GER_expand_kummersdorfs_capacity
 				has_tech_bonus = {
 				    category = cat_heavy_armor
 				}
-			}
-			modifier = {
-				tag = PAL
-				factor = 100
 			}
 		}
 
@@ -1248,12 +1237,6 @@ technologies = {
 				}
 				ITA_add_advanced_heavy_tank_templates = yes
 			}
-		    hidden_effect = {
-				every_country = {
-						limit = { is_in_faction_with = ROOT }
-						set_technology = { advanced_heavy_tank_chassis = 1 }
-				}
-			}
 		}
 
 		ai_will_do = {
@@ -1274,8 +1257,8 @@ technologies = {
 				date > "1946.1.1"
 			}
 			modifier = {
-				tag = PAL
-				factor = 100
+				tag = SOV
+				factor = 5
 			}
 
 			modifier = {
@@ -1340,12 +1323,6 @@ technologies = {
 		}
 
 		on_research_complete = {
-		    hidden_effect = {
-				every_country = {
-						limit = { is_in_faction_with = ROOT }
-						set_technology = { super_heavy_tank_chassis = 1 }
-				}
-			}
 			if = { #Italian templates
 				limit = {
 					original_tag = ITA
@@ -1370,6 +1347,35 @@ technologies = {
 				}
 			}
 
+			IF = { #Japanese templates
+				limit = {
+					original_tag = JAP
+					has_completed_focus = JAP_the_ultimate_tank
+				}
+				#O-I
+				create_equipment_variant = {
+					name = "O-I"
+					type = super_heavy_tank_chassis_1
+					parent_version = 0
+					design_team = mio:JAP_mitsubishi_heavy_industries_organization
+					modules = {
+						main_armament_slot = tank_super_heavy_cannon
+						turret_type_slot = tank_super_heavy_four_man_tank_turret
+						suspension_type_slot = tank_christie_suspension
+						armor_type_slot = tank_cast_armor
+						engine_type_slot = tank_gasoline_engine
+						special_type_slot_1 = secondary_turret_hmg
+						special_type_slot_2 = additional_machine_guns
+						special_type_slot_3 = squeezebore_adaptor
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 5
+						tank_nsb_armor_upgrade = 8
+					}
+					icon = "GFX_JAP_improved_heavy_tank_medium"
+				}
+			}
+
 			if = {
 				limit = {
 					has_dlc = "Gotterdammerung"
@@ -1385,14 +1391,15 @@ technologies = {
 			base = 0
 			modifier = {
 				add = 1
-				date > 1943.6.1
+				date > 1943.9.1
 				NOT = { has_government = democratic }
 				num_of_military_factories > 150
 			}
 			modifier = {
 				add = 2
 				original_tag = GER
-				date > 1943.9.1
+				date > 1944.5.1
+				surrender_progress < 0.1
 				has_government = fascism
 				has_war_with = SOV
 			}
@@ -1438,12 +1445,12 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 2
+				factor = 10
 				is_major = yes
 			}
 			modifier = {
 				has_war = yes
-				factor = 2
+				factor = 10
 			}
 
 			modifier = {
@@ -1452,12 +1459,12 @@ technologies = {
 			}
 
 			modifier = {
-				factor = 1.1
+				factor = 1.5
 				date > "1938.1.1"
 			}
 
 			modifier = {
-				factor = 1.1
+				factor = 2
 				date > "1939.1.1"
 			}
 		}
@@ -1498,7 +1505,7 @@ technologies = {
 			factor = 1
 
 			modifier = {
-				factor = 2
+				factor = 4
 				is_major = yes
 			}
 			modifier = {
@@ -1508,17 +1515,17 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 1.1
 				date > "1938.1.1"
 			}
 
 			modifier = {
-				factor = 1.1
+				factor = 1.5
 				date > "1939.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1940.1.1"
 			}
 		}
 
@@ -1569,17 +1576,17 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "1937.1.1"
+				date > "1941.1.1"
 			}
 
 			modifier = {
-				factor = 1.1
-				date > "1938.1.1"
+				factor = 1.5
+				date > "1942.1.1"
 			}
 
 			modifier = {
-				factor = 1.1
-				date > "1939.1.1"
+				factor = 2
+				date > "1943.1.1"
 			}
 		}
 
@@ -1621,17 +1628,17 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "1937.1.1"
+				date > "1944.1.1"
 			}
 
 			modifier = {
-				factor = 1.1
-				date > "1938.1.1"
+				factor = 1.5
+				date > "1945.1.1"
 			}
 
 			modifier = {
-				factor = 1.1
-				date > "1939.1.1"
+				factor = 2
+				date > "1946.1.1"
 			}
 		}
 
@@ -1681,12 +1688,12 @@ technologies = {
 			}
 
 			modifier = {
-				factor = 1.1
+				factor = 1.5
 				date > "1938.1.1"
 			}
 
 			modifier = {
-				factor = 1.1
+				factor = 2
 				date > "1939.1.1"
 			}
 		}
@@ -1735,17 +1742,17 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 1.1
 				date > "1938.1.1"
 			}
 
 			modifier = {
-				factor = 1.1
+				factor = 1.5
 				date > "1939.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1940.1.1"
 			}
 		}
 
@@ -1791,17 +1798,17 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "1937.1.1"
+				date > "1941.1.1"
 			}
 
 			modifier = {
-				factor = 1.1
-				date > "1938.1.1"
+				factor = 1.5
+				date > "1942.1.1"
 			}
 
 			modifier = {
-				factor = 1.1
-				date > "1939.1.1"
+				factor = 2
+				date > "1943.1.1"
 			}
 		}
 
@@ -1841,17 +1848,17 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "1937.1.1"
+				date > "1944.1.1"
 			}
 
 			modifier = {
-				factor = 1.1
-				date > "1938.1.1"
+				factor = 1.5
+				date > "1945.1.1"
 			}
 
 			modifier = {
-				factor = 1.1
-				date > "1939.1.1"
+				factor = 2
+				date > "1946.1.1"
 			}
 		}
 
@@ -1929,12 +1936,12 @@ technologies = {
 			jungle = {
 				attack = 0.05
 			}
-			urban = {
-				attack = 0.05
-			}
-			fort = {
-				attack = 0.05
-			}
+			#urban = {
+			#	attack = 0.05
+			#}
+			#fort = {
+			#	attack = 0.05
+			#}
 		}
 
 		medium_flame_tank = {
@@ -1947,12 +1954,12 @@ technologies = {
 			jungle = {
 				attack = 0.05
 			}
-			urban = {
-				attack = 0.05
-			}
-			fort = {
-				attack = 0.05
-			}
+			#urban = {
+			#	attack = 0.05
+			#}
+			#fort = {
+			#	attack = 0.05
+			#}
 		}
 
 		heavy_flame_tank = {
@@ -1965,12 +1972,12 @@ technologies = {
 			jungle = {
 				attack = 0.05
 			}
-			urban = {
-				attack = 0.05
-			}
-			fort = {
-				attack = 0.05
-			}
+			#urban = {
+			#	attack = 0.05
+			#}
+			#fort = {
+			#	attack = 0.05
+			#}
 		}
 
 		show_effect_as_desc = yes

@@ -1,0 +1,48 @@
+﻿l_russian:
+  support_light_td:0 "Рота поддержки лёгких истребителей танков"
+  support_medium_td:0 "Рота поддержки средних истребителей танков"
+  support_heavy_td:0 "Рота поддержки тяжёлых истребителей танков"
+  support_modern_td:0 "Рота поддержки современных истребителей танков"
+  support_super_heavy_td:0 "Рота поддержки сверхтяжёлых истребителей танков"
+  MST_super_heavy_tank_destroyer_brigade:0 "Сверхтяжёлый истребитель танков"
+
+  support_light_tank_art:0 "Рота поддержки лёгкой САУ"
+  support_medium_tank_art:0 "Рота поддержки средней САУ"
+  support_heavy_tank_art:0 "Рота поддержки тяжёлой САУ"
+  support_modern_tank_art:0 "Рота поддержки современной САУ"
+  support_super_heavy_tank_art:0 "Рота поддержки сверхтяжёлой САУ"
+  MST_super_heavy_sp_artillery_brigade:0 "Сверхтяжёлая САУ"
+
+  support_light_tank_aa:0 "Рота поддержки лёгкой ЗСУ"
+  support_medium_tank_aa:0 "Рота поддержки средней ЗСУ"
+  support_heavy_tank_aa:0 "Рота поддержки тяжёлой ЗСУ"
+  support_modern_tank_aa:0 "Рота поддержки современной ЗСУ"
+  support_super_heavy_tank_aa:0 "Рота поддержки сверхтяжёлой ЗСУ"
+  MST_super_heavy_sp_anti_air_brigade:0 "Сверхтяжёлая ЗСУ"
+
+  support_light_tank:0 "Рота поддержки лёгких танков"
+  support_medium_tank:0 "Рота поддержки средних танков"
+  support_heavy_tank:0 "Рота поддержки тяжёлых танков"
+  support_modern_tank:0 "Рота поддержки современных танков"
+  support_super_heavy_tank:0 "Рота поддержки сверхтяжёлых танков"
+  super_heavy_armor_brigade:0 "Сверхтяжёлый танк"
+
+  support_amphibious_tank:0 "Рота поддержки плавающих танков"
+  support_amphibious_light_tank:0 "Рота поддержки лёгких плавающих танков"
+  support_amphibious_medium_tank:0 "Рота поддержки средних плавающих танков"
+  support_amphibious_heavy_tank:0 "Рота поддержки тяжёлых плавающих танков"
+
+  support_mechanized:0 "Рота поддержки механизированной пехоты"
+  mech_recon:0 "Механизированная разведывательная рота"
+
+  support_amtrack:0 "Рота поддержки амфибийных транспортеров"
+
+  support_armoured_car:0 "Рота поддержки бронеавтомобилей"
+
+  support_motorized_rocket:0 "Рота поддержки моторизованной реактивной артиллерии"
+
+  etd_support_mechanized:0 "Рота поддержки механизированной пехоты"
+  etd_mech_recon:0 "Механизированная разведывательная рота"
+  etd_support_armoured_car:0 "Рота поддержки бронеавтомобилей"
+
+ 

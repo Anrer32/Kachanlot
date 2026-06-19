@@ -1,4 +1,4 @@
-NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 7
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 5
 NDefines.NMilitary.MIN_DIVISION_BRIGADE_HEIGHT = 5
 
 
@@ -22,8 +22,6 @@ NDefines.NMilitary.TRAINING_ATTRITION = 0.00
 NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.49
 NDefines.NMilitary.PLANNING_MAX = 0.15
 NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.01
-NDefines.NMilitary.ARMOR_VS_AVERAGE = 0 --vanilla 0.4  | eventually armor will be reworked when paradox finally releases their armor rework
-NDefines.NMilitary.PEN_VS_AVERAGE = 0
 
 ---- Воздух
 NDefines.NAir.PORT_STRIKE_DAMAGE_FACTOR = 1.7
@@ -47,8 +45,8 @@ NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_MAX_DISRUPTION_DAMAGE_TO_CONSIDER = 0
 NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_DIRECT_DISRUPTION_DAMAGE_FACTOR	 =  0
 NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRUCK_MAX_FACTOR = 0 
 NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 14
-NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.098   -- модификаторы на урон касами
-NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.062    -- 
+NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.2   -- модификаторы на урон касами
+NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.14    -- 
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 0.4 -- зависимость количества влёта касов в бой от шф
 NDefines.NAir.DISRUPTION_FACTOR = 6  
 NDefines.NAir.ESCORT_FACTOR = 1
@@ -59,7 +57,7 @@ NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_DEFLECTION_FACTOR = 0.8
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.098 -- 0.06
 NDefines.NMilitary.REINFORCEMENT_REQUEST_MAX_WAITING_DAYS = 1  -- Every X days the equipment will be sent, regardless if still didn't produced all that has been requested.
 NDefines.NMilitary.REINFORCEMENT_REQUEST_DAYS_FREQUENCY = 1
-NDefines.NMilitary.REINFORCE_CHANCE = 0.03
+NDefines.NMilitary.REINFORCE_CHANCE = 0.05
 NDefines.NMilitary.SPEED_REINFORCEMENT_BONUS = 0.7
 NDefines.NMilitary.ARMY_INITIATIVE_REINFORCE_FACTOR = 0.15
 NDefines.NMilitary.PLANNING_DECAY = 0.1
@@ -88,45 +86,12 @@ NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 1.0
 NDefines.NNavy.NAVAL_MINES_PLANTING_SPEED_MULT = 0.00001
 NDefines.NNavy.RELATIVE_SURFACE_DETECTION_TO_POSITIONING_FACTOR = 0.01 -- увеличивает обнаружение между 2 флотами, сторона с большим обнаружением получает бонус
 NDefines.NNavy.MAX_POSITIONING_BONUS_FROM_SURFACE_DETECTION = 0.0 -- уменьшает бонус от обнаружения
-NDefines.NNavy.AGGRESSION_TORPEDO_EFFICIENCY_ON_HEAVY_SHIPS = 1.1 -- приоритет атаки торпед по тяжам
-NDefines.NNavy.AGGRESSION_TORPEDO_EFFICIENCY_ON_LIGHT_SHIPS = 0.01 -- приоритет атаки торпед по лт флоту
 
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
 		41.0,	-- big guns
 		60.0,	-- torpedoes
 		10.0,	-- small guns
 	}
--- Асы удалены
-
-NDefines.NAir.ACE_DEATH_CHANCE_BASE = 0
-NDefines.NAir.ACE_DEATH_BY_OTHER_ACE_CHANCE = 0
-NDefines.NAir.ACE_DEATH_CHANCE_PLANES_MULT = 0
-NDefines.NAir.ACE_EARN_CHANCE_BASE = 0
-NDefines.NAir.ACE_EARN_CHANCE_PLANES_MULT = 0
-
-
-
--- Стаки корабликов
-NDefines.NNavy.MIN_SHIPS_FOR_HIGHER_SHIP_RATIO_PENALTY = 30 -- минимальное количество кораблей в соединение, чтобы начались штрафы от размещения
-NDefines.NNavy.HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR = 0.6 -- дебафф размещения
-NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO = 0.60 -- минус к урону
-NDefines.NNavy.HIGHER_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR = 0 -- штраф на своё соединение, за более большое авиа соединение у противка
-NDefines.NNavy.MAX_CARRIER_RATIO_POSITIONING_PENALTY_FACTOR = 0.5 -- макс штраф за большее количество самолетов у противника на авиках
-NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CAPITALS = 1 -- кол-во требуемых кораблей охранения на 1 тяж корабль
-NDefines.NNavy.SPEED_TO_ESCAPE_SPEED = 0.6 -- скорость побега с боя
-NDefines.NNavy.BASE_JOIN_COMBAT_HOURS = 0.0 -- сколько кораблям надо прождать в часах, чтобы вступить в бой
-NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING	= 0.1
-NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING	= 0.2
-
-NDefines.NNavy.DAMAGE_PENALTY_ON_MINIMUM_POSITIONING = 0.5 -- штраф нанесения урона при плохом размещении
-NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.5 -- понижение щитка при понижении размещения
-NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.35 -- дебафф на пво флота от размещения
-NDefines.NNavy.POSITIONING_PENALTY_FOR_SHIPS_JOINED_COMBAT_AFTER_IT_STARTS = 0.01 -- каждый корабль в бою который получает штраф к размещению
-NDefines.NNavy.MAX_POSITIONING_PENALTY_FOR_NEWLY_JOINED_SHIPS = 0.3 -- максимальный штраф за новые суда
-NDefines.NNavy.POSITIONING_PENALTY_HOURLY_DECAY_FOR_NEWLY_JOINED_SHIPS = 0.3 -- накопленный штраф за новые суда который будет уменьшаться
-
-
-
 ---- продакшен
 
 NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 300 -- максимальное количество заводов на линии
@@ -156,9 +121,9 @@ NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1
 
 NDefines.NMilitary.COMBAT_STACKING_START = 3						-- ваниль - 8 -- при каком из делений начинается штраф за накопление
 NDefines.NMilitary.COMBAT_STACKING_EXTRA = 1                      -- ваниль 4 -- дополнительное наложение из указаний
-NDefines.NMilitary.COMBAT_STACKING_PENALTY = -0.18               -- ваниль -0,02 — сколько штрафов за деление
+NDefines.NMilitary.COMBAT_STACKING_PENALTY = -0.1              -- ваниль -0,02 — сколько штрафов за деление
 
-NDefines.NGame.GAME_SPEED_SECONDS = { 6000.0, 0.3, 0.15, 0.07, 0.0  }
+NDefines.NGame.GAME_SPEED_SECONDS = { 6000.0, 0.4, 0.2, 0.1, 0.0  }
 
 ------Technology------
 NDefines.NAI.RESEARCH_DAYS_BETWEEN_WEIGHT_UPDATE = 1
@@ -170,3 +135,5 @@ NDefines.NAI.RESEARCH_YEARS_BEHIND_FACTOR = 0.0
 
 NDefines.NBuildings.BASE_FACTORY_REPAIR = 2.0			-- Default repair rate in percentage before factories are taken into account (1.0 equals 1%).
 	NDefines.NBuildings.BASE_FACTORY_REPAIR_FACTOR = 4.0
+
+--Броня
