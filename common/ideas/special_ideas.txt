@@ -1,0 +1,35 @@
+ideas = {
+
+	country = {
+		AXIS_Traide_close_GER = {
+
+	     	picture = ger_trade
+
+	    	removal_cost = -1
+
+	    	allowed = {
+     		    always = yes
+    		}		
+			targeted_modifier = {
+				tag = ITA
+				extra_trade_to_target_factor = 1
+			}
+        }
+		AXIS_Traide_close_ITA = {
+
+	     	picture = ita_trade
+
+	    	removal_cost = -1
+
+	    	allowed = {
+     		    always = yes
+    		}		
+			targeted_modifier = {
+				tag = GER
+				extra_trade_to_target_factor = 1
+			}	
+        }
+	}
+
+
+}

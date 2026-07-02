@@ -1,0 +1,34 @@
+spriteTypes = {	
+
+
+
+	spriteType = {
+		name = "GFX_idea_JAP_gekokujo"
+		texturefile = "gfx/interface/ideas/idea_JAP_gekokujo.dds"
+	}
+		spriteType = {
+		name = "GFX_idea_SOV_gpw"
+		texturefile = "gfx/interface/ideas/gpw.dds"
+	}
+			spriteType = {
+		name = "GFX_idea_american_industry1"
+		texturefile = "gfx/interface/ideas/american_industy.dds"
+	}
+				spriteType = {
+		name = "GFX_idea_american_state"
+		texturefile = "gfx/interface/ideas/american_state.dds"
+	}
+	spriteType = {
+	name = "GFX_idea_jap_closeeco"
+	texturefile = "gfx/interface/ideas/idea_jap_closeeco.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ger_trade"
+		texturefile = "gfx/interface/ideas/ger_trade.dds"
+		}
+	spriteType = {
+	name = "GFX_idea_ita_trade"
+	texturefile = "gfx/interface/ideas/ita_trade.dds"
+	}
+
+}

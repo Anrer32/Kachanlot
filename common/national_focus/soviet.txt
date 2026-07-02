@@ -108,20 +108,6 @@ focus_tree = {
             remove_ideas = SOV_repressed_army_command_1
         }
     }
-	focus = {
-        id = SOV_sturm_batallion # Стартовый фокус ветки
-        icon = GFX_focus_prc_infiltration
-        x = 0
-        y = 2
-        cost = 10
-		prerequisite = {focus = SOV_gen_repression_remove_2}
-		relative_position_id = SOV_gen_repression_remove_1
-        completion_reward = {
-           set_technology = {
-    sturm = 1
-   }
-        }
-    }
 		focus = {
         id = SOV_spec_force_improve # Стартовый фокус ветки
         icon = GFX_focus_RAJ_specialized_dietery_requirements
@@ -7113,8 +7099,8 @@ set_country_flag = { flag = SOV_counter_operation value = 1 days = 140 }
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_lessons_war_tt_kmp
-			add_to_variable = { SOV_the_red_army_army_attack_factor = 0.15 tooltip = army_attack_factor_tt}
-			add_to_variable = { SOV_the_red_army_breakthrough_factor = 0.15 tooltip = breakthrough_factor_tt }
+			add_to_variable = { SOV_the_red_army_army_attack_factor = 0.05 tooltip = army_attack_factor_tt}
+			add_to_variable = { SOV_the_red_army_breakthrough_factor = 0.05 tooltip = breakthrough_factor_tt }
 			add_to_variable = { SOV_the_red_army_land_doctrine_cost_factor = -0.1 }
 			
 			army_experience = 75

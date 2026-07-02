@@ -1,0 +1,27 @@
+add_namespace = indonesia_events
+
+
+country_event = { 
+	id = indonesia_events.88
+	title = indonesia_events.88.t
+	desc = indonesia_events.88.desc
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+	immediate = {
+		
+	}
+
+	option = { 
+		name = indonesia_events.88.a
+		OVERLORD = { end_puppet = INS }
+		set_politics = {
+			ruling_party = democracy
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = democracy
+			popularity = 0.7
+		}
+	}
+}

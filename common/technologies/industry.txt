@@ -454,7 +454,7 @@ technologies = {
 	
 	concentrated_industry4 = {
 
-		industrial_capacity_factory = 0.15
+		industrial_capacity_factory = 0.1
 		industrial_capacity_dockyard = 0.1
 		#industrial_capacity_factory_powered = 0.15 
 		#industrial_capacity_dockyard_powered = 0.1 
@@ -494,7 +494,7 @@ technologies = {
 	
 	concentrated_industry5 = {
 
-		industrial_capacity_factory = 0.15
+		industrial_capacity_factory = 0.1
 		industrial_capacity_dockyard = 0.1
 		#industrial_capacity_factory_powered = 0.15 
 		#industrial_capacity_dockyard_powered = 0.1 
@@ -696,7 +696,7 @@ technologies = {
 	
 	dispersed_industry4 = {
 
-		industrial_capacity_factory = 0.1
+		industrial_capacity_factory = 0.05
 		industrial_capacity_dockyard = 0.1
 		#industrial_capacity_factory_powered = 0.1 
 		#industrial_capacity_dockyard_powered = 0.1 
@@ -739,7 +739,7 @@ technologies = {
 	
 	dispersed_industry5 = {
 
-		industrial_capacity_factory = 0.1
+		industrial_capacity_factory = 0.05
 		industrial_capacity_dockyard = 0.1
 		#industrial_capacity_factory_powered = 0.1 
 		#industrial_capacity_dockyard_powered = 0.1 
@@ -1987,7 +1987,7 @@ technologies = {
 
 	excavation4 = {
 		
-		local_resources_factor = 0.10
+		local_resources_factor = 0.20
 		local_resources_coal_factor = 0.05
 
 		path = {
@@ -2077,7 +2077,7 @@ technologies = {
 
 	excavation5 = {
 		
-		local_resources_factor = 0.10
+		local_resources_factor = 0.20
 		local_resources_coal_factor = 0.05
 
 		path = {

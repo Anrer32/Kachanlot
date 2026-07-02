@@ -2793,8 +2793,11 @@ focus_tree = {
 		cost = 15
 		available = {
 			has_war_with_major = yes
+			OR = {
 			SOV = {
 				has_completed_focus = SOV_lessons_of_war
+			}
+			surrender_progress > 0.5
 			}
 			OR = {
 				has_war_support > 0.89
@@ -3173,7 +3176,15 @@ focus = {
 		completion_reward = {
 			add_command_power = 25
 			army_experience = 25
-
+			add_daily_mastery = {
+    		amount = 0.5
+    		days = 1440
+    		name = CHI_military_affairs_commission_sea
+    		# FILTERS:
+    		folder = land
+    		grand_doctrine = mobile_warfare
+    		index = 1
+			}
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			#add_doctrine_cost_reduction = {
@@ -10400,10 +10411,6 @@ focus = {
 					num_subjects > 5
 					check_variable = { GER_occupied_states_europe > 49 }
 				}
-			}
-			custom_trigger_tooltip = { 
-				tooltip = GER_the_supreme_leader_trigger
-				check_variable = { GER_capitulated_major_countries > 2 }
 			}
 		}
 

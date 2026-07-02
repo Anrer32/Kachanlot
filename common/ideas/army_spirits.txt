@@ -171,11 +171,19 @@ ideas = {
 		inventive_leadership_spirit = {
 			ledger = army
 			available = { has_military_academy = yes 
-			NOT = {is_major = yes}
+			OR ={
+				NOT = {original_tag = SOV
+				original_tag = GER
+				original_tag = ITA
+				original_tag = ENG
+				original_tag = USA
+				num_of_controlled_factories >350
+		}
+		}
 		}
 			modifier = {
 				custom_modifier_tooltip = inventive_leadership_spirit_tt
-				experience_gain_factor = 0.5
+				experience_gain_factor = 0.75
 			}
 			ai_will_do = {
 				factor = 1

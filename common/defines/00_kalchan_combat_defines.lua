@@ -14,15 +14,18 @@ NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.7
 NDefines.NCountry.EQUIPMENT_UPGRADE_CHUNK_MAX_SIZE = 100
 NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 100
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 200.0
-NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 100000;	
-	NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 40			
+NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 100000	
+NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 40
+
 NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.032                  
 NDefines.NMilitary.INFRASTRUCTURE_MOVEMENT_SPEED_IMPACT = -0.02;
 NDefines.NMilitary.TRAINING_ATTRITION = 0.00
 NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.49
 NDefines.NMilitary.PLANNING_MAX = 0.15
 NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.01
-
+NDefines.NMilitary.COHESION_IMMOBILE_PLANNING_SPEED_MULTIPLIER = 1
+	NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE = 0.55	       -- more AA attack will approach this amount of help (diminishing returns)
+	NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE_STEEPNESS = 625 -- how quickly defense approaches the max impact diminishing returns curve
 ---- Воздух
 NDefines.NAir.PORT_STRIKE_DAMAGE_FACTOR = 1.7
 NDefines.NAir.PORT_STRIKE_DAMAGE_FACTOR = 1.7
