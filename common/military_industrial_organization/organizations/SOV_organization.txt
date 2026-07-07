@@ -1773,17 +1773,7 @@ SOV_mig_design_bureau_organization = {
 				has_full_control_of_state = 251 #KUYBYSHEV
 			}
 			FROM = {
-				has_completed_focus = SOV_raskovas_aviation_group
-			}
-			FROM = {
-				NOT = { has_country_flag = SOV_merge_plant_no_28_flag }
-			}
-		}
-
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = SOV_merge_plant_no_28_flag
+				has_completed_focus = SOV_desperate_measures
 			}
 		}
 
@@ -1810,15 +1800,11 @@ SOV_mig_design_bureau_organization = {
 				has_full_control_of_state = 219 #MOSCOW
 			}
 			FROM = {
-				has_completed_focus = SOV_raskovas_aviation_group
-			}
-			FROM = {
-				NOT = { has_country_flag = SOV_merge_plant_no_150_flag }
+				has_completed_focus = SOV_desperate_measures
 			}
 		}
 
 		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
 			FROM = {
 				set_country_flag = SOV_merge_plant_no_150_flag
 				add_resource = {
@@ -1851,23 +1837,8 @@ SOV_mig_design_bureau_organization = {
 			FROM = {
 				has_completed_focus = SOV_desperate_measures
 			}
-			FROM = {
-				NOT = { has_country_flag = SOV_merge_vef_plant_flag }
-			}
 		}
 
-		on_complete = {
-			custom_effect_tooltip = generic_trait_will_not_be_available_in_other_organizations
-			FROM = {
-				set_country_flag = SOV_merge_vef_plant_flag
-				add_tech_bonus = {
-					name = SOV_mio_trait_merge_vef_plant
-					bonus = 1
-					uses = 1
-					category = radar_tech
-				}
-			}
-		}
 
 		equipment_bonus = {
 			air_defence = 0.2

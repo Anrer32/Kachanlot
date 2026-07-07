@@ -10247,7 +10247,7 @@ country_event = { #Germany wants resource rights for Sweden
 
 	option = { #Yes
 		ai_chance = {
-			base = 30
+			base = 3000
 		}
 		name = AAT_germany.1.b
 

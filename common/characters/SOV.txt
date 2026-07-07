@@ -171,34 +171,43 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { lock_up_vpis panzer_leader expert_improviser combined_arms_expert adaptable trait_engineer fortress_buster swamp_fox hill_fighter winter_specialist winter_expert urban_assault_specialist ranger logistics_wizard thorough_planner aggressive_assaulter inspirational_leader }
-			skill = 7
-			attack_skill = 6
-			defense_skill = 7
-			planning_skill = 9
+			traits = { media_personality armor_officer war_hero winter_specialist talent_gen }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 4
 			logistics_skill = 5
 			legacy_id = 410
-			visible = { has_completed_focus = SOV_lessons_of_war }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 
 		advisor = {
 			cost = 150
-			slot = army_chief
+			slot = theorist
 			idea_token = georgy_zhukov
 			ledger = army
 			allowed = {
 				original_tag = SOV
 			}
 			available = {
-				has_completed_focus = SOV_lessons_of_war
+				has_completed_focus = SOV_positive_heroism
+				if = {
+					limit = {
+						has_character_flag = SOV_exiled_flag
+					}
+					NOT = { has_character_flag = SOV_exiled_flag }
+				}
 			}
 			traits = {
-				marshal_of_vic
+				mass_assault_expert
+			}
+			ai_will_do = {
+				base = 2
 			}
 		}		
 	}
 
-	SOV_konstantin_rokossovsky = {
+SOV_konstantin_rokossovsky = {
 		name = SOV_konstantin_rokossovsky
 
 		portraits = {
@@ -209,33 +218,50 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { lock_up_vpis panzer_leader expert_improviser cavalry_leader combined_arms_expert adaptable trait_engineer fortress_buster swamp_fox hill_fighter winter_specialist winter_expert urban_assault_specialist ranger }
-			skill = 7
-			attack_skill = 9
-			defense_skill = 8
-			planning_skill = 6
-			logistics_skill = 7
+			traits = { brilliant_strategist trait_cautious armor_officer talent_gen }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 4
 			legacy_id = 402
-			visible = { has_completed_focus = SOV_the_glory_of_the_red_army }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 
-			advisor = {
-				slot = high_command
-				idea_token = konstantin_rokossovsky
-				ledger = army
-				allowed = {
-					original_tag = SOV
+		advisor = {
+			slot = high_command
+			idea_token = konstantin_rokossovsky
+			ledger = army
+			allowed = {
+				original_tag = SOV
+				hidden_trigger = {
+					NOT = {
+						any_other_country = {
+							has_war_with = SOV
+							original_tag = SOV
+							has_unit_leader = 403.000
+						}
+					}
 				}
-				available = {
-					has_completed_focus = SOV_positive_heroism
-					has_completed_focus = SOV_expand_stavka_1
+			}
+			available = {
+				has_completed_focus = SOV_positive_heroism
+				if = {
+					limit = {
+						has_character_flag = SOV_exiled_flag
+					}
+					NOT = { has_character_flag = SOV_exiled_flag }
 				}
-				traits = {
-					army_armored_3
-				}
-				cost = 200
-			}		
-		}
+			}
+			traits = {
+				army_armored_3
+			}
+			cost = 200
+			ai_will_do = {
+				base = 2
+			}
+		}		
+	}
 
 	SOV_aleksandr_vasilevsky = {
 		name = SOV_aleksandr_vasilevsky
@@ -1105,33 +1131,18 @@ characters = {
 		portraits = {
 			army = {
 				large = GFX_portrait_SOV_vasily_chuykov
-				small = GFX_portrait_SOV_vasily_chuykov_small
+				small=GFX_portrait_SOV_vasily_chuykov_small
 			}
 		}
 		corps_commander = {
-			traits = { lock_up_vpis infantry_leader infantry_expert commando swamp_fox hill_fighter ranger adaptable trickster camouflage_expert guerilla_fighter}
-			skill = 7
-			attack_skill = 5
-			defense_skill = 10
-			planning_skill = 6
-			logistics_skill = 10
-			legacy_id = 1489
-			visible = { has_completed_focus = SOV_lessons_of_war }
-		}
-		advisor = {
-			slot = high_command
-			idea_token = vasily_chuykov
-			ledger = army
-			allowed = {
-				original_tag = SOV
-			}
-			traits = {
-				army_infantry_3
-			}
-			available = {
-				has_completed_focus = SOV_expand_stavka_2
-			}
-			cost = 200
+			traits = { brilliant_strategist career_officer talent_gen }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 

@@ -664,10 +664,12 @@ irregulars = {
     # EFFECTS
 
     rewards = {
-        service_by_lot = { 
+        service_by_lot = {
+            mastery = 50 
             mobilization_speed = 0.05
         }
         partisan_regiments = {
+            mastery = 50
             irregular_infantry = {
                 combat_width = -0.4
             }
@@ -681,6 +683,7 @@ irregulars = {
 
         
         improvised_officer_groups = {
+            mastery = 50
             category_light_infantry = {
                 max_organisation = 10
                 soft_attack = 0.1
@@ -690,11 +693,13 @@ irregulars = {
             
         }
         levee_en_masse = {
+            mastery = 50
             conscription = 0.02
             mobilization_speed = 0.05
 
         }
         standardization_efforts = {
+            mastery = 50
             category_light_infantry = {
                 max_organisation = 10
                 soft_attack = 0.1
@@ -848,6 +853,7 @@ great_war_infantry = {
 
     rewards = {
         traverse_digging = {
+            mastery = 50
             dig_in_speed_factor = 0.05
 			fire_support = {
                 soft_attack = 0.1		
@@ -864,6 +870,7 @@ great_war_infantry = {
             
         }
         sapping_operations = {
+            mastery = 50
             category_light_infantry = {
                 defense = 0.1
             }
@@ -872,6 +879,7 @@ great_war_infantry = {
             }
         }
         centralized_artillery_control = {
+            mastery = 50
             artillery = {
                 soft_attack = 0.1
                 battalion_mult = {
@@ -885,6 +893,7 @@ great_war_infantry = {
 			}
         }
         field_fortification_emphasis = {
+            mastery = 50
             category_light_infantry = {
                 reliability = 0.05
                 defense = 0.05
@@ -892,6 +901,7 @@ great_war_infantry = {
             }
         }
         redoubt_networks = {
+            mastery = 50
             dig_in_speed_factor = 0.10
         }
 

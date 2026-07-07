@@ -327,13 +327,13 @@ characters = {
 				small = GFX_portrait_GER_gunther_von_kluge_small
 			}
 		}
-		corps_commander = {
-			traits = { lock_up_vpis expert_improviser cavalry_leader combined_arms_expert adaptable trait_engineer fortress_buster logistics_wizard }
-			skill = 7
-			attack_skill = 8
+		corps_commander = { 
+			traits = { trait_cautious brilliant_strategist }
+			skill = 4
+			attack_skill = 4
 			defense_skill = 3
-			planning_skill = 6
-			logistics_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
 			legacy_id = 2
 		}
 	}
@@ -556,12 +556,13 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { lock_up_vpis media_personality armor_officer war_hero trickster urban_assault_specialist hill_fighter panzer_leader combined_arms_expert adaptable trait_engineer fortress_buster desert_fox }
-			skill = 7
-			attack_skill = 8
+			visible = { has_completed_focus = GER_adopt_new_panzer_doctrine }
+			traits = { trait_reckless media_personality armor_officer war_hero trickster talent_gen}
+			skill = 4
+			attack_skill = 5
 			defense_skill = 3
-			planning_skill = 6
-			logistics_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
 			legacy_id = 4
 		}
 	}
@@ -588,7 +589,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { brilliant_strategist armor_officer trickster trait_engineer }
+			traits = { brilliant_strategist armor_officer trickster trait_engineer talent_gen }
 			skill = 4
 			attack_skill = 3
 			defense_skill = 3
@@ -623,7 +624,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { brilliant_strategist career_officer armor_officer trickster panzer_leader }
+			traits = { brilliant_strategist career_officer armor_officer trickster panzer_leader talent_gen}
 			skill = 4
 			attack_skill = 3
 			defense_skill = 4
@@ -680,7 +681,7 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { cavalry_officer harsh_leader brilliant_strategist }
+			traits = { cavalry_officer harsh_leader brilliant_strategist talent_gen}
 			skill = 4
 			attack_skill = 3
 			defense_skill = 3
@@ -737,8 +738,8 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { lock_up_vpis panzer_leader combined_arms_expert }
-			skill = 8
+			traits = { armor_officer defensive_doctrine }
+			skill = 3
 			attack_skill = 2
 			defense_skill = 3
 			planning_skill = 3
@@ -4188,5 +4189,5 @@ characters = {
 			}
 		}
 	}
+	}
 
-}

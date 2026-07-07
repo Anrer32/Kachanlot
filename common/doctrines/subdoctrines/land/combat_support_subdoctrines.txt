@@ -588,7 +588,7 @@ self_propelled_support = {
         air_attack = 0.1
     }
     category_tank_destroyers = {
-        hard_attack = 0.05
+        hard_attack = 0.02
     }
 
 
@@ -666,7 +666,7 @@ self_propelled_support = {
             category_tank_destroyers = {
                 max_organisation = 5
                 default_morale = 0.15
-                hard_attack = 0.05
+                hard_attack = 0.02
             }
 			
         }

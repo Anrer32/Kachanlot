@@ -382,8 +382,6 @@ sub_units = {
 			category_all_armor
 			category_army
 			category_tank_destroyers
-			category_support_battalions
-			category_regimental_support_battalions
 			category_tank_destroyer_regimental_support
 		}
 
@@ -437,8 +435,6 @@ allowed_battalion_groups = { infantry mobile combat_support mobile_combat_suppor
 			category_all_armor
 			category_army
 			category_tank_destroyers
-			category_support_battalions
-			category_regimental_support_battalions
 			category_tank_destroyer_regimental_support
 		}
 
@@ -491,8 +487,6 @@ allowed_battalion_groups = { infantry mobile combat_support mobile_combat_suppor
 			category_all_armor
 			category_army
 			category_tank_destroyers
-			category_support_battalions
-			category_regimental_support_battalions
 			category_tank_destroyer_regimental_support
 		}
 
@@ -542,8 +536,7 @@ allowed_battalion_groups = { infantry mobile combat_support mobile_combat_suppor
 			category_all_armor
 			category_army
 			category_tank_destroyers
-			category_support_battalions
-			category_regimental_support_battalions
+
 			category_tank_destroyer_regimental_support
 		}
 

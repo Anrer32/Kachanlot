@@ -5,7 +5,7 @@ fighter_aircraft = {
     icon = "GFX_doctrine_milestone_fighter_air"
     icon_frame = "GFX_doctrine_decor_air"
     mastery = {
-        multiplier = 7.0 
+        multiplier = 5.0 
         equipment = {
             fighter
             interceptor
@@ -27,7 +27,7 @@ strike_aircraft = {
     icon = "GFX_doctrine_milestone_striker_air"
     icon_frame = "GFX_doctrine_decor_air"
     mastery = {
-        multiplier = 7.0 
+        multiplier = 5.0 
         equipment = {
             fighter
             interceptor
@@ -49,7 +49,7 @@ medium_aircraft = {
     icon = "GFX_doctrine_milestone_medium_air"
     icon_frame = "GFX_doctrine_decor_air"
     mastery = {
-        multiplier = 7.0 
+        multiplier = 5.0 
         equipment = {
             fighter
             interceptor
@@ -71,7 +71,7 @@ heavy_aircraft = {
     icon = "GFX_doctrine_milestone_heavy_air"
     icon_frame = "GFX_doctrine_decor_air"
     mastery = {
-        multiplier = 7.0 
+        multiplier = 5.0 
         equipment = {
             fighter
             interceptor

@@ -92,20 +92,13 @@ last_stand = {
     xp_type = army
 
     available = {
-        if = {
-            limit = {
-                NOT = {
-                    original_tag = INS
-                }
-            }
-            has_defensive_war = yes
+        OR= {
+        has_completed_focus = GER_totaler_krieg
+        AND = {
+        surrender_progress >0.6
+        is_major = no
         }
-        else = {
-            OR = {
-                has_defensive_war = yes
-                has_country_flag = INS_revolution_has_started
-            }
-        }
+    }
     }
     # EFFECTS
     conscription = 0.05
@@ -119,30 +112,37 @@ last_stand = {
     rewards = {
         werwolf_groups = {
         #1
-            resistance_damage_to_garrison_on_our_occupied_states = 0.25
+        category_army = {
+            default_morale = 0.1
+        }
+            resistance_damage_to_garrison_on_our_occupied_states = 0.33
         }
 
         pocket_consolidation = {
         #2
             category_all_infantry = {
-                defense = 0.1
+                defense = 0.2
             }
         }
         digging_in = {
         #3
             out_of_supply_factor = -0.20
-            category_all_infantry = {
-                entrenchment = 0.1
+            infantry = {
+                 urban = {
+            defence = 0.4
+            }
             }
         }
         stocking_up = {
         #4
+            supply_consumption_factor = -0.05
             no_supply_grace = 72 
         }
         breaking_out = {
         #5
             category_army = {
                 soft_attack = 0.15
+                hard_attack = 0.1
             }
 			category_regimental_support_artillery = {
 				max_organisation = 5

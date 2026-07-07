@@ -6,7 +6,6 @@ set_war_support = 0.6 # Was 0.8, but will make you have to scale up with Militar
 
 set_research_slots = 4 # Was 4
 set_fuel_ratio = 1.0
-
 # This can't be used in a civil war duh
 set_country_flag = JAP_first_strike_principle_blocked
 set_country_flag = JAP_kantai_kessen_blocked
@@ -305,7 +304,7 @@ add_ideas = {
 	# National Spirits
 	#JAP_zaibatsus
 	JAP_militarism
-
+	JAP_soviet_neutral
 	#Imperial Influence Ideas
 	JAP_army_faction_tier_2_equal_navy
 	JAP_naval_faction_tier_2_equal_army
@@ -333,7 +332,7 @@ IF = {
 # East Hebei
 609 = {
 	start_resistance = yes
-	set_compliance = 15
+	set_compliance = 70
 	set_resistance = 5
 	set_garrison_strength = 1.0
 }
@@ -341,7 +340,7 @@ IF = {
 # Dalian
 745 = {
 	start_resistance = yes
-	set_compliance = 20
+	set_compliance = 70
 	set_resistance = 5
 	set_garrison_strength = 1.0
 }
@@ -349,7 +348,7 @@ IF = {
 # Taiwan
 524 = {
 	start_resistance = yes
-	set_compliance = 20
+	set_compliance = 70
 	set_resistance = 5
 	set_garrison_strength = 1.0
 }
@@ -357,7 +356,7 @@ IF = {
 # Palau
 647 = {
 	start_resistance = yes
-	set_compliance = 25
+	set_compliance = 70
 	set_resistance = 0
 	set_garrison_strength = 1.0
 }
@@ -365,7 +364,7 @@ IF = {
 # Caroline Islands
 684 = {
 	start_resistance = yes
-	set_compliance = 25
+	set_compliance = 70
 	set_resistance = 0
 	set_garrison_strength = 1.0
 }
@@ -373,7 +372,7 @@ IF = {
 # Marshall Islands
 633 = {
 	start_resistance = yes
-	set_compliance = 25
+	set_compliance = 70
 	set_resistance = 0
 	set_garrison_strength = 1.0
 }
@@ -383,7 +382,7 @@ IF = {
 # Heian-Koukai
 527 = {
 	start_resistance = yes
-	set_compliance = 5
+	set_compliance = 70
 	set_resistance = 5
 	set_garrison_strength = 1.0
 }
@@ -391,7 +390,7 @@ IF = {
 # Kankyou
 1028 = {
 	start_resistance = yes
-	set_compliance = 5
+	set_compliance = 70
 	set_resistance = 5
 	set_garrison_strength = 1.0
 }
@@ -399,7 +398,7 @@ IF = {
 # Keiki 
 525 = {
 	start_resistance = yes
-	set_compliance = 5
+	set_compliance = 70
 	set_resistance = 5
 	set_garrison_strength = 1.0
 }
@@ -407,7 +406,7 @@ IF = {
 # Kougen 
 1029 = {
 	start_resistance = yes
-	set_compliance = 5
+	set_compliance = 70
 	set_resistance = 5
 	set_garrison_strength = 1.0
 }
@@ -415,7 +414,7 @@ IF = {
 # Keishou 
 1030 = {
 	start_resistance = yes
-	set_compliance = 5
+	set_compliance = 70
 	set_resistance = 5
 	set_garrison_strength = 1.0
 }
@@ -423,7 +422,7 @@ IF = {
 # Chuusei-Zenra 
 1031 = {
 	start_resistance = yes
-	set_compliance = 5
+	set_compliance = 70
 	set_resistance = 5
 	set_garrison_strength = 1.0
 }

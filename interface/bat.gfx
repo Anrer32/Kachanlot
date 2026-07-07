@@ -1,0 +1,5 @@
+spriteType = {
+		name = "GFX_industrial_center"
+		texturefile = "gfx/interface/icons/indutsrial_center_icon.dds"
+		noOfFrames = 2
+	}

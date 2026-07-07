@@ -160,7 +160,7 @@ characters = {
 
 		advisor = {
 			cost = 150
-			slot = army_chief
+			slot = theorist
 			idea_token = rodolfo_graziani
 			ledger = army
 			allowed = {
@@ -170,7 +170,7 @@ characters = {
 				has_government = fascism
 			}
 			traits = {
-				army_chief_offensive_2
+				grand_battle_plan_expert
 			}
 			ai_will_do = {
 				base = 3.000
@@ -178,13 +178,14 @@ characters = {
 		}
 
 		field_marshal = {
-			traits = { lock_up_vpis expert_improviser cavalry_leader combined_arms_expert desert_fox adaptable trait_engineer fortress_buster logistics_wizard }
-			skill = 7
-			attack_skill = 7
-			defense_skill = 6
-			planning_skill = 4
-			logistics_skill = 8
+			traits = { trait_cautious politically_connected offensive_doctrine desert_fox }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
 			legacy_id = 0
+			visible = { has_government = fascism }
 		}
 	}
 
@@ -340,7 +341,7 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { armor_officer war_hero }
+			traits = { armor_officer war_hero talent_gen }
 			skill = 4
 			attack_skill = 4
 			defense_skill = 3
@@ -415,13 +416,14 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { lock_up_vpis armor_officer trickster hill_fighter panzer_leader combined_arms_expert adaptable trait_engineer fortress_buster desert_fox }
-			skill = 7
-			attack_skill = 6
-			defense_skill = 2
-			planning_skill = 6
-			logistics_skill = 8
+			traits = { career_officer trait_cautious }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
 			legacy_id = 0
+			visible = { has_government = fascism }
 		}
 	}
 
@@ -435,13 +437,14 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { lock_up_vpis infantry_leader infantry_expert hill_fighter adaptable commando desert_fox camouflage_expert guerilla_fighter }
-			skill = 7
-			attack_skill = 4
-			defense_skill = 8
-			planning_skill = 2
-			logistics_skill = 8
+			traits = { infantry_officer career_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
 			legacy_id = 0
+			visible = { has_government = fascism }
 		}
 	}
 

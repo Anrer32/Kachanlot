@@ -1704,12 +1704,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
-			add_stability = -0.05
-			add_popularity = {
-			    ideology = ROOT
-			    popularity = -0.05
-			}
-
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			if = {
@@ -2821,7 +2815,7 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = GER_gain_totaler_krieg_remove_total_mob_tt
-			add_ideas = totaler_krieg_economy
+			add_ideas = tota
 
 			if = {
 				limit = {
@@ -3243,6 +3237,10 @@ focus = {
 		relative_position_id = GER_develop_modern_maneuver_warfare
 		cost = 5
 		available = {
+			OR = {
+			has_completed_focus = GER_remilitarize_the_rhineland
+			has_completed_focus = GER_oppose_hitler_ww
+			}
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL FOCUS_FILTER_RESEARCH FOCUS_FILTER_MILITARY_CHARACTER }
@@ -3255,7 +3253,41 @@ focus = {
 				category = cat_fortification
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
-
+				hidden_effect = {
+				978 = {
+					set_building_level = {
+				type = bunker
+				level = 4
+				province = {
+					all_provinces = yes
+					limit_to_border = yes
+				}
+					}
+				}
+				42 = {
+					set_building_level = {
+				type = bunker
+				level = 4
+				province = {
+					all_provinces = yes
+					limit_to_border = yes
+				}
+					}
+					51 = {
+					set_building_level = {
+				type = bunker
+				level = 4
+				province = {
+					all_provinces = yes
+					limit_to_border = yes
+					limit_to_victory_point > 1
+				}
+					}
+				}
+				
+				}
+				}
+			custom_effect_tooltip = GER_wall_tt
 			add_timed_idea = {
 				idea = GER_fortify_the_vaterland_idea
 				days = 730
@@ -3269,7 +3301,7 @@ focus = {
 	focus = {
 		id = GER_the_prussian_legacy
 		icon = GFX_focus_GER_prussian_legacy
-		prerequisite = { focus = GER_develop_modern_maneuver_warfare }
+		prerequisite = { focus = GER_fortify_the_vaterland }
 		mutually_exclusive = { focus = GER_adopt_new_panzer_doctrine }
 		x = -2
 		y = 2
@@ -4599,7 +4631,7 @@ focus = {
 		icon = GFX_focus_generic_tank_assault
 		alternate_icon = GFX_focus_GER_adopt_new_panzer_doctrine_historical
 
-		prerequisite = { focus = GER_develop_modern_maneuver_warfare }
+		prerequisite = { focus = GER_fortify_the_vaterland }
 		mutually_exclusive = { focus = GER_the_prussian_legacy }
 		x = 2
 		y = 2

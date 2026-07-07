@@ -11766,9 +11766,6 @@ focus_tree = {
 			any_enemy_country = {
 				is_literally_china = yes
 			}
-			NOT = {
-				has_idea = JAP_surprise_invasion_idea
-			}
 		}
 
 		bypass = {
@@ -14147,6 +14144,7 @@ focus_tree = {
 		}
 
 		available = {
+			date > 1940.06.01
 			is_subject = no
 			IF = {
 				limit = {
@@ -15466,6 +15464,13 @@ focus_tree = {
 		}
 
 		available = {
+			JAP = {
+				owns_state = 285
+				owns_state = 439
+				owns_state = 336
+				owns_state = 1058
+				owns_state = 284
+			}
 			JAP_army_faction_is_at_least_influential = yes
 			IF = {
 				limit = {
@@ -15531,7 +15536,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-
+			remove_ideas = JAP_soviet_neutral
 			IF = {
 				limit = {
 					NOT = {
@@ -15638,6 +15643,13 @@ focus_tree = {
 		}
 
 		available = {
+			JAP = {
+				owns_state = 285
+				owns_state = 439
+				owns_state = 336
+				owns_state = 1058
+				owns_state = 284
+			}
 			JAP_army_faction_is_at_least_influential = yes
 			IF = {
 				limit = {
@@ -15707,7 +15719,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-
+			remove_ideas = JAP_soviet_neutral
 			declare_war_on = {
 				target = SOV
 				type = annex_everything
@@ -25396,7 +25408,7 @@ focus_tree = {
 		x = -2
 		y = 1
 
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 3
@@ -25483,7 +25495,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 3
@@ -25591,7 +25603,7 @@ focus_tree = {
 		x = 2
 		y = 1
 
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 3
@@ -25684,7 +25696,7 @@ focus_tree = {
 		x = 4
 		y = 1
 
-		cost = 5
+		cost = 2
 
 		ai_will_do = {
 			factor = 3
@@ -25778,7 +25790,6 @@ focus_tree = {
 		}
 
 		available = {
-			num_of_civilian_factories > 34
 		}
 
 		bypass = {
@@ -30030,7 +30041,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
+			add_ideas = JAP_zero
 			IF = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
@@ -30044,6 +30055,7 @@ focus_tree = {
 			
 			add_tech_bonus = {
 				name = JAP_develop_new_fighters
+				uses = 2
 				bonus = 1
 				ahead_reduction = 1
 				category = light_air
@@ -30369,7 +30381,13 @@ focus_tree = {
 			air_experience = 15
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-
+			add_tech_bonus = {
+				name = JAP_develop_new_fighters
+				uses = 2
+				bonus = 1
+				ahead_reduction = 1
+				category = air_equipment
+			}
 			add_ace = {
 				name = Tateo
 				surname = Kato

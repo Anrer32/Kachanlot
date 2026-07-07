@@ -25,7 +25,7 @@ ideas = {
 				can_create_factions = yes
 			}
 		}
-		
+			
 		general_staff = {
 			
 			allowed = {

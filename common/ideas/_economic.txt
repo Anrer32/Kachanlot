@@ -94,12 +94,8 @@ ideas = {
 				factory_energy_consumption = -0.4
 			}
 			allowed_to_remove = {
-				IF = {
-					OR = {
 						has_war = yes
-					}
 				}
-			}
 
 			cancel_if_invalid = no
 		}

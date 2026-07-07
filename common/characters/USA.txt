@@ -155,7 +155,7 @@ characters={
 		advisor={
 			cost = 150
 
-			slot = high_command
+			slot = theorist
 			idea_token = george_patton
 			ledger = army
 				allowed = {
@@ -163,17 +163,17 @@ characters={
 				}
 
 				traits = {
-					army_CombinedArms_2
+					mobile_warfare_expert
 				}
 		}
 
 		corps_commander={
-			traits={ lock_up_vpis trickster urban_assault_specialist hill_fighter panzer_leader combined_arms_expert adaptable trait_engineer fortress_buster jungle_rat }
-			skill=7
-			attack_skill=7
-			defense_skill=1
-			planning_skill=7
-			logistics_skill=8
+			traits={ trait_reckless armor_officer war_hero trickster panzer_leader talent_gen }
+			skill=4
+			attack_skill=6
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
 			legacy_id=0
 		}
 	}
@@ -190,7 +190,7 @@ characters={
 		}
 		advisor={
 			cost = 150
-			slot = high_command
+			slot = theorist
 			idea_token = omar_bradley
 			ledger = army
 			allowed = {
@@ -198,17 +198,17 @@ characters={
 			}
 
 			traits = {
-				army_armored_3
+				superior_firepower_expert
 			}
 		}
 
 		corps_commander={
-			traits={ lock_up_vpis expert_improviser cavalry_leader combined_arms_expert commando trait_mountaineer hill_fighter jungle_rat adaptable trait_engineer fortress_buster naval_invader invader_ii naval_liason }
-			skill=7
-			attack_skill=8
-			defense_skill=5
-			planning_skill=6
-			logistics_skill=7
+			traits={ brilliant_strategist trait_cautious harsh_leader trait_engineer }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=3
 			legacy_id=0
 		}
 	}
@@ -247,7 +247,7 @@ characters={
 		}
 
 		field_marshal={
-			traits={ trait_cautious armor_officer politically_connected organizer logistics_wizard offensive_doctrine }
+			traits={ trait_cautious armor_officer politically_connected organizer logistics_wizard offensive_doctrine talent_gen}
 			skill=5
 			attack_skill=3
 			defense_skill=3
@@ -372,7 +372,7 @@ characters={
 		}
 
 		field_marshal={
-			traits={ brilliant_strategist career_officer media_personality politically_connected offensive_doctrine }
+			traits={ brilliant_strategist career_officer media_personality politically_connected offensive_doctrine talent_gen }
 			skill=4
 			attack_skill=4
 			defense_skill=3
@@ -783,7 +783,6 @@ characters={
 			defense_skill=3
 			maneuvering_skill=3
 			coordination_skill=6
-			visible = { has_completed_focus = USA_king_navy }
 		}
 	}
 	USA_chester_w_nimitz={
@@ -841,7 +840,6 @@ characters={
 			defense_skill=3
 			maneuvering_skill=3
 			coordination_skill=2
-			visible = { has_completed_focus = USA_helsi_jr }
 		}
 		advisor={
 			slot = navy_chief
@@ -1797,11 +1795,6 @@ characters={
 		advisor={
 			slot = political_advisor
 			idea_token = USA_henry_stimson
-					available = {
-			has_completed_focus = USA_voenki_1
-			has_completed_focus = USA_voenki_2
-			has_completed_focus = USA_voenki_3
-		}
 			allowed  = {
 				original_tag  = USA
 			}

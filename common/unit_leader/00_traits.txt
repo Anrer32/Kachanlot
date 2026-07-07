@@ -232,12 +232,12 @@ leader_traits = {
 		logistics_skill_factor = 1
 	}
 	
-	lock_up_vpis = { 
+	talent_gen = { 
 		type = land
 		trait_type = personality_trait
 		
 		non_shared_modifier = {
-			experience_gain_factor = -2
+			experience_gain_factor = 1
 		}
 	}
 

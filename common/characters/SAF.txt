@@ -95,9 +95,9 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ lock_up_vpis expert_improviser cavalry_leader combined_arms_expert desert_fox adaptable trait_engineer fortress_buster logistics_wizard }
-			skill=6
-			attack_skill=6
+			traits={ cavalry_leader combined_arms_expert desert_fox trait_engineer logistics_wizard }
+			skill=4
+			attack_skill=3
 			defense_skill=4
 			planning_skill=4
 			logistics_skill=1
