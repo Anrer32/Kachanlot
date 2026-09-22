@@ -2365,7 +2365,7 @@ characters = {
 				original_tag = GER
 			}
 			available = {
-				has_country_flag = GER_reinstated_nazi_leadership
+				has_country_flag = GER_reinstated_nazi_leaderships
 			}
 			visible = {
 				has_country_flag = GER_reinstated_nazi_leadership

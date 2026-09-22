@@ -492,19 +492,14 @@ technologies = {
 
 	paratroopers = {
 
-		enable_subunits = {
-			paratrooper
-		}
-		enable_subunits = {
-			limit = { has_dlc = "Thunder at Our Gates"}
-			hq_paratrooper
-		}
 
 		path = {
 			leads_to_tech = paratroopers2
 			research_cost_coeff = 1
 		}
-
+		allow = {
+			num_of_controlled_factories > 25
+		}
 		research_cost = 2
 		start_year = 1936
 		folder = {
@@ -513,11 +508,9 @@ technologies = {
 		}
 
 		on_research_complete_limit = {
-			NOT = {
-				has_template_containing_unit = paratrooper
-			}
 		}
 		on_research_complete = {
+			set_variable = {para_limit = 2}
 			hidden_effect = {
 				load_oob = "unlock_paratroopers"
 			}
@@ -560,19 +553,10 @@ technologies = {
 				tag = ENG
 			}
 
-			modifier = { #Sokolov Raid prep
-				factor = 20
-				tag = GER
-				has_completed_focus = GER_anschluss
-				CZE = { 
-					is_ai = no
-				}
-			}
-
 			modifier = {
 				factor = 5
 				tag = GER
-				has_completed_focus = GER_fallschirmjager
+				#TODO_Danne Add Fallschirmsjäger focus here!
 			}
 		}
 	}
@@ -587,8 +571,11 @@ technologies = {
 		path = {
 			leads_to_tech = paratroopers3
 			research_cost_coeff = 1
+		}		
+		on_research_complete = {
+			add_to_variable = {para_limit = 2}
+			set_division_template_cap = {  division_template = "Paratroopers" division_cap = para_limit }
 		}
-
 		research_cost = 1.5
 		start_year = 1939
 		folder = {
@@ -632,7 +619,10 @@ technologies = {
 			max_organisation = 5
 		}
 
-
+		on_research_complete = {
+			add_to_variable = {para_limit = 2}
+			set_division_template_cap = {  division_template = "Paratroopers" division_cap = para_limit }
+		}
 		research_cost = 2.0
 		start_year = 1943
 		folder = {

@@ -351,9 +351,6 @@ if = {
 		dispersed_industry2 = 1
 		dispersed_industry3 = 1
 	}
-	complete_special_project = {
-		project = sp:sp_air_radar
-	}
 	if = {
 		limit = {
 			NOT = {
@@ -440,7 +437,6 @@ add_ideas = {
 }
 
 give_guarantee = CZE
-give_guarantee = YUG
 give_guarantee = ROM
 
 recruit_character = FRA_philippe_petain
@@ -508,6 +504,9 @@ recruit_character = FRA_francois_hussenot
 recruit_character = FRA_louis_renault
 recruit_character = FRA_henri_edmond_fouche
 recruit_character = FRA_joseph_bethenod
+
+set_grand_doctrine = grand_battleplan
+set_grand_doctrine = new_fleet_in_being
 
 if = {
 	limit = {

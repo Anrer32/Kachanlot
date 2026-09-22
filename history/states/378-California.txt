@@ -12,6 +12,11 @@ state={
 	}
 
 	history={
+		add_state_modifier = {
+    	modifier = {
+        local_building_slots = 10
+    	}
+		}
 		owner = USA
 		buildings = {
 			infrastructure = 3 #was: 6

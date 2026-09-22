@@ -3,7 +3,6 @@ state = {
 	name = "STATE_57"
 	manpower = 5109333
 	state_category = megalopolis
-
 	history = {
 		owner = GER
 		add_core_of = GER
@@ -17,7 +16,11 @@ state = {
 		#victory_points = {
 		#	9509 1 # Hamm
 		#}
-
+		add_state_modifier = {
+    	modifier = {
+        local_building_slots = 8
+    	}
+		}
 		buildings = {
 
 			infrastructure = 4

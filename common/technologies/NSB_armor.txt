@@ -70,13 +70,9 @@ technologies = {
 			medium_armor
 			heavy_armor
 		}
-		on_research_complete_limit = {
-			NOT = {	has_template_containing_unit = light_armor }
-			NOT = {	has_template_containing_unit = heavy_armor }
-			NOT = {	has_template_containing_unit = medium_armor }
-		}
 		on_research_complete = {
 			hidden_effect = {
+				add_ideas = tank_limit
 				if = {
 					limit = {
 						has_tech = motorised_infantry

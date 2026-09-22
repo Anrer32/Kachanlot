@@ -51,35 +51,6 @@ mio_policy_land_casting_specialists = {
 	}
 }
 
-mio_policy_subsidy_contracts = {
-	icon = GFX_mio_policy_heavy_gantry_cranes_land
-	allowed = { 
-		OR = {
-			has_mio_equipment_type = armor
-			has_mio_equipment_type = mechanized
-			has_mio_equipment_type = anti_tank
-			has_mio_equipment_type = flame
-			has_mio_equipment_type = railway_gun
-			has_mio_equipment_type = train
-			has_mio_equipment_type = mio_cat_eq_all_medium_tank
-			has_mio_equipment_type = mio_cat_eq_all_heavy_tank
-		} 
-	 }
-	available = { has_mio_size > 5
-has_idea = subsidized_contracts_army_spirit}
-	production_bonus = {
-		light_tank_chassis = {
-			production_efficiency_gain_factor = 0.35
-		}
-		medium_tank_chassis = {
-			production_efficiency_gain_factor = 0.35
-		}
-		heavy_tank_chassis = {
-			production_efficiency_gain_factor = 0.35
-		}
-
-	}
-}
 
 mio_policy_land_heavy_gantry_cranes = {
 	icon = GFX_mio_policy_heavy_gantry_cranes_land

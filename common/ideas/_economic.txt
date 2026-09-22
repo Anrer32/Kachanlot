@@ -49,6 +49,7 @@ ideas = {
 				consumer_goods_expected_value = 0.60
 				production_speed_arms_factory_factor = -0.5
 				production_speed_dockyard_factor = -0.5
+				production_speed_infrastructure_factor = 0.45
 				conversion_cost_civ_to_mil_factor = 0.5
 				conversion_cost_mil_to_civ_factor = 0.5
 				generate_wargoal_tension = 1.00
@@ -77,7 +78,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_expected_value = 0.4
+				consumer_goods_expected_value = 0.45
 				production_speed_industrial_complex_factor = -0.4
 				production_speed_arms_factory_factor = -0.4
 				production_speed_dockyard_factor = -0.4
@@ -103,12 +104,13 @@ ideas = {
 		civilian_economy = {
 
 
-			cost = 150
+			cost = 100
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_expected_value = 0.35
-				production_speed_industrial_complex_factor = -0.3
+				stability_weekly = 0.002
+				consumer_goods_expected_value = 0.4
+				production_speed_infrastructure_factor = 0.45
 				production_speed_arms_factory_factor = -0.3
 				conversion_cost_civ_to_mil_factor= 0.3
 				conversion_cost_mil_to_civ_factor = 0.3
@@ -197,12 +199,12 @@ ideas = {
 				
 			}
 
-			cost = 150
+			cost = 100
 			removal_cost = -1
 
 			modifier = {
 				consumer_goods_expected_value = 0.3
-				production_speed_industrial_complex_factor = -0.1
+				production_speed_infrastructure_factor = 0.15
 				production_speed_arms_factory_factor = -0.1
 				fuel_gain_factor = -0.25
 				factory_energy_consumption = -0.15
@@ -292,10 +294,14 @@ ideas = {
 				}
 			}
 
-			cost = 150
+			cost = 100
 			removal_cost = -1
 
 			modifier = {
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				stability_weekly = -0.001
+				war_support_weekly = -0.001
 				consumer_goods_expected_value = 0.25
 				production_speed_arms_factory_factor = 0.1
 				conversion_cost_civ_to_mil_factor= -0.1
@@ -425,10 +431,14 @@ ideas = {
 				}
 			}
 
-			cost = 150
+			cost = 100
 			removal_cost = -1
 
 			modifier = {
+				industrial_capacity_dockyard = 0.1
+				industrial_capacity_factory = 0.1
+				stability_weekly = -0.0025
+				war_support_weekly = -0.0025
 				consumer_goods_expected_value = 0.2
 				production_speed_arms_factory_factor = 0.2
 				conversion_cost_civ_to_mil_factor= -0.2
@@ -604,10 +614,14 @@ ideas = {
 				}
    			}
 
-			cost = 150
+			cost = 100
 			removal_cost = -1
 
 			modifier = {
+				industrial_capacity_dockyard = 0.25
+				industrial_capacity_factory = 0.25
+				stability_weekly = -0.005
+				war_support_weekly = -0.005
 				consumer_goods_expected_value = 0.15
 				conscription = -0.03
 				production_speed_arms_factory_factor = 0.3
@@ -629,17 +643,19 @@ ideas = {
 				has_war_support >0.9
 			}
 			
-			cost = 150
+			cost = 100
 			removal_cost = -1
 
 			modifier = {
+				industrial_capacity_factory = 0.5
+				industrial_capacity_dockyard = 0.5
+				stability_weekly = -0.01
+				war_support_weekly = -0.01
 				consumer_goods_expected_value = 0.1
 				conscription = -0.02
 				production_speed_arms_factory_factor = 0.4
 				conversion_cost_civ_to_mil_factor= -0.3
 				conversion_cost_mil_to_civ_factor = -0.3
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05
 			}
 			cancel_if_invalid = no
 		}
@@ -672,10 +688,12 @@ ideas = {
 				}
 			}
 
-			cost = 150
+			cost = 100
 			removal_cost = -1
 
 			modifier = {
+				stability_weekly = -0.0025
+				war_support_weekly = -0.0025
 				consumer_goods_expected_value = 0.15
 				production_speed_arms_factory_factor = 0.3
 				conversion_cost_civ_to_mil_factor= -0.3
@@ -1125,6 +1143,7 @@ ideas = {
 
 			modifier = {
 				min_export = 0.15
+				local_resources_factor = 0.05
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
 				production_speed_buildings_factor = 0.1
@@ -1166,9 +1185,11 @@ ideas = {
 
 			modifier = {
 				min_export = 0.15
+				local_resources_factor = 0.1
+				consumer_goods_factor = -0.15
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
-				production_speed_buildings_factor = 0.15
+				production_speed_buildings_factor = 0.2
 				research_speed_factor = 0.1
 			}
 
@@ -1328,17 +1349,19 @@ ideas = {
 			cost = 150
 			removal_cost = -1
 			modifier = {
-				min_export = 0
 				industrial_capacity_factory = 0.10
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.15
+				production_speed_industrial_infrastructure_factor = 0.5
 				research_speed_factor = 0.10
 				production_speed_synthetic_refinery_factor = 0.5
 				civilian_intel_to_others = 40.0
 				navy_intel_to_others = 20.0
-				local_resources_factor = 0.35
-				min_export = 0.05
-								resource_trade_cost_bonus_per_factory = -5
+				local_resources_factor = 0.6
+				min_export = 0.25
+				resource_trade_cost_bonus_per_factory = -5
+				embargo_threshold_factor = -2.0
+				embargo_cost_factor = -2.0
 			}
 			cancel_if_invalid = no
 			allowed_to_remove = {

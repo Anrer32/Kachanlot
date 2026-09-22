@@ -349,10 +349,7 @@ GER_seize_gold_reserves_cat = {
 							is_fully_controlled_by = ROOT
 							NOT = { has_state_flag = GER_seize_gold_reserves_state_flag }
 						}
-						add_compliance = -5
-						add_resistance = 10
 						set_state_flag = GER_seize_gold_reserves_state_flag
-						add_dynamic_modifier = { modifier = GER_overburdened_state_modifier days = 90 }
 					}
 				}
 			}
@@ -363,10 +360,7 @@ GER_seize_gold_reserves_cat = {
 							is_fully_controlled_by = ROOT
 							NOT = { has_state_flag = GER_seize_gold_reserves_state_flag }
 						}
-						add_compliance = -5
-						add_resistance = 10
 						set_state_flag = GER_seize_gold_reserves_state_flag
-						add_dynamic_modifier = { modifier = GER_overburdened_state_modifier days = 90 }
 					}
 				}
 			}
@@ -484,10 +478,7 @@ GER_seize_gold_reserves_cat = {
 				add_to_temp_variable = { occupied_state_num_factory = industrial_complex_level }
 				add_to_temp_variable = { occupied_state_num_factory = building_level@dockyard }
 
-				add_resistance = 10
-				add_compliance = -5
 				set_state_flag = GER_seize_gold_reserves_state_flag
-				add_dynamic_modifier = { modifier = GER_overburdened_state_modifier days = 90 }
 				
 				divide_temp_variable = { occupied_state_num_factory = 200 } #This is necessary since a single factory will increase the occupied_state_num_factory number to 1, which in turn translates to -100% when subtracting from the Consumer Goods. Dividing it by 100 here will give you 1% instead, which is more like what we want.
 				multiply_temp_variable = { occupied_state_num_factory = -1 }
@@ -716,7 +707,7 @@ GER_operational_planning_category = {
 							add_dynamic_modifier = {
 								modifier = GER_motor_and_mech_attack_modifier
 								scope = GER
-								days = 45
+								days = 80
 							}
 						}
 					}
@@ -734,7 +725,7 @@ GER_operational_planning_category = {
 						add_dynamic_modifier = {
 							modifier = GER_blitzkrieg_modifier
 							scope = GER
-							days = 45
+							days = 80
 						}
 					}
 				}
@@ -751,7 +742,7 @@ GER_operational_planning_category = {
 						add_dynamic_modifier = {
 							modifier = GER_blitzkrieg_modifier_lvl_2
 							scope = GER
-							days = 45
+							days = 80
 						}
 					}
 				}
@@ -767,12 +758,12 @@ GER_operational_planning_category = {
 						add_dynamic_modifier = {
 							modifier = GER_blitzkrieg_modifier_lvl_3
 							scope = GER
-							days = 45
+							days = 80
 						}
 					}
 				}
 				hidden_effect = { #This removes the GER_operational_planning_flag, enabling Germany to do the decision again. remove_effect won't work if the country in question capitulates
-					country_event = { id = wuw_GER_military_events.1 days = 45 } 
+					country_event = { id = wuw_GER_military_events.1 days = 80 } 
 				}
 			}
 			#BEWEGUNGSKRIEG
@@ -957,7 +948,7 @@ GER_operational_planning_category = {
 							add_dynamic_modifier = {
 								modifier = GER_motor_and_mech_attack_modifier
 								scope = GER
-								days = 45
+								days = 80
 							}
 						}
 					}
@@ -975,7 +966,7 @@ GER_operational_planning_category = {
 						add_dynamic_modifier = {
 							modifier = GER_blitzkrieg_modifier
 							scope = GER
-							days = 45
+							days = 80
 						}
 					}
 				}
@@ -992,7 +983,7 @@ GER_operational_planning_category = {
 						add_dynamic_modifier = {
 							modifier = GER_blitzkrieg_modifier_lvl_2
 							scope = GER
-							days = 45
+							days = 80
 						}
 					}
 				}
@@ -1008,12 +999,12 @@ GER_operational_planning_category = {
 						add_dynamic_modifier = {
 							modifier = GER_blitzkrieg_modifier_lvl_3
 							scope = GER
-							days = 45
+							days = 80
 						}
 					}
 				}
 				hidden_effect = { #This removes the GER_operational_planning_flag, enabling Germany to do the decision again. remove_effect won't work if the country in question capitulates
-					country_event = { id = wuw_GER_military_events.1 days = 45 } 
+					country_event = { id = wuw_GER_military_events.1 days = 80 } 
 				}
 			}
 			#BEWEGUNGSKRIEG
@@ -2244,7 +2235,7 @@ GER_fortify_the_vaterland_cat = {
 			NOT = { has_country_flag = GER_constructing_forts_flag }
 		}
 
-		days_remove = 90
+		days_remove = 15
 
 		fire_only_once = yes
 
@@ -2332,7 +2323,7 @@ GER_fortify_the_vaterland_cat = {
 				}
 				add_building_construction = {
 					type = coastal_bunker
-					level = 1
+					level = 5
 					instant_build = yes
 					province = {
 						all_provinces = yes
@@ -2361,7 +2352,7 @@ GER_fortify_the_vaterland_cat = {
 				}
 				add_building_construction = {
 					type = coastal_bunker
-					level = 1
+					level = 5
 					instant_build = yes
 					province = {
 						all_provinces = yes
@@ -2440,7 +2431,7 @@ GER_fortify_the_vaterland_cat = {
 			NOT = { has_country_flag = GER_constructing_forts_flag }
 		}
 
-		days_remove = 90
+		days_remove = 15
 
 		fire_only_once = yes
 
@@ -2563,7 +2554,7 @@ GER_fortify_the_vaterland_cat = {
 				}
 				add_building_construction = {
 					type = coastal_bunker
-					level = 1
+					level = 5
 					instant_build = yes
 					province = {
 						all_provinces = yes
@@ -2633,7 +2624,7 @@ GER_fortify_the_vaterland_cat = {
 			NOT = { has_country_flag = GER_constructing_forts_flag }
 		}
 
-		days_remove = 90
+		days_remove = 15
 
 		fire_only_once = yes
 
@@ -2715,7 +2706,7 @@ GER_fortify_the_vaterland_cat = {
 				}
 				add_building_construction = {
 					type = coastal_bunker
-					level = 1
+					level = 5
 					instant_build = yes
 					province = {
 						all_provinces = yes
@@ -2741,7 +2732,7 @@ GER_fortify_the_vaterland_cat = {
 				}
 				add_building_construction = {
 					type = coastal_bunker
-					level = 1
+					level = 5
 					instant_build = yes
 					province = {
 						all_provinces = yes
@@ -2831,7 +2822,7 @@ GER_fortify_the_vaterland_cat = {
 			NOT = { has_country_flag = GER_constructing_forts_flag }
 		}
 
-		days_remove = 90
+		days_remove = 15
 
 		fire_only_once = yes
 
@@ -2909,7 +2900,7 @@ GER_fortify_the_vaterland_cat = {
 				}
 				add_building_construction = {
 					type = coastal_bunker
-					level = 1
+					level = 5
 					instant_build = yes
 					province = {
 						all_provinces = yes
@@ -2934,7 +2925,7 @@ GER_fortify_the_vaterland_cat = {
 				}
 				add_building_construction = {
 					type = coastal_bunker
-					level = 1
+					level = 5
 					instant_build = yes
 					province = {
 						all_provinces = yes
@@ -3662,7 +3653,7 @@ GER_reichskommissariats = {
 						}
 					}
 					transfer_state_to = RKG
-					add_compliance = 25
+					add_compliance = 50
 				}
 				every_state = {	
 					limit = {
@@ -3683,7 +3674,7 @@ GER_reichskommissariats = {
 					add_contested_owner = RKG
 					set_state_controller_to = RKG
 					add_claim_by = RKG
-					add_compliance = 25
+					add_compliance = 50
 				}
 
 				RKG = {
@@ -3797,7 +3788,7 @@ GER_reichskommissariats = {
 				}
 				transfer_state_to = RKN
 				set_state_flag = GER_RK_capital_state_trasferred_RKN_flag
-				add_compliance = 25
+				add_compliance = 50
 			}
 
 			custom_effect_tooltip = GER_reichskommissariat_niederlande_effect_tt
@@ -3820,7 +3811,7 @@ GER_reichskommissariats = {
 						}
 					}
 					transfer_state_to = RKN
-					add_compliance = 25
+					add_compliance = 50
 				}
 				every_state = {	
 					limit = {
@@ -3841,7 +3832,7 @@ GER_reichskommissariats = {
 					add_contested_owner = RKN
 					set_state_controller_to = RKN
 					add_claim_by = RKN
-					add_compliance = 25
+					add_compliance = 50
 				}
 				RKN = {
 					add_manpower = 50000
@@ -3961,7 +3952,7 @@ GER_reichskommissariats = {
 				}
 				transfer_state_to = RKB
 				set_state_flag = GER_RK_capital_state_trasferred_RKB_flag
-				add_compliance = 25
+				add_compliance = 50
 			}
 
 			custom_effect_tooltip = GER_reichskommissariat_belgien_effect_tt
@@ -3984,7 +3975,7 @@ GER_reichskommissariats = {
 						}
 					}
 					transfer_state_to = RKB
-					add_compliance = 25
+					add_compliance = 50
 				}
 				every_state = {	
 					limit = {
@@ -4005,7 +3996,7 @@ GER_reichskommissariats = {
 					add_contested_owner = RKB
 					set_state_controller_to = RKB
 					add_claim_by = RKB
-					add_compliance = 25
+					add_compliance = 50
 				}
 				RKB = {
 					add_manpower = 50000
@@ -6216,7 +6207,7 @@ GER_reichskommissariats = {
 				}
 				transfer_state_to = GEN
 				set_state_flag = GER_RK_capital_state_trasferred_GEN_flag
-				add_compliance = 25
+				add_compliance = 100
 			}
 
 			custom_effect_tooltip = GER_generalgouvernement_effect_tt
@@ -6239,7 +6230,7 @@ GER_reichskommissariats = {
 						}
 					}
 					transfer_state_to = GEN
-					add_compliance = 25
+					add_compliance = 100
 				}
 				every_state = {	
 					limit = {
@@ -6260,7 +6251,7 @@ GER_reichskommissariats = {
 					add_contested_owner = GEN
 					set_state_controller_to = GEN
 					add_claim_by = GEN
-					add_compliance = 25
+					add_compliance = 100
 				}
 
 				GEN = {
@@ -6465,7 +6456,7 @@ GER_reichskommissariats = {
 				}
 				transfer_state_to = RKH
 				set_state_flag = GER_RK_capital_state_trasferred_RKH_flag
-				add_compliance = 25
+				add_compliance = 100
 			}
 
 			custom_effect_tooltip = GER_reichskommissariat_bohemia_effect_tt
@@ -6488,7 +6479,7 @@ GER_reichskommissariats = {
 						}
 					}
 					transfer_state_to = RKH
-					add_compliance = 25
+					add_compliance = 100
 				}
 				every_state = {	
 					limit = {
@@ -6509,7 +6500,7 @@ GER_reichskommissariats = {
 					add_contested_owner = RKH
 					set_state_controller_to = RKH
 					add_claim_by = RKH
-					add_compliance = 25
+					add_compliance = 100
 				}
 				RKH = {
 					add_manpower = 50000
@@ -6717,7 +6708,7 @@ GER_reichskommissariats = {
 				}
 				transfer_state_to = RKI
 				set_state_flag = GER_RK_capital_state_trasferred_RKI_flag
-				add_compliance = 25
+				add_compliance = 50
 			}
 
 			custom_effect_tooltip = GER_reichskommissariat_iberia_effect_tt
@@ -6740,7 +6731,7 @@ GER_reichskommissariats = {
 						}
 					}
 					transfer_state_to = RKI
-					add_compliance = 25
+					add_compliance = 50
 				}
 				every_state = {	
 					limit = {
@@ -6761,7 +6752,7 @@ GER_reichskommissariats = {
 					add_contested_owner = RKI
 					set_state_controller_to = RKI
 					add_claim_by = RKI
-					add_compliance = 25
+					add_compliance = 50
 				}
 
 				RKI = {
@@ -6978,7 +6969,7 @@ GER_reichskommissariats = {
 				}
 				transfer_state_to = RKC
 				set_state_flag = GER_RK_capital_state_trasferred_RKC_flag
-				add_compliance = 25
+				add_compliance = 50
 			}
 
 			custom_effect_tooltip = GER_reichskommissariat_balkan_effect_tt
@@ -7010,7 +7001,7 @@ GER_reichskommissariats = {
 						}
 					}
 					transfer_state_to = RKC
-					add_compliance = 25
+					add_compliance = 50
 				}
 				every_state = {	
 					limit = {
@@ -7040,7 +7031,7 @@ GER_reichskommissariats = {
 					add_contested_owner = RKC
 					set_state_controller_to = RKC
 					add_claim_by = RKC
-					add_compliance = 25
+					add_compliance = 50
 				}
 
 				RKC = {

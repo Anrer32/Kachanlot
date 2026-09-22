@@ -441,7 +441,34 @@ GER_henschel_organization = {
 			production_cost_factor = 0.03
 		}
 	}
+	add_trait = {
+		token = GER_mio_trait_stug
+		name = GER_mio_trait_stug
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank_quality
+		special_trait_background = yes
+		available = {
+			GER = {has_war_with = SOV}
+		}
+		limit_to_equipment_type = { medium_tank_destroyer_chassis }
 
+		position = { x=1 y=1 }
+
+
+		visible = {
+			FROM = { original_tag = GER }
+		}
+
+		equipment_bonus = {
+			reliability = 0.1
+			build_cost_ic = -0.1
+		}
+
+		production_bonus = {
+			production_efficiency_gain_factor = 0.15
+			production_cost_factor = -0.2
+			production_resource_need_factor = -0.4
+		}
+	}
 	add_trait = {
 		token = GER_mio_trait_telescopic_sight
 		name = GER_mio_trait_telescopic_sight

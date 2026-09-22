@@ -10,12 +10,40 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-
+			cancel = {
+			OR = {
+				date > 1944.01.01
+				AND = {
+					date > 1943.01.01
+					OR = {
+						AND = {
+						439 = { CONTROLLER = { is_in_faction_with = ROOT } }
+						1021 = { CONTROLLER = { is_in_faction_with = ROOT } }
+						}
+						AND ={
+						285 = { CONTROLLER = { is_in_faction_with = ROOT } }
+						284 = { CONTROLLER = { is_in_faction_with = ROOT } }
+						}
+					}
+				}
+				AND = {
+					date > 1942.01.01
+						AND = {
+						439 = { CONTROLLER = { is_in_faction_with = ROOT } }
+						1021 = { CONTROLLER = { is_in_faction_with = ROOT } }
+						285 = { CONTROLLER = { is_in_faction_with = ROOT } }
+						284 = { CONTROLLER = { is_in_faction_with = ROOT } }
+						}
+				}
+			}
+			}
 			picture = SOV_soviet_hegemony
 			
 			targeted_modifier = {
 				tag = SOV
 				attack_bonus_against = -0.5
+				breakthrough_bonus_against = -0.5	
+				generate_wargoal_tension_against = 5.0
 			}
 		}
 		JAP_zero= {
@@ -391,11 +419,13 @@ ideas = {
 
 			picture = warrior_traditions_idea
 			modifier = {
+				stability_weekly = 0.005
+				war_support_weekly = 0.005
 				mobilization_laws_cost_factor = -0.25
 				justify_war_goal_time = -0.2
 				research_speed_factor = -0.05
 				ai_desired_divisions_factor = 0.25
-				compliance_gain = 0.04
+				compliance_gain = 0.1
 			}
 		}
 
@@ -415,6 +445,8 @@ ideas = {
 
 			picture = jap_militarism_shogun
 			modifier = {
+				stability_weekly = 0.005
+				war_support_weekly = 0.005
 				war_support_factor = 0.3
 				mobilization_laws_cost_factor = -0.35
 				justify_war_goal_time = -0.2
@@ -440,6 +472,8 @@ ideas = {
 
 			picture = jap_militarism_showa
 			modifier = {
+				stability_weekly = 0.005
+				war_support_weekly = 0.005
 				war_support_factor = 0.1
 				mobilization_laws_cost_factor = -0.15
 				justify_war_goal_time = -0.1

@@ -140,7 +140,7 @@ ideas = {
 			
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.06
 				}
 			}
 		}
@@ -159,13 +159,13 @@ ideas = {
 			
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.06
 				}
 				medium_plane_airframe = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.06
 				}
 				large_plane_airframe = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.06
 				}
 			}
 		}
@@ -2139,8 +2139,16 @@ ideas = {
 			}
 			
 			traits = { industrial_concern }
-			
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.3
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.3
+				}
+			}
 			modifier = {
+				factory_energy_consumption = -0.1
 				industrial_capacity_factory = 0.05
 			}
 		}

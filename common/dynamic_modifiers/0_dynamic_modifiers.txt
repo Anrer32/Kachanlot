@@ -26,17 +26,6 @@
 #	can be added to countries, states, unit leaders or special projects
 #	will only updated daily, unless forced by force_update_dynamic_modifier effect
 #депрессия для стейтов юсы
-american_industry = {
-	enable = { always = yes }
-
-	icon = GFX_idea_american_state
-
-	local_factories = USA_factories
-	state_resources_factor = USA_local_resources_factor_var
-	local_building_slots = USA_slots
-	state_production_speed_arms_factory_factor = USA_constr_speed
-	state_production_speed_dockyard_factor = USA_constr_speed
-}
 
 sabotaged_resources = {
 	remove_trigger = { 
@@ -490,12 +479,11 @@ SOV_seraya_loshad_battery = { #STATE MODIFIER
 
 	icon = GFX_modifiers_SOV_armored_battery
 	
-	army_defence_factor = 1.0
-	cas_damage_reduction = 0.5
-	dig_in_speed_factor = 1.0
-	max_dig_in_factor = 1.0
+	army_defence_factor = 0.1
+	cas_damage_reduction = 0.1
+	dig_in_speed_factor = 0.25
+	max_dig_in_factor = 0.1
 	pocket_penalty = -0.15
-	local_supplies = 2.0
 }
 
 SOV_krasnaya_gorka_battery = { #STATE MODIFIER
@@ -503,12 +491,11 @@ SOV_krasnaya_gorka_battery = { #STATE MODIFIER
 
 	icon = GFX_modifiers_SOV_armored_battery
 	
-	army_defence_factor = 1.0
-	cas_damage_reduction = 0.5
-	dig_in_speed_factor = 1.0
-	max_dig_in_factor = 1.0
+	army_defence_factor = 0.1
+	cas_damage_reduction = 0.1
+	dig_in_speed_factor = 0.25
+	max_dig_in_factor = 0.1
 	pocket_penalty = -0.15
-	local_supplies = 2.0
 }
 
 SOV_armored_battery_35 = { #STATE MODIFIER #German designation Maksim Gorky
@@ -516,12 +503,11 @@ SOV_armored_battery_35 = { #STATE MODIFIER #German designation Maksim Gorky
 
 	icon = GFX_modifiers_SOV_armored_battery
 	
-	army_defence_factor = 1.0
-	cas_damage_reduction = 0.5
-	dig_in_speed_factor = 1.0
-	max_dig_in_factor = 1.0
+	army_defence_factor = 0.1
+	cas_damage_reduction = 0.1
+	dig_in_speed_factor = 0.25
+	max_dig_in_factor = 0.1
 	pocket_penalty = -0.15
-	local_supplies = 2.0
 }
 
 SOV_factory_worker_militias_raised = { #STATE MODIFIER
@@ -621,6 +607,7 @@ SOV_third_five_year_plan_civilian_dynamic_modifier = { #NATIONAL SPIRIT - Civili
 	industrial_capacity_dockyard = SOV_fyp_industrial_capacity_dockyard #0.05 -> Steel Casting Industry
 	fuel_gain_factor_from_states = SOV_fyp_fuel_gain_factor_from_states #0.05 -> Oil Production
 	production_oil_factor = SOV_fyp_production_oil_factor #0.05 -> Oil Production
+	production_speed_arms_factory_factor = SOV_fyp_production_speed_arms_factory_factor #0.10
 }
 
 SOV_third_five_year_plan_military_dynamic_modifier = { #NATIONAL SPIRIT - Military

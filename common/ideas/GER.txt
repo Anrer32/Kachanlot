@@ -14,6 +14,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				stability_weekly = 0.0015
+				war_support_weekly = 0.0015
 				drift_defence_factor = 0.5
 				land_doctrine_cost_factor = -0.5
 				air_doctrine_cost_factor = -0.5
@@ -63,15 +65,61 @@ ideas = {
 			}
 			
 			modifier = {
+				stability_weekly = 0.002
+				war_support_weekly = 0.002
 				political_power_gain = 1
 				drift_defence_factor = 0.75
 				monthly_population = 0.15
+				land_doctrine_cost_factor = -0.5
+				air_doctrine_cost_factor = -0.5
+				land_mastery_gain_factor = 1.0
+				land_mastery_gain = 1.0
+				air_mastery_gain_factor = 1.0
 			}
 			rule = {
 				can_create_factions = yes
 			}
 		}
-		
+		GER_suez = {
+			picture = generic_fuel_reserves
+			allowed = {
+				always = no
+			}
+			available = {
+				OR = {
+				ROOT= {
+					OR = {
+					controls_state = 446
+				controls_state = 447
+				controls_state = 907
+					}
+				}
+				any_allied_country = {
+				OR = {
+					controls_state = 446
+				controls_state = 447
+				controls_state = 907
+				}
+				}
+			}
+			}
+			removal_cost = -1
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.075
+				local_resources_rubber_factor = 0.2
+				local_resources_tungsten_factor = 0.2
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				fuel_gain_factor = 0.5
+				max_fuel_factor = 0.33
+				consumer_goods_expected_value = -0.01
+			}
+		}
 		#MM: UNUSED AFTER WW (FOR NOW unless we give this to SOV after Treaty with the USSR)
 		GER_air_innovations_2_idea = {
 			removal_cost = -1
@@ -2270,6 +2318,7 @@ GER_prod_cost = {
 			removal_cost = -1
 
 			modifier = {
+				local_non_core_manpower = 0.05
 				conscription = 0.01
 			}
 			equipment_bonus = {
@@ -2306,6 +2355,7 @@ GER_prod_cost = {
 			removal_cost = -1
 
 			modifier = {
+				local_non_core_manpower = 0.1
 				conscription = 0.03
 				industrial_capacity_factory = -0.075
 			}
@@ -2662,8 +2712,8 @@ GER_prod_cost = {
 
 			targeted_modifier = {
 				tag = GER
-				cic_to_target_factor = 0.2
-				mic_to_target_factor = 0.15
+				cic_to_target_factor = 0.75
+				mic_to_target_factor = 0.75
 			}
 		}
 
@@ -2696,8 +2746,8 @@ GER_prod_cost = {
 
 			targeted_modifier = {
 				tag = GER
-				cic_to_target_factor = 0.1
-				mic_to_target_factor = 0.1
+				cic_to_target_factor = 0.75
+				mic_to_target_factor = 0.75
 			}
 		}
 
@@ -2730,8 +2780,8 @@ GER_prod_cost = {
 
 			targeted_modifier = {
 				tag = GER
-				cic_to_target_factor = 0.2
-				mic_to_target_factor = 0.15
+				cic_to_target_factor = 0.75
+				mic_to_target_factor = 0.75
 			}
 		}
 
@@ -2764,8 +2814,8 @@ GER_prod_cost = {
 
 			targeted_modifier = {
 				tag = GER
-				cic_to_target_factor = 0.2
-				mic_to_target_factor = 0.15
+				cic_to_target_factor = 0.75
+				mic_to_target_factor = 0.75
 			}
 		}
 
@@ -6089,7 +6139,26 @@ GER_prod_cost = {
 
 	
 	hidden_ideas = {
+		supply_out = {
 
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				truck_attrition_factor = 0.25
+				winter_attrition_factor = 1.0
+				acclimatization_hot_climate_gain_factor = -1000
+				supply_node_range = -0.6
+			}
+
+		}
 		fascism_drift_ARG = {
 
 			allowed = {
@@ -6134,9 +6203,7 @@ GER_prod_cost = {
 				# PP Cost
 				political_power_gain = -0.1
 
-				production_speed_industrial_complex_factor = 0.1
-				production_speed_infrastructure_factor = 0.1
-				production_speed_rail_way_factor = 0.1
+				production_speed_buildings_factor = 0.1
 			}
 		}
 
@@ -6154,11 +6221,12 @@ GER_prod_cost = {
 				# PP Cost
 				political_power_gain = -0.3
 
-				production_speed_industrial_complex_factor = 0.1
-				production_speed_infrastructure_factor = 0.1
-				production_speed_rail_way_factor = 0.1
-				production_speed_arms_factory_factor = 0.1
-				production_speed_dockyard_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				production_speed_bunker_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_facility_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
 			}
 		}
 
@@ -6194,11 +6262,12 @@ GER_prod_cost = {
 			modifier = {
 				# PP Cost
 				political_power_gain = -0.3
-
 				production_speed_buildings_factor = 0.05
-				fascism_drift = 0.01
-								industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = 0.1
+				production_factory_max_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.05
+				local_non_core_manpower = 0.05
+				consumer_goods_expected_value = -0.1
+				production_speed_arms_factory_factor = 0.15
 			}
 		}
 
@@ -6208,14 +6277,17 @@ GER_prod_cost = {
 			allowed = {
 				always = no
 			}
-
+			available = {
+				OR = {
+						has_dynamic_modifier = { modifier = GER_mefo_bills_modifier }
+						has_dynamic_modifier = { modifier = GER_economy_of_conquest_modifier }
+					}
+			}
 			removal_cost = -1
-
 
 			modifier = {
 				# PP Cost
 				political_power_gain = -0.1
-
 				local_resources_factor = 0.05
 				#production_lack_of_resource_penalty_factor = -0.05?
 				#industry_free_repair_factor = 0.15?
@@ -6230,19 +6302,24 @@ GER_prod_cost = {
 			}
 
 			removal_cost = -1
-
-
+			available = {
+					OR = {
+						has_dynamic_modifier = { modifier = GER_mefo_bills_modifier }
+						has_dynamic_modifier = { modifier = GER_economy_of_conquest_modifier }
+					}
+			}
 			modifier = {
 				# PP Cost
 				political_power_gain = -0.3
-
+				stability_weekly = -0.002
+				war_support_weekly = -0.002
 				local_resources_factor = 0.05
 				#production_lack_of_resource_penalty_factor = -0.05?
 				#industry_free_repair_factor = 0.15?
-				production_factory_max_efficiency_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.05
-				production_factory_start_efficiency_factor = 0.05
-				line_change_production_efficiency_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_start_efficiency_factor = 0.15
+				line_change_production_efficiency_factor = 0.15
 			}
 		}
 

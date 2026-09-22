@@ -69,6 +69,7 @@ ideas = {
 			}
 
 			modifier = {
+				send_volunteer_size = -20
 				stability_factor = -0.2
 				political_power_factor = -0.15
 			}
@@ -103,26 +104,23 @@ ideas = {
 				has_government = communism
 			}
 			modifier = {
+				stability_weekly = 0.0035
+				war_support_weekly = 0.0035
 				drift_defence_factor = 0.5
 				min_export = 0.1
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
-				production_speed_buildings_factor = 0.2
+				production_speed_buildings_factor = 0.15
 				research_speed_factor = 0.10
 				cic_construction_boost_factor = 0.05
 			}
 			rule = {
 				can_create_factions = yes
 			}
-			equipment_bonus= {
-				infantry_equipment={
-					build_cost_ic= -0.1
-				}
-			}
 		}
-	workers_protest = {
+		workers_protest = {
 			removal_cost = -1
-	picture = por_iberian_workers_united
+		picture = por_iberian_workers_united
 			allowed = {
 				always = no # Added via focus
 			}
@@ -504,6 +502,8 @@ ideas = {
 			picture = SOV_organize_wreckers
 
 			modifier ={
+				stability_weekly = 0.002
+				war_support_weekly = 0.002
 				production_factory_efficiency_gain_factor=0.03
 			}
 		}
@@ -522,7 +522,7 @@ ideas = {
 
 
 			modifier ={
-				surrender_limit = 0.15
+				surrender_limit = 0.1
 				conscription_factor = 0.1
 				army_org_factor = 0.05
 				army_morale_Factor = 0.05
@@ -532,7 +532,7 @@ ideas = {
 				compliance_growth_on_our_occupied_states = -0.2
 			}
 		}
-SOV_all = { #Comes from Propaganda Campaign
+		SOV_all = { #Comes from Propaganda Campaign
 			name = SOV_all
 
 			removal_cost = -1
@@ -548,7 +548,7 @@ SOV_all = { #Comes from Propaganda Campaign
 			picture = ARG_economic_reactivation
 
 			modifier ={
-				production_speed_arms_factory_factor=0.1
+				production_speed_arms_factory_factor=0.05
 			}
 		}
 		SOV_war_industry = { #Comes from Propaganda Campaign
@@ -569,8 +569,7 @@ SOV_all = { #Comes from Propaganda Campaign
 			modifier ={
 				local_resources_factor = 0.2
 				global_building_slots_factor = 0.2
-				production_speed_arms_factory_factor=0.15
-				industrial_capacity_factory = 0.15
+				production_speed_arms_factory_factor=0.1
 			}
 		}
 		SOV_war_industry_1 = { #Comes from Propaganda Campaign
@@ -591,8 +590,7 @@ SOV_all = { #Comes from Propaganda Campaign
 			modifier ={
 				global_building_slots_factor = 0.3
 				local_resources_factor = 0.4
-				production_speed_arms_factory_factor=0.3
-				industrial_capacity_factory = 0.3
+				production_speed_arms_factory_factor=0.15
 			}
 		}
 		SOV_tankograd = { #Comes from Propaganda Campaign
@@ -1287,8 +1285,6 @@ SOV_all = { #Comes from Propaganda Campaign
 
 			modifier = {
 				mobilization_speed = 2.0
-				army_attack_factor = 0.05
-				army_defence_factor = 0.05
 				minimum_training_level = -0.05
 				training_time_factor = -0.25
 			}
@@ -2898,16 +2894,36 @@ SOV_all = { #Comes from Propaganda Campaign
 
 			}
 						on_remove = {
-						if = {
 				add_ideas = SOV_repressed_army_command
 			}
-		}
 			modifier = {
-				army_attack_factor = 0.1
-				army_defence_factor = 0.15
-				land_mastery_gain_factor = -0.65
-				experience_loss_factor = 0.25
+				experience_gain_factor = -0.65
+				land_mastery_gain_factor = -0.9
 				planning_speed = 0.4
+			}
+		}
+		SOV_counter_offensive= {
+
+			picture = FIN_german_threat
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+
+			}
+			available = {
+
+			}
+			modifier = {
+			army_attack_against_major_factor = 0.1	
+			army_defence_against_major_factor = 0.1
+			army_breakthrough_against_major_factor = 0.1
+			supply_consumption_factor = -0.1
+			terrain_penalty_reduction = 0.1
+			cas_damage_reduction = 0.25
+			acclimatization_cold_climate_gain_factor = 0.5
 			}
 		}
 		SOV_repressed_army_command = {
@@ -2925,14 +2941,13 @@ SOV_all = { #Comes from Propaganda Campaign
 
 			}
 			modifier = {
-								experience_gain_factor = -0.5
-				army_org_factor = -0.3
-				land_mastery_gain_factor = -0.65
-				experience_loss_factor = 0.7
-				max_planning = -0.25
+				army_org_factor = -0.4
+				experience_gain_factor = -0.65
+				land_mastery_gain_factor = -0.9
+				max_planning = -0.3
 				max_dig_in = -10
-				army_bonus_air_superiority_factor = -0.4
-				enemy_army_bonus_air_superiority_factor = 0.4
+				army_bonus_air_superiority_factor = -0.75
+				enemy_army_bonus_air_superiority_factor = 0.6
 			}
 		}
 		SOV_repressed_army_command_1 = {
@@ -2950,12 +2965,13 @@ SOV_all = { #Comes from Propaganda Campaign
 
 			}
 			modifier = {
-				army_org_factor = -0.15
-				experience_loss_factor = 0.35
-				max_planning = -0.125
+				army_org_factor = -0.2
+				max_planning = -0.15
+				experience_gain_factor = -0.325
+				land_mastery_gain_factor = -0.45
 				max_dig_in = -5
-				army_bonus_air_superiority_factor = -0.2
-				enemy_army_bonus_air_superiority_factor = 0.2
+				army_bonus_air_superiority_factor = -0.375
+				enemy_army_bonus_air_superiority_factor = 0.3
 			}
 		}
 		SOV_stavka= {
@@ -2975,8 +2991,7 @@ SOV_all = { #Comes from Propaganda Campaign
 			modifier = {
 				experience_gain_army_factor = 0.5
 				land_mastery_gain_factor = 0.5
-				army_morale_factor = 0.08
-				army_org_factor = 0.08
+				army_org_factor = 0.05
 				max_commander_army_size = 48
 					training_time_army_factor = -0.75
 experience_gain_factor = 0.2
@@ -9866,7 +9881,7 @@ experience_gain_factor = 0.2
 			traits = { industrial_concern }
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.025
 			}
 			
 			ai_will_do = {
@@ -9929,7 +9944,7 @@ experience_gain_factor = 0.2
 			traits = { electronics_concern }
 
 			modifier = {
-				supply_consumption_factor = -0.02
+				research_speed_factor = 0.1
 			}
 		}
 
@@ -10000,6 +10015,7 @@ experience_gain_factor = 0.2
 			traits = { railway_company }
 
 			modifier = {
+				supply_node_range = 0.15
 				mobilization_speed = 0.02
 			}
 		}

@@ -14,6 +14,11 @@ state = {
 	}
 
 	history = {
+		add_state_modifier = {
+    	modifier = {
+        local_building_slots = 5
+    	}
+		}
 		owner = ITA
 		victory_points = {
 			6788 10 

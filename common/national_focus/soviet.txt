@@ -133,59 +133,12 @@ focus_tree = {
         available = {
         }
         completion_reward = {
-add_tech_bonus = {
-    bonus = 2.0
-    uses = 2
-    category = artillery
-}        }
-    }
-		focus = {
-        id = SOV_expand_stavka_1 # Стартовый фокус ветки
-        icon = GFX_focus_chi_army_reform
-        x = 8
-        y = 1
-        cost = 6
-		prerequisite = {focus = SOV_stavk}
-		relative_position_id = SOV_stavk
-        available = {
-        }
-        completion_reward = {
-						add_political_power = 100
-			custom_effect_tooltip = available_military_high_command
-			show_ideas_tooltip = konstantin_rokossovsky        
-		}
-    }
-		focus = {
-        id = SOV_army_reform # Стартовый фокус ветки
-        icon = GFX_focus_SOV_builder_of_the_red_army
-        x = 2
-        y = 1
-        cost = 6
-		relative_position_id = SOV_expand_stavka_1
-        available = {
-			has_completed_focus = SOV_the_centre
-			has_completed_focus = SOV_military_reorganization
-        }
-        completion_reward = {
-			army_experience = 50
-        }
-    }
-	focus = {
-        id = SOV_expand_stavka_2 # Стартовый фокус ветки
-        icon = GFX_focus_chi_army_reform
-        x = 0
-        y = 2
-        cost = 6
-		prerequisite = {focus = SOV_expand_stavka_1 focus = SOV_army_reform}
-		relative_position_id = SOV_expand_stavka_1
-        available = {
-        }
-        completion_reward = {
-			add_political_power = 100
-         			custom_effect_tooltip = available_military_high_command
-			show_ideas_tooltip = vasily_chuykov   
-        }
-    }
+			add_tech_bonus = {
+				bonus = 2.0
+				uses = 2
+				category = artillery
+			}        }
+				}
 
     # Трудовая мобилизация
     focus = {
@@ -848,9 +801,6 @@ focus = {
 		y = 2
 		relative_position_id = SOV_third_five_year_plan
 		cost = 10
-		mutually_exclusive = {
-			 focus = SOV_shift_to_armaments_production
-		}
 
 		available = {
 			SOV_third_five_year_plan_available = yes
@@ -1046,15 +996,13 @@ focus = {
 		relative_position_id = SOV_third_five_year_plan
 		cost = 10
 
-		mutually_exclusive = {
-			 focus = SOV_reorganize_the_pc_of_heavy_industry
-		}
 
 		available = {
+			has_completed_focus = SOV_industrial_modernization
 			SOV_third_five_year_plan_available = yes
 			custom_trigger_tooltip = {
-				tooltip = SOV_fyp_controlled_factories_tier_3_tt
-				NOT = { num_of_controlled_factories < SOV_fyp_factory_requirement_tier_3 }
+				tooltip = SOV_fyp_controlled_factories_tier_5_tt
+				NOT = { num_of_controlled_factories < SOV_fyp_factory_requirement_tier_5 }
 			}
 			NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
 		}
@@ -1065,22 +1013,8 @@ focus = {
 			hidden_effect = {
 				set_variable = { SOV_fyp_production_speed_industrial_complex_factor = 0 } #Remove Civ constr speed
 			}
-			if = {
-				limit = {
-					has_government = communism
-				}
-				hidden_effect = {
-					#Swap dynamic modifier to change icon
-					remove_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier }
-					add_dynamic_modifier = { modifier = SOV_third_five_year_plan_military_dynamic_modifier }
-				}
-			}
-			else = {
-				hidden_effect = {
-					#Swap dynamic modifier to change icon
-					remove_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier_alt }
-					add_dynamic_modifier = { modifier = SOV_third_five_year_plan_military_dynamic_modifier_alt }
-				}
+			add_to_variable = {
+				SOV_fyp_production_speed_arms_factory_factor = 0.1
 			}
 			custom_effect_tooltip = SOV_shift_to_armaments_production_ns_tt
 
@@ -1106,8 +1040,8 @@ focus = {
 		available = {
 			SOV_third_five_year_plan_available = yes
 			custom_trigger_tooltip = {
-				tooltip = SOV_fyp_controlled_factories_tier_4_tt
-				NOT = { num_of_controlled_factories < SOV_fyp_factory_requirement_tier_4 }
+				tooltip = SOV_fyp_controlled_factories_tier_5_tt
+				NOT = { num_of_controlled_factories < SOV_fyp_factory_requirement_tier_5 }
 			}
 			NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
 		}
@@ -1402,6 +1336,7 @@ focus = {
 		cancel_if_invalid = no
 
 		available = {
+			has_completed_focus = SOV_the_glory_of_the_red_army
 			SOV_fourth_five_year_plan_available = yes
 			NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
 		}
@@ -2407,7 +2342,8 @@ focus = {
 				name = SOV_transpolar_flights
 				bonus = 2.0
 				uses = 2
-				category = air_equipment
+				technology = engines_3
+				technology = engines_4
 			}
 		}
 	}
@@ -2439,10 +2375,12 @@ focus = {
 			set_variable = { SOV_soviet_airforce_aircraft_manufacturer_cost_factor = -0.25 }
 			custom_effect_tooltip = SOV_expand_the_aircraft_industry_ns_tt
 			add_tech_bonus = {
-				name = SOV_increase_aircraft_production
+				name = SOV_transpolar_flights
 				bonus = 2.0
-				uses = 2
-				category = light_air
+				uses = 3
+				technology = advanced_small_airframe
+				technology = improved_small_airframe
+				technology = aa_cannon_3
 			}
 			random_owned_controlled_state = {
 				limit = {
@@ -2999,7 +2937,6 @@ focus = {
 				}
 				if = {
 					limit = {
-						ROOT = { is_special_project_completed = sp:sp_air_radar }
 						radar_station < 1
 					}
 					add_building_construction = {
@@ -5372,9 +5309,8 @@ focus = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_military_engineering_university
-		cost = 10
+		cost = 8
 
-		mutually_exclusive = { focus = SOV_improve_the_stalin_line }
 
 		available = {
 			OR = {
@@ -5613,9 +5549,8 @@ focus = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_military_engineering_university
-		cost = 10
+		cost = 8
 
-		mutually_exclusive = { focus = SOV_the_molotov_line }
 
 		available = {
 			OR = {
@@ -5755,7 +5690,7 @@ focus = {
 		x = -2
 		y = 2
 		relative_position_id = SOV_improve_the_stalin_line
-		cost = 5
+		cost = 2
 
 		available = {
 			217 = {
@@ -5852,7 +5787,7 @@ focus = {
 		x = -3
 		y = 1
 		relative_position_id = SOV_improve_the_stalin_line
-		cost = 5
+		cost = 2
 
 		available = {
 			219 = {
@@ -5991,6 +5926,7 @@ focus = {
 		available = {
 			OR = {
 				has_full_control_of_state = 195 #LENINGRAD
+				has_full_control_of_state = 208 #LUGA
 				has_full_control_of_state = 137 #CRIMEA
 			}
 		}
@@ -6029,6 +5965,31 @@ focus = {
 					add_dynamic_modifier = { modifier = SOV_krasnaya_gorka_battery scope = SOV }
 				}
 			}
+			if = {
+				limit = {
+					has_full_control_of_state = 208 #LUGA
+				}
+				208 = { #LUGA
+					add_building_construction = {
+						type = anti_air_building
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 9097
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = coastal_bunker
+						level = 3
+						province = 9097
+						instant_build = yes
+					}
+					add_dynamic_modifier = { modifier = SOV_seraya_loshad_battery scope = SOV }
+				}
+			}
 
 			if = {
 				limit = {
@@ -6057,7 +6018,6 @@ focus = {
 			}
 		}
 	}
-
 	focus = {
 		id = SOV_protect_the_white_sea_baltic_canal
 		icon = GFX_SOV_protect_the_white_sea_baltic_canal_ccp_2d_sov_compatibility
@@ -6502,8 +6462,8 @@ focus = {
 		cost = 0
 
 		available = {
-			any_enemy_country = {
-				SOV_is_major_not_original_sov = yes
+			any_neighbor_country = {
+				has_war_with = SOV
 				num_of_controlled_factories > 300
 			}
 		}
@@ -6511,6 +6471,7 @@ focus = {
 		search_filters = {}
 
 		completion_reward = {
+			activate_mission = SOV_mobilisation
 			army_experience = 40
 			if ={
 				limit = {
@@ -6518,7 +6479,7 @@ focus = {
 				}
 							add_timed_idea = {
 				idea = SOV_desperate_measures_ns
-				days = 150
+				days = 182
 			}
 						add_ideas = totaler_krieg_economy
 			}
@@ -6528,14 +6489,14 @@ focus = {
 				}
 											add_timed_idea = {
 				idea = SOV_desperate_measures_ns
-				days = 150
+				days = 182
 			}
 			}
 			custom_effect_tooltip = SOV_lessons_war_tt_kmp
-			add_to_variable = { SOV_the_red_army_army_defence_factor = 0.10 tooltip = army_defence_factor_tt }
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			custom_effect_tooltip = SOV_desperate_measures_decisions_unlocked_tt
+			custom_effect_tooltip = SOV_desperate_measures_mob
 		}
 	}
 
@@ -6581,6 +6542,7 @@ focus = {
 		search_filters = {FOCUS_FILTER_ARMY_XP}
 
 		completion_reward = {
+			activate_advisor = georgy_zhukov
 			custom_effect_tooltip = SOV_lessons_war_tt_kmp
 			add_to_variable = { SOV_the_red_army_army_org_factor = 0.05 tooltip = army_org_factor_tt }
 			set_variable = { SOV_the_red_army_experience_gain_army_factor = 0 tooltip = experience_gain_army_factor_tt}
@@ -6590,7 +6552,7 @@ focus = {
 			add_to_variable = { SOV_the_red_army_breakthrough_factor = 0.1 tooltip = breakthrough_factor_tt }
 
 			add_timed_idea ={ idea = SOV_army_reform
-			days = 210}
+			days = 365}
 			unlock_decision_tooltip = SOV_order_227
 			custom_effect_tooltip = SOV_lessons_of_war_unlock_military_operations_tt
 
@@ -6861,10 +6823,10 @@ set_country_flag = { flag = SOV_counter_operation value = 1 days = 140 }
 
 		completion_reward = {
 		add_timed_idea ={ idea = SOV_army_reform_1
-			days = 210}
+			days = 365}
 			custom_effect_tooltip = SOV_lessons_war_tt_kmp
-			add_to_variable = { SOV_the_red_army_army_defence_factor = 0.1 tooltip = army_defence_factor_tt }
-			add_to_variable = { SOV_the_red_army_army_attack_factor = 0.1 tooltip = army_attack_factor_tt}
+			add_to_variable = { SOV_the_red_army_army_defence_factor = 0.05 tooltip = army_defence_factor_tt }
+			add_to_variable = { SOV_the_red_army_army_attack_factor = 0.05 tooltip = army_attack_factor_tt}
 			if = {
 				limit = {
 					has_idea = SOV_politicized_military
@@ -6913,8 +6875,8 @@ set_country_flag = { flag = SOV_counter_operation value = 1 days = 140 }
 			add_timed_idea ={ idea = SOV_army_reform
 			days = 210}
 			custom_effect_tooltip = SOV_lessons_war_tt_kmp
-			add_to_variable = { SOV_the_red_army_army_defence_factor = 0.1 tooltip = army_defence_factor_tt }
-			add_to_variable = { SOV_the_red_army_army_attack_factor = 0.1 tooltip = army_attack_factor_tt}
+			add_to_variable = { SOV_the_red_army_army_defence_factor = 0.05 tooltip = army_defence_factor_tt }
+			add_to_variable = { SOV_the_red_army_army_attack_factor = 0.05 tooltip = army_attack_factor_tt}
 			if = {
 				limit = {
 					has_idea = SOV_politicized_military
@@ -7018,8 +6980,7 @@ set_country_flag = { flag = SOV_counter_operation value = 1 days = 140 }
 
 		completion_reward = {
 			custom_effect_tooltip = SOV_lessons_war_tt_kmp
-			add_to_variable = { SOV_the_red_army_army_attack_factor = 0.05 tooltip = army_attack_factor_tt}
-			add_to_variable = { SOV_the_red_army_breakthrough_factor = 0.05 tooltip = breakthrough_factor_tt }
+			add_to_variable = { SOV_the_red_army_army_attack_factor = 0.1 tooltip = army_attack_factor_tt}
 			add_to_variable = { SOV_the_red_army_land_doctrine_cost_factor = -0.1 }
 			
 			army_experience = 75
@@ -7747,16 +7708,6 @@ set_country_flag = { flag = SOV_counter_operation value = 1 days = 140 }
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
-			custom_effect_tooltip = SOV_war_economy_stability_tt
-			if = {
-				limit = {
-					has_war = no
-				}
-				add_stability = -0.1
-			}
-			else = {
-				custom_effect_tooltip = SOV_war_economy_stability_war_tt
-			}
 			if = {
 				limit = {
 					NOT = { has_idea = war_economy }
@@ -7777,10 +7728,10 @@ set_country_flag = { flag = SOV_counter_operation value = 1 days = 140 }
 					}
 				}
 				217 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 5
 					add_building_construction = {
 						type = arms_factory
-						level = 2
+						level = 5
 						instant_build = yes
 					}
 				}
@@ -7795,10 +7746,10 @@ set_country_flag = { flag = SOV_counter_operation value = 1 days = 140 }
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 5
 					add_building_construction = {
 						type = arms_factory
-						level = 2
+						level = 5
 						instant_build = yes
 					}
 				}
@@ -12249,7 +12200,6 @@ set_country_flag = { flag = SOV_counter_operation value = 1 days = 140 }
 			}	
 		}
 		
-		mutually_exclusive = { focus = SOV_policy_of_individual_security }
 
 		available = {
 
@@ -12570,7 +12520,6 @@ set_country_flag = { flag = SOV_counter_operation value = 1 days = 140 }
 			}	
 		}
 		
-		mutually_exclusive = { focus = SOV_policy_of_collective_security }
 
 		available = {
 
@@ -13320,7 +13269,6 @@ set_country_flag = { flag = SOV_counter_operation value = 1 days = 140 }
 					}
 					if = {
 						limit = {
-							ROOT = { is_special_project_completed = sp:sp_air_radar }
 							radar_station < 1
 						}
 						add_building_construction = {
@@ -14715,7 +14663,9 @@ ai_will_do = {
 		y = 1
 		relative_position_id = SOV_the_threat_from_the_land_of_the_rising_sun
 		cost = 5
-
+		allow_branch = {
+			always = no
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {

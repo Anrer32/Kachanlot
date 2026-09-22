@@ -3573,7 +3573,6 @@ focus_tree = {
 		relative_position_id = ITA_fiocchi_munizioni
 		cost = 5
 		available = {
-			is_special_project_completed = sp:sp_air_radar
 			has_full_control_of_state = 159
 		}
 

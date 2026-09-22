@@ -5,6 +5,7 @@ ideas = {
 			available = { has_air_academy = yes }
 			modifier = {
 				air_advisor_cost_factor = -0.75
+				air_spirit_category_type_cost_factor = -0.8
 			}
 			ai_will_do = {
 				factor = 1
@@ -25,10 +26,10 @@ ideas = {
 			research_bonus = {
 				heavy_air = 0.05
 			}
-			modifier = {
-				large_plane_airframe_design_cost_factor = -0.75
-				#strat_bomber_equipment_design_cost_factor = -0.75
-				#jet_strat_bomber_equipment_design_cost_factor = -0.75
+			equipment_bonus = {
+				large_plane_airframe = {
+					build_cost_ic = -0.02
+				}
 			}
 			ai_will_do = {
 				factor = 1
@@ -49,11 +50,10 @@ ideas = {
 			research_bonus = {
 				cas_bomber = 0.05
 			}
-			modifier = {
-				small_plane_cas_airframe_design_cost_factor = -0.75
-				cv_small_plane_cas_airframe_design_cost_factor = -0.75
-				#CAS_equipment_design_cost_factor = -0.75
-				#cv_CAS_equipment_design_cost_factor = -0.75
+			equipment_bonus = {
+				small_plane_cas_airframe = {
+					build_cost_ic = -0.02
+				}
 			}
 			ai_will_do = {
 				factor = 1
@@ -74,10 +74,10 @@ ideas = {
 			research_bonus = {
 				tactical_bomber = 0.05
 			}
-			modifier = {
-				medium_plane_airframe_design_cost_factor = -0.75
-				#tac_bomber_equipment_design_cost_factor = -0.75
-				#jet_tac_bomber_equipment_design_cost_factor = -0.75
+			equipment_bonus = {
+				medium_plane_airframe = {
+					build_cost_ic = -0.02
+				}
 			}
 			ai_will_do = {
 				factor = 1
@@ -122,7 +122,7 @@ ideas = {
 			ledger = air
 			available = { has_air_academy = yes }
 			modifier = {
-				experience_gain_air = 0.1
+				experience_gain_air = 0.4
 				airforce_intel_to_others = -5
 			}
 			ai_will_do = {
@@ -158,7 +158,7 @@ ideas = {
 			ledger = air
 			available = { has_air_force_command = yes }
 			modifier = {
-				ground_attack_factor = 0.05
+				ground_attack_factor = 0.075
 				air_escort_efficiency = 0.05
 			}
 			ai_will_do = {
@@ -253,7 +253,7 @@ ideas = {
 			ledger = air
 			available = { has_air_force_command = yes }
 			modifier = {
-				air_power_projection_factor = 0.1
+				air_range_factor = 0.1
 			}
 			ai_will_do = {
 				factor = 1
@@ -272,7 +272,7 @@ ideas = {
 				}
 			}
 			modifier = {
-				army_bonus_air_superiority_factor = 0.05
+				army_bonus_air_superiority_factor = 0.1
 			}
 			ai_will_do = {
 				factor = 1
@@ -291,7 +291,7 @@ ideas = {
 				}
 			}
 			modifier = {
-				air_cas_efficiency = 0.25
+				air_cas_efficiency = 0.2
 			}
 			ai_will_do = {
 				factor = 1

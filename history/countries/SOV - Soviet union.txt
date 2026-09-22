@@ -186,6 +186,9 @@ SOV_lavrenty_beriya = { #NKVD Chiefs are always safe from regular purges, they'l
 SOV_vsevolod_merkulov = {
 	set_character_flag = SOV_safe_from_purge_flag
 }
+SOV_nikolay_voznesensky = {
+	set_character_flag = SOV_safe_from_purge_flag
+}
 SOV_vyacheslav_molotov = {
 	set_character_flag = SOV_safe_from_purge_flag
 }
@@ -393,7 +396,7 @@ set_variable = { SOV_propaganda_peace_cost = SOV_propaganda_cost } # ID = 24
 set_variable = { SOV_propaganda_happy_life_cost = SOV_propaganda_cost } # ID = 25
 
 set_variable = { SOV_propaganda_campaigns_taken = 0 } #Used as a requirement for certain focuses
-
+set_variable = {para_limit = 1}
 
 ###PARANOIA ###
 set_variable = { SOV_paranoia = 0 } # Intitial Paranoia value
@@ -499,7 +502,7 @@ set_variable = { SOV_national_academy_of_sciences_construction_time = 90 } #The 
 set_variable = { SOV_academies_required_for_atomic_bomb_project = 7 } #Number of academies of sciences required to pick focus Soviet Atomic Bomb Project
 
 #THIRD FIVE YEAR PLAN FACTORY REQUIREMENTS
-set_variable = { SOV_fyp_factory_requirement_tier_1 = 100 }
+set_variable = { SOV_fyp_factory_requirement_tier_1 = 110 }
 set_variable = { SOV_fyp_factory_requirement_tier_2 = 120 }
 set_variable = { SOV_fyp_factory_requirement_tier_3 = 130 }
 set_variable = { SOV_fyp_factory_requirement_tier_4 = 200 }
@@ -508,8 +511,8 @@ set_variable = { SOV_fyp_factory_requirement_tier_5 = 250 }
 #THIRD FIVE YEAR PLAN NATIONAL SPIRIT VARS
 set_variable = { SOV_fyp_production_factory_efficiency_gain_factor = -0.15 }
 set_variable = { SOV_fyp_production_factory_max_efficiency_factor = 0.05 }
-set_variable = { SOV_fyp_consumer_goods_factor = -0.03 }
-set_variable = { SOV_fyp_production_speed_industrial_complex_factor = 0.05 }
+set_variable = { SOV_fyp_consumer_goods_factor = -0.05 }
+set_variable = { SOV_fyp_production_speed_industrial_complex_factor = 0.2 }
 
 set_variable = { SOV_fyp_production_synthetic_refinery_factor = 0 }
 set_variable = { SOV_fyp_industrial_concern_cost_factor = -0.15 } #-> Third Five Year Plan
@@ -603,10 +606,11 @@ set_variable = { SOV_the_red_army_max_dig_in = 0 } # -> Experts in Camouflage
 set_variable = { SOV_the_red_army_dig_in_speed_factor = 0 } # -> Experts in Camouflage
 set_variable = { SOV_the_red_army_operative_slot  = 0 } # -> Organization of the Partisans
 set_variable = { SOV_the_red_army_max_command_power_mult = 0 } # -> Depoliticize the Military
-set_variable = { SOV_the_red_army_army_attack_factor = -0.20 }
-set_variable = { SOV_the_red_army_army_defence_factor = -0.25 }
-set_variable = { SOV_the_red_army_breakthrough_factor = -0.20 }
-
+set_variable = { SOV_the_red_army_army_attack_factor = -0.15 }
+set_variable = { SOV_the_red_army_army_defence_factor = -0.15 }
+set_variable = { SOV_the_red_army_breakthrough_factor = -0.10 }
+set_grand_doctrine = mass_assault
+set_grand_doctrine = new_fleet_in_being
 add_dynamic_modifier = { modifier = SOV_the_red_army_dynamic_modifier }
 
 #THE POLITBURO SPIRIT VARS
@@ -690,7 +694,6 @@ set_variable = { SOV_planned_economy_party_popularity_stability_factor = 0 } #Vi
 set_variable = { SOV_planned_economy_max_surrender_limit_offset = 0 } #Victory Over Devastation
 set_variable = { SOV_planned_economy_industry_repair_factor = 0 } #Victory Over Devastation
 set_variable = { SOV_planned_economy_consumer_goods_factor = 0 } #Victory Over Devastation
-
 
 #Add synthetic refineries tech
 set_technology = {
@@ -1196,11 +1199,6 @@ add_ideas = {
 		support_weapons2 = 1
 		#paratroopers = 1
 
-		#doctrines
-		pocket_defence = 1
-		defence_in_depth = 1
-		battlefleet_concentration = 1
-		submarine_operations = 1
 
 		#Air
 		    		
@@ -1230,11 +1228,6 @@ add_ideas = {
 		concentrated_industry3 = 1
 	}
 	
-	complete_special_project = {
-		project = sp:sp_air_radar
-		scientist = SOV_vladimir_kotelnikov
-		state = 260
-	}
 
 	if = {
 		limit = {

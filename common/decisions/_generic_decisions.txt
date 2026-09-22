@@ -293,7 +293,6 @@ propaganda_efforts = {
 
 		available = {
 			NOT = { has_country_flag = war_propaganda_campaign_running }
-			has_war_support < 0.5
 			
 			if = {
 				limit = {
@@ -328,12 +327,12 @@ propaganda_efforts = {
 
 		fire_only_once = no
 
-		days_remove = 90
-		days_re_enable = 180
+		days_remove = 180
 
-		cost = 150
+		cost = 125
 
 		modifier = {
+			stability_weekly = 0.0015
 			war_support_weekly = 0.005
 		}
 
@@ -379,6 +378,7 @@ propaganda_efforts = {
 		cost = 100
 
 		modifier = {
+			stability_weekly = 0.00025
 			weekly_casualties_war_support = 0.006
 		}
 
@@ -449,6 +449,7 @@ propaganda_efforts = {
 		cost = 100
 
 		modifier = {
+			stability_weekly = 0.00025
 			weekly_convoys_war_support = 0.006
 		}
 
@@ -504,6 +505,7 @@ propaganda_efforts = {
 		cost = 100
 
 		modifier = {
+			stability_weekly = 0.00025
 			weekly_bombing_war_support = 0.006
 		}
 
@@ -1787,46 +1789,33 @@ war_measures = {
 
         available = {
             has_war = yes
-            OR = {
-                AND = {
-                    has_government = democratic
-                    has_war_support > 0.79
-                }
-                AND = {
-                    has_government = communism
-                    has_war_support > 0.79
-                }
-                AND = {
-                    has_government = fascism
-                    OR = {
-                        has_war_support > 0.89
-                        surrender_progress > 0
-                    }
-                }
-                AND = {
-                    has_government = neutrality
-                    has_war_support > 0.84
-                    has_stability > 0.7
-                }
-            }
+			OR = {
+			has_idea = tot_economic_mobilisation
+			has_idea = totaler_krieg_economy
+			}
         }
         visible = {
             has_war = yes
             NOT = { tag = SPC }
         }
-
+		cancel_trigger = {
+			NOT = {has_idea = tot_economic_mobilisation
+			has_idea = totaler_krieg_economy
+		}
+		}
         fire_only_once = no
 
 		days_remove = 180
 
-		cost = GER_war_bonds_var?50
+		cost = 50
 
 		modifier = {
-			consumer_goods_factor = -0.20
+			stability_weekly = 0.008
+			war_support_weekly = 0.008
 		}
 
 		ai_will_do = {
-			factor = 1
+			factor = 100
 			modifier = {
 				has_political_power < 100
 				factor = 0 #use as pp dump
@@ -1840,7 +1829,10 @@ war_measures = {
 		}
 
 		remove_effect = {
-
+			if = {
+				limit = {has_active_decision = war_bonds_add}
+			}
+			activate_decision = war_bonds
 		}
 
 		complete_effect = {
@@ -1892,10 +1884,226 @@ war_measures = {
 					value = -0.025
 				}
 				add_war_support = GER_war_bonds_war_support_var
+				add_stability = GER_war_bonds_war_support_var
 			}
 		}
     }
-	
+	war_rationing = {
+
+    	icon = generic_industry
+
+    	allowed = {
+            always = yes
+        }
+
+        available = {
+            has_war = yes
+			OR = {
+			has_idea = war_economy
+			has_idea = tot_economic_mobilisation
+			has_idea = totaler_krieg_economy
+			}
+        }
+        visible = {
+            has_war = yes
+            NOT = { tag = SPC }
+        }
+        fire_only_once = yes
+
+		cost = 50
+
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				has_political_power < 100
+				factor = 0 #use as pp dump
+			}
+
+			modifier = {
+				factor = 0
+				original_tag = SOV
+				SOV_save_pp_for_manpower_trouble = yes
+			}
+		}
+
+		remove_effect = {
+		}
+
+		complete_effect = {
+		add_stability = 0.075
+		add_war_support = 0.075
+    	}
+	}
+	war_fuel = {
+
+    	icon = generic_industry
+
+    	allowed = {
+            always = yes
+        }
+
+        available = {
+            has_war = yes
+			OR = {
+			has_idea = war_economy
+			has_idea = tot_economic_mobilisation
+			has_idea = totaler_krieg_economy
+			}
+        }
+        visible = {
+            has_war = yes
+            NOT = { tag = SPC }
+        }
+        fire_only_once = no
+		days_remove = -1
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				has_political_power < 100
+				factor = 0 #use as pp dump
+			}
+
+			modifier = {
+				factor = 0
+				original_tag = SOV
+				SOV_save_pp_for_manpower_trouble = yes
+			}
+		}
+
+		remove_effect = {
+		}
+
+		modifier = {
+			fuel_gain_factor = 0.3
+			stability_weekly = -0.001
+			war_support_weekly = -0.001
+		}
+	}
+	war_fuel_cancel = {
+
+    	icon = generic_industry
+
+    	allowed = {
+            always = yes
+        }
+
+        available = {
+            has_decision = war_fuel
+        }
+        visible = {
+            has_decision = war_fuel
+        }
+        fire_only_once = no
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				has_political_power < 100
+				factor = 0 #use as pp dump
+			}
+
+			modifier = {
+				factor = 0
+				original_tag = SOV
+				SOV_save_pp_for_manpower_trouble = yes
+			}
+		}
+
+		remove_effect = {
+		}
+
+		complete_effect = {
+			remove_decision = war_fuel
+		}
+	}
+	comendant_hour = {
+
+    	icon = generic_industry
+
+    	allowed = {
+            always = yes
+        }
+		cost = 150
+        available = {
+            has_war = yes
+			OR = {
+			has_idea = war_economy
+			has_idea = tot_economic_mobilisation
+			has_idea = totaler_krieg_economy
+			}
+        }
+        visible = {
+            has_war = yes
+            NOT = { tag = SPC }
+        }
+        fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				has_political_power < 100
+				factor = 0 #use as pp dump
+			}
+
+			modifier = {
+				factor = 0
+				original_tag = SOV
+				SOV_save_pp_for_manpower_trouble = yes
+			}
+		}
+
+		remove_effect = {
+		}
+		
+		complete_effect = {
+		add_stability = 0.1
+		add_war_support = 0.1
+		}
+	}
+	rearm_program = {
+
+    	icon = generic_industry
+
+    	allowed = {
+            always = yes
+        }
+		cost = 100
+        available = {
+			has_government = democratic
+            has_war = yes
+			OR = {
+			has_idea = war_economy
+			has_idea = tot_economic_mobilisation
+			has_idea = totaler_krieg_economy
+			}
+        }
+        visible = {
+			has_government = democratic
+            NOT = { tag = SPC }
+        }
+        fire_only_once = yes
+		days_remove = 120
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				has_political_power < 100
+				factor = 0 #use as pp dump
+			}
+
+			modifier = {
+				factor = 0
+				original_tag = SOV
+				SOV_save_pp_for_manpower_trouble = yes
+			}
+		}
+		modifier = {
+			production_speed_arms_factory_factor = 0.05
+			production_factory_efficiency_gain_factor = 0.1
+		}
+	}
 	diversify_special_forces = {
 
 		icon = GFX_decision_generic_military
@@ -2036,10 +2244,10 @@ economy_decisions = {
             always = yes
         }
 
-        cost = 100
+        cost = 0
         fire_only_once = no
 
-        days_re_enable = 30
+        days_re_enable = 10
 
 		available = {
 			any_owned_state = {
@@ -2090,7 +2298,78 @@ economy_decisions = {
 			}
 		}
     }
+	state_upgrade = {
 
+		icon = generic_construction
+
+        allowed = {
+            always = yes
+        }
+
+        cost = 100
+        fire_only_once = no
+
+        days_re_enable = 3
+
+		available = {
+			any_owned_state = {
+				NOT = { has_state_category = megalopolis }
+				is_fully_controlled_by = ROOT
+				free_building_slots = {
+					building = infrastructure
+					size < 1
+				}
+				free_building_slots = {
+					building = industrial_complex
+					size < 1
+				}
+			}
+		}
+	
+		visible = {
+			any_owned_state = {
+				NOT = { has_state_category = megalopolis }
+				is_fully_controlled_by = ROOT
+				free_building_slots = {
+					building = infrastructure
+					size < 1
+				}
+				free_building_slots = {
+					building = industrial_complex
+					size < 1
+				}
+			}
+		}
+
+        complete_effect = {
+			random_owned_state = {
+				limit = {
+					NOT = { has_state_category = megalopolis }
+				is_fully_controlled_by = ROOT
+				free_building_slots = {
+					building = infrastructure
+					size < 1
+				}
+				free_building_slots = {
+					building = industrial_complex
+					size < 1
+				}
+				}
+				increase_state_category = yes
+				remove_building = {
+					type = infrastructure
+					level = 2
+				}
+			}
+		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 1.5
+				all_owned_state = { free_building_slots = { building = industrial_complex size < 1 include_locked = no } }
+			}
+		}
+    }
     war_building_slot = {
 
     	icon = generic_construction

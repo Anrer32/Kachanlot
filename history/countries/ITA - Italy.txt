@@ -102,7 +102,8 @@ set_variable = { ITA_missiolinis_fighters_to_produce = 300 } #Used by Strengthen
 set_variable = { ITA_missiolinis_bombers_to_produce = 300 } #Used by Strengthened the Airforce Missiolini
 set_variable = { ITA_missiolinis_aircraft_to_produce = 300 } #Unused yet. Might be used in the future by Strengthened the Airforce Missiolini
 
-
+set_grand_doctrine = grand_battleplan
+set_grand_doctrine = new_fleet_in_being
 ############# MILITIA CAP ###############
 set_variable = { ITA_militias_cap = 12 } #WARNING THIS VALUE NEEDS TOP MATCH THE division_cap value for the blackshirt template in the OOB
 
@@ -657,11 +658,6 @@ if = {
 		concentrated_industry3 = 1
 	}
 	
-	complete_special_project = {
-		project = sp:sp_air_radar
-		scientist = ITA_giovanni_giorgi
-		state = 2
-	}
 
 	if = {
 		limit = {

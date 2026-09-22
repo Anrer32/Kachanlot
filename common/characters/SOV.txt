@@ -183,14 +183,14 @@ characters = {
 
 		advisor = {
 			cost = 150
-			slot = theorist
+			slot = army_chief
 			idea_token = georgy_zhukov
 			ledger = army
 			allowed = {
 				original_tag = SOV
 			}
 			available = {
-				has_completed_focus = SOV_positive_heroism
+				has_completed_focus = SOV_lessons_of_war
 				if = {
 					limit = {
 						has_character_flag = SOV_exiled_flag
@@ -199,7 +199,7 @@ characters = {
 				}
 			}
 			traits = {
-				mass_assault_expert
+				marshal_of_vic
 			}
 			ai_will_do = {
 				base = 2
@@ -207,7 +207,7 @@ characters = {
 		}		
 	}
 
-SOV_konstantin_rokossovsky = {
+		SOV_konstantin_rokossovsky = {
 		name = SOV_konstantin_rokossovsky
 
 		portraits = {
@@ -1144,6 +1144,38 @@ SOV_konstantin_rokossovsky = {
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
+		advisor = {
+			slot = high_command
+			idea_token = SOV_vasily_chuykov
+			ledger = army
+			allowed = {
+				original_tag = SOV
+				hidden_trigger = {
+					NOT = {
+						any_other_country = {
+							has_war_with = SOV
+							original_tag = SOV
+							has_unit_leader = 403.000
+						}
+					}
+				}
+			}
+			available = {
+				if = {
+					limit = {
+						has_character_flag = SOV_exiled_flag
+					}
+					NOT = { has_character_flag = SOV_exiled_flag }
+				}
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				base = 2
+			}
+		}		
 	}
 
 ######################

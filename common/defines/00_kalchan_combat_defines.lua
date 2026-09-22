@@ -1,7 +1,5 @@
-NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 5
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 7
 NDefines.NMilitary.MIN_DIVISION_BRIGADE_HEIGHT = 5
-
-
 
 NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 216
@@ -18,15 +16,15 @@ NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 100000
 NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 40
 
 NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.032                  
-NDefines.NMilitary.INFRASTRUCTURE_MOVEMENT_SPEED_IMPACT = -0.02;
+NDefines.NMilitary.INFRASTRUCTURE_MOVEMENT_SPEED_IMPACT = -0.02
 NDefines.NMilitary.TRAINING_ATTRITION = 0.00
+NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.15
 NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.49
 NDefines.NMilitary.PLANNING_MAX = 0.15
 NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.01
 NDefines.NMilitary.COHESION_IMMOBILE_PLANNING_SPEED_MULTIPLIER = 1
-	NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE = 0.55	       -- more AA attack will approach this amount of help (diminishing returns)
-	NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE_STEEPNESS = 625 -- how quickly defense approaches the max impact diminishing returns curve
----- Воздух
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE = 0.55	       -- more AA attack will approach this amount of help (diminishing returns)
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE_STEEPNESS = 625 -- how quickly defense approaches the max impact diminishing returns curve
 NDefines.NAir.PORT_STRIKE_DAMAGE_FACTOR = 1.7
 NDefines.NAir.PORT_STRIKE_DAMAGE_FACTOR = 1.7
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.7 -- бафф морбобров по дамагу
@@ -79,23 +77,12 @@ NDefines.NNavy.ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE = 0.25
 
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0.00 --- кораблики не ломаются на тренировке
 
-NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCORE = 200 -- Попадание Авиков по линейке
-NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_SCORE = 1 -- попадание авиков по авикам
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 50
 NDefines.NProduction.DEFAULT_MAX_NAV_FACTORIES_PER_LINE = 50
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 50
 NDefines.NNavy.SUPPLY_NEED_FACTOR = 1.5
 NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 1.0
 NDefines.NNavy.NAVAL_MINES_PLANTING_SPEED_MULT = 0.00001
-NDefines.NNavy.RELATIVE_SURFACE_DETECTION_TO_POSITIONING_FACTOR = 0.01 -- увеличивает обнаружение между 2 флотами, сторона с большим обнаружением получает бонус
-NDefines.NNavy.MAX_POSITIONING_BONUS_FROM_SURFACE_DETECTION = 0.0 -- уменьшает бонус от обнаружения
-
-NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
-		41.0,	-- big guns
-		60.0,	-- torpedoes
-		10.0,	-- small guns
-	}
----- продакшен
 
 NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 300 -- максимальное количество заводов на линии
 NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0
@@ -116,9 +103,9 @@ NDefines.NOperatives.PROPAGANDA_OPERATIVE_STACKING_FACTOR = 0.0
 NDefines.NOperatives.PROPAGANDA_COUNTRY_STACKING_FACTOR = 0.0
 
 
-NDefines.NProduction.BASE_LICENSE_IC_COST = 0;
-NDefines.NProduction.LICENSE_EQUIPMENT_BASE_SPEED = 0;
-NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0;
+NDefines.NProduction.BASE_LICENSE_IC_COST = 0
+NDefines.NProduction.LICENSE_EQUIPMENT_BASE_SPEED = 0
+NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1
 
 
@@ -128,15 +115,3 @@ NDefines.NMilitary.COMBAT_STACKING_PENALTY = -0.1              -- ваниль -
 
 NDefines.NGame.GAME_SPEED_SECONDS = { 6000.0, 0.4, 0.2, 0.1, 0.0  }
 
-------Technology------
-NDefines.NAI.RESEARCH_DAYS_BETWEEN_WEIGHT_UPDATE = 1
-NDefines.NAI.RESEARCH_AHEAD_BONUS_FACTOR = 100.0
-NDefines.NAI.RESEARCH_AHEAD_OF_TIME_FACTOR = 0.0
-NDefines.NAI.RESEARCH_BONUS_FACTOR = 0.1
-NDefines.NAI.MAX_AHEAD_RESEARCH_PENALTY = 100
-NDefines.NAI.RESEARCH_YEARS_BEHIND_FACTOR = 0.0
-
-NDefines.NBuildings.BASE_FACTORY_REPAIR = 2.0			-- Default repair rate in percentage before factories are taken into account (1.0 equals 1%).
-	NDefines.NBuildings.BASE_FACTORY_REPAIR_FACTOR = 4.0
-
---Броня

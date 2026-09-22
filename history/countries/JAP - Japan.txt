@@ -1071,11 +1071,6 @@ add_mastery = {
 
 
 
-	complete_special_project = {
-		project = sp:sp_air_radar
-		scientist = JAP_yoji_ito
-		state = 532
-	}
 
 	IF = {
 		limit = {

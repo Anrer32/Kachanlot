@@ -84,7 +84,7 @@ war_measures = {
 			always = no
 		}
 
-		days_mission_timeout = 180
+		days_mission_timeout = 360
 
 		fire_only_once = yes
 
@@ -114,7 +114,7 @@ war_measures = {
 			always = no
 		}
 
-		days_mission_timeout = 540
+		days_mission_timeout = 720
 
 		fire_only_once = yes
 
@@ -144,7 +144,7 @@ war_measures = {
 			always = no
 		}
 
-		days_mission_timeout = 840
+		days_mission_timeout = 1080
 
 		fire_only_once = yes
 

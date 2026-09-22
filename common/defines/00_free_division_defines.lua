@@ -14,10 +14,4 @@ NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0.0				-- XP cost for re
 NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0.0				-- XP cost for converting one equipment module to a related module when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0.0
 
-NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 9999;
-NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 9999;
-NDefines.NMilitary.MAX_AIR_EXPERIENCE  = 9999;
-
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 6 --12
-NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 60 --10
-NDefines.NGame.LAG_DAYS_FOR_PAUSE = 100 --25

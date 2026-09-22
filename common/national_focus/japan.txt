@@ -13044,7 +13044,6 @@ focus_tree = {
 
 			IF = {
 				limit = {
-					ROOT = { is_special_project_completed = sp:sp_air_radar }
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 				every_state = {
@@ -15465,11 +15464,11 @@ focus_tree = {
 
 		available = {
 			JAP = {
-				owns_state = 285
-				owns_state = 439
-				owns_state = 336
-				owns_state = 1058
-				owns_state = 284
+				controls_state = 285
+				controls_state = 439
+				controls_state = 336
+				controls_state = 1058
+				controls_state = 284
 			}
 			JAP_army_faction_is_at_least_influential = yes
 			IF = {
@@ -15536,7 +15535,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-			remove_ideas = JAP_soviet_neutral
 			IF = {
 				limit = {
 					NOT = {
@@ -15644,11 +15642,11 @@ focus_tree = {
 
 		available = {
 			JAP = {
-				owns_state = 285
-				owns_state = 439
-				owns_state = 336
-				owns_state = 1058
-				owns_state = 284
+				controls_state = 285
+				controls_state = 439
+				controls_state = 336
+				controls_state = 1058
+				controls_state = 284
 			}
 			JAP_army_faction_is_at_least_influential = yes
 			IF = {
@@ -15719,7 +15717,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-			remove_ideas = JAP_soviet_neutral
 			declare_war_on = {
 				target = SOV
 				type = annex_everything

@@ -748,7 +748,7 @@ prospect_for_resources = {
 #		icon = steel
 #
 #		allowed = {
-#
+#gs
 #		}
 #
 #		available = {
@@ -2945,7 +2945,7 @@ prospect_for_resources = {
 				NOT = {
 					has_state_flag = {
 						flag = idaho_tungsten_developed
-						value = 5
+						value = 3
 					}
 				}
 			}
@@ -3012,7 +3012,7 @@ prospect_for_resources = {
 			387 = {
 				add_resource = {
 					type = tungsten
-					amount = 12
+					amount = 6
 				}
 			}
 		}
@@ -3054,7 +3054,7 @@ prospect_for_resources = {
 				NOT = {
 					has_state_flag = {
 						flag = california_tungsten_developed
-						value = 5
+						value = 3
 					}
 				}
 			}
@@ -3121,7 +3121,7 @@ prospect_for_resources = {
 			378 = {
 				add_resource = {
 					type = tungsten
-					amount = 12
+					amount = 6
 				}
 			}
 		}

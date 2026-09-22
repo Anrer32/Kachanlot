@@ -7919,12 +7919,11 @@ leader_traits = {
 		sprite = 13
 		equipment_bonus = {
 			train_equipment = {
-				build_cost_ic = 0.05
 				armor_value = 0.1
 			}
 		}
-		production_speed_rail_way_factor = 0.05
-		production_speed_supply_node_factor = 0.05
+		production_speed_rail_way_factor = 0.25
+		production_speed_supply_node_factor = 0.25
 		fuel_gain_factor = 0.05
 	}
 
@@ -7932,6 +7931,7 @@ leader_traits = {
 	political_commissar = {
 		random = no
 		sprite = 13
+		experience_gain_army_factor = 0.05
 		communism_drift = 0.1
 		political_power_factor = 0.05
 		max_command_power = 30
@@ -7941,19 +7941,16 @@ leader_traits = {
 	pc_for_foreign_affairs_molotov = {
 		random = no
 		sprite = 13
-		trade_opinion_factor = 0.10
-		justify_war_goal_time = -0.1
-		fascism_acceptance = 40
+		local_resources_factor = 0.1
+		min_export = -0.05
 	}
 
 	#Litvinov
 	pc_for_foreign_affairs_litvinov = {
 		random = no
 		sprite = 13
-		opinion_gain_monthly_factor = 0.15
-		enemy_justify_war_goal_time = 0.15
-		request_lease_tension = -0.2
-		democratic_acceptance = 40
+		min_export = 0.1
+		resource_trade_cost_bonus_per_factory = 2
 	}
 
 	#Patriarch Sergy
@@ -13160,14 +13157,22 @@ leader_traits = {
 		consumer_goods_factor = 0.05 #yes, this is actually a penalty
 		local_resources_factor = 0.1
 		production_lack_of_resource_penalty_factor = -0.15
-
+		
 		equipment_bonus = {
 			infantry_equipment = {
-				build_cost_ic = -0.05
+				build_cost_ic = -0.1
 				instant = yes
 			}
 			artillery = {
-				build_cost_ic = -0.05
+				build_cost_ic = -0.1
+				instant = yes
+			}
+			anti_tank = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+			anti_air = {
+				build_cost_ic = -0.1
 				instant = yes
 			}
 		}
@@ -13271,11 +13276,11 @@ leader_traits = {
 	GER_reich_minister_of_armaments_speer = { #Speer
 		sprite = 10
 		random = no
-		production_speed_buildings_factor = 0.05
 		fascism_drift = 0.01
 		#global_building_slots = 1
-		industrial_capacity_factory = 0.1
-		industrial_capacity_dockyard = 0.1
+		production_factory_max_efficiency_factor = 0.1
+		consumer_goods_factor = -0.5
+		production_speed_arms_complex_factor = 0.2
 		#MIO research boost or something with AAT?
 	}
 
@@ -13284,9 +13289,7 @@ leader_traits = {
 		random = no
 		#production_speed_bunker_factor = 0.1
 		#production_speed_coastal_bunker_factor = 0.1
-		production_speed_industrial_complex_factor = 0.1
-		production_speed_infrastructure_factor = 0.1
-		production_speed_rail_way_factor = 0.1
+		production_speed_buildings_factor = 0.05
 	}
 
 	GER_reich_minister_of_armaments_todt = { #Todt
@@ -13294,11 +13297,8 @@ leader_traits = {
 		random = no
 		#production_speed_bunker_factor = 0.1
 		#production_speed_coastal_bunker_factor = 0.1
-		production_speed_industrial_complex_factor = 0.1
-		production_speed_infrastructure_factor = 0.1
-		production_speed_rail_way_factor = 0.1
+		production_speed_buildings_factor = 0.1
 		production_speed_arms_factory_factor = 0.1
-		production_speed_dockyard_factor = 0.1
 	}
 
 	GER_overseer_four_year_plan  = { #Göring 
@@ -14878,7 +14878,7 @@ leader_traits = {
 	}
 	marshal_of_vic = { # +15 Offensive efficiency
 		sprite = 7
-		army_attack_factor = 0.15
+		army_attack_factor = 0.1
 		army_defence_factor = 0.05
 		experience_gain_army = @chief_experience_gain_high
 

@@ -21,6 +21,11 @@ state={
 		victory_points = {
 			6710 20 # Detriot
 		}
+		add_state_modifier = {
+    	modifier = {
+        local_building_slots = 24
+    	}
+		}
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 7

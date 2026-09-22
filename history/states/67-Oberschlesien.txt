@@ -8,10 +8,14 @@ state = {
 		coal = 25 # initial distribution / 660 total
 	}
 	
-	state_category = large_city
+	state_category = metropolis
 
 	history = {
-
+		add_state_modifier = {
+    	modifier = {
+        local_building_slots = 12
+    	}
+		}
 		owner = GER
 		add_core_of = GER
 		add_core_of = SIL

@@ -1,3 +1,48 @@
+#real world equivalencies - use these to guide historical templates to maintain parity between countries with similar equipment
+#
+#USE THESE ONLY AS A GUIDE, NOT A HARD RULE. REAL WORLD CAPABILITY IS NOT JUST FROM WEAPON CALIBER, BUT A COMBINATION OF THAT, RANGE, FIRE CONTROL, AMMUNITION QUALITY, ETC. DO NOT GIVE COUNTRIES MODULES THEY DON'T HAVE TECH FOR
+#IN THE STARTING DATE!
+#
+#Engines
+#
+#assign all other necessary modules then try as closely as possible to match real world top speed (at 10-20000 feet, if altitude is specified). Try to respect IRL engine numbers if possible, but prioritize stats
+#
+#Weapons
+#in general, even if they have fixed forward armament, unless a plane is agile and fast enough to be a dogfighter against enemy planes, leave fixed guns off. Use defense turrets instead.
+#rifle caliber machine guns (~7.62mm/.30 cal) fixed forward, for dogfighting other planes = light_mg_x
+#heavy machine guns (~12.7=15mm/.50 cal) fixed forward, for dogfighting other planes = heavy_mg_x
+#~20mm cannon, fixed forward for dogfighting = aircraft_cannon_1
+#~30mm cannon, fixed forward for dogfighting = aircraft_cannon_2
+#~37mmmm cannon, fixed forward for dogfighting = large_aircraft_cannon
+#external light bombs (~250kg) = bomb_locks
+#external heavy bombs 250kg+) = heavy_bomb_locks (also assess if additional regular bomb_locks would be more suitable)
+#light naval bombers and carrier CAS weapons = armor_piercing_bomb_locks (specifcally stronger against ships)
+#wing-mounted air-to-ground rockets = rocket_rails
+#internally carried small/fragmentation bombs ~50=100 kg, one moduleper ~ 1000 kg payload = small_bomb_bay
+#internally carried general purpose ~250kg bombs, one module per ~ 1000 kg payload = medium_bomb_bay
+#dedicated strat bombers only, one module per ~1000 kg payload = large_bomb_bay
+#two ground target focused ~30mm cannons = tank_buster_1
+#two ground target focused ~37mm cannons, or a single 50-75mm weapon = tank_buster_2
+#early air-dropped torpedo = torpedo_mounting (use more modules for heeavier, multi-engine torpedo bombers)
+#middle air-dropped torpedo = torpedo_mounting_2 
+#late air-dropped torpedo = torpedo_mounting_3
+#single rifle caliber machine gun defense turret = lmg_defense_turret (each turret can have multiple guns each IRL, treat that as one turret in most cases, for simplicity)
+#two rifle caliber machine gun turrets = lmg_defense_turret_2x
+#single ~.50 cal defense turret = hmg_defense_turret
+#two ~.50 cal defense turrets = hmg_defense_turret_2x
+#single ~20mm cannon defense turret = cannon_defense_turret
+#two ~20mm cannon defense turrets = cannon_defense_turret_2x
+#
+#armour for cockpit and critical components, fighters and CAS = armor_plate_small
+#internal, exceptionally large fuel capacity = fuel_tanks_small
+#self sealing protection for fuel tanks, fighters and CAS = self_sealing_fuel_tanks_small
+#extensive use of wood instead of metal for construction, fighters and CAS = non_strategic_materials_small
+#jettisonable drop tanks for fuel, fighters and CAS = drop_tanks
+#dedicated dive bombing equipment (stuka-like, not just a fighter with bombs strapped on and no sights, etc) = dive_brakes_small
+#seaplanes = floats
+#medium and large mirror the above, but for their respective aircraft size classes
+#dedicated high altitude bomb aiming equipment for strat bombers = bomb_sights_x
+
 equipment_modules = {
 	limit = {
 		has_dlc = "By Blood Alone"
@@ -11,10 +56,9 @@ equipment_modules = {
 
 		add_stats = {
 			thrust = 11
-			build_cost_ic = 24
+			build_cost_ic = 12
 			fuel_consumption = 0.16
 		}
-		xp_cost = 0
 		
 	}
 
@@ -22,10 +66,10 @@ equipment_modules = {
 		abbreviation = "e12"
 		category = twin_plane_engine_type
 		sfx = sfx_ui_sd_module_engine
-xp_cost = 0
+
 		add_stats = {
 			thrust = 19
-			build_cost_ic = 48
+			build_cost_ic = 24
 			fuel_consumption = 0.32
 		}
 	}
@@ -34,10 +78,10 @@ xp_cost = 0
 		abbreviation = "e13"
 		category = medium_plane_engine_type
 		sfx = sfx_ui_sd_module_engine
-xp_cost = 0
+
 		add_stats = {
 			thrust = 23
-			build_cost_ic = 72
+			build_cost_ic = 36
 			fuel_consumption = 0.48
 		}
 	}
@@ -46,10 +90,10 @@ xp_cost = 0
 		abbreviation = "e14"
 		category = quad_large_plane_engine_type
 		sfx = sfx_ui_sd_module_engine
-xp_cost = 0
+
 		add_stats = {
 			thrust = 32
-			build_cost_ic = 96
+			build_cost_ic = 48
 			fuel_consumption = 0.64
 		}
 	}
@@ -58,10 +102,10 @@ xp_cost = 0
 		abbreviation = "e16"
 		category = large_plane_engine_type
 		sfx = sfx_ui_sd_module_engine
-xp_cost = 0
+
 		add_stats = {
 			thrust = 41
-			build_cost_ic = 136
+			build_cost_ic = 68
 			fuel_consumption = 0.8
 		}
 	}
@@ -71,10 +115,10 @@ xp_cost = 0
 		category = plane_engine_type
 		sfx = sfx_ui_sd_module_engine
 		parent = engine_1_1x
-xp_cost = 0
+
 		add_stats = {
 			thrust = 16
-			build_cost_ic = 30
+			build_cost_ic = 14
 			fuel_consumption = 0.16
 		}
 
@@ -93,10 +137,10 @@ xp_cost = 0
 		category = twin_plane_engine_type
 		sfx = sfx_ui_sd_module_engine
 		parent = engine_1_2x
-xp_cost = 0
+
 		add_stats = {
 			thrust = 25
-			build_cost_ic = 56
+			build_cost_ic = 28
 			fuel_consumption = 0.32
 		}
 
@@ -118,14 +162,14 @@ xp_cost = 0
 
 		add_stats = {
 			thrust = 32
-			build_cost_ic = 84
+			build_cost_ic = 42
 			fuel_consumption = 0.48
 		}
 
 		multiply_stats = {
 			maximum_speed = 0.20
 		}
-xp_cost = 0
+
 		can_convert_from = {
 			module = engine_1_3x
 			convert_cost_ic = 4.5
@@ -140,10 +184,10 @@ xp_cost = 0
 
 		add_stats = {
 			thrust = 40
-			build_cost_ic = 112
+			build_cost_ic = 56
 			fuel_consumption = 0.64
 		}
-xp_cost = 0
+
 		multiply_stats = {
 			maximum_speed = 0.20
 		}
@@ -159,10 +203,10 @@ xp_cost = 0
 		category = large_plane_engine_type
 		sfx = sfx_ui_sd_module_engine
 		parent = engine_1_6x
-xp_cost = 0
+
 		add_stats = {
 			thrust = 56
-			build_cost_ic = 160
+			build_cost_ic = 80
 			fuel_consumption = 0.8
 		}
 
@@ -181,10 +225,10 @@ xp_cost = 0
 		category = plane_engine_type
 		sfx = sfx_ui_sd_module_engine
 		parent = engine_2_1x
-xp_cost = 0
+
 		add_stats = {
 			thrust = 25
-			build_cost_ic = 35
+			build_cost_ic = 16
 			fuel_consumption = 0.16
 		}
 
@@ -206,10 +250,10 @@ xp_cost = 0
 
 		add_stats = {
 			thrust = 38
-			build_cost_ic = 64
+			build_cost_ic = 32
 			fuel_consumption = 0.32
 		}
-xp_cost = 0
+
 		multiply_stats = {
 			maximum_speed = 0.30
 		}
@@ -228,10 +272,10 @@ xp_cost = 0
 
 		add_stats = {
 			thrust = 51
-			build_cost_ic = 96
+			build_cost_ic = 48
 			fuel_consumption = 0.48
 		}
-xp_cost = 0
+
 		multiply_stats = {
 			maximum_speed = 0.30
 		}
@@ -250,10 +294,10 @@ xp_cost = 0
 
 		add_stats = {
 			thrust = 64
-			build_cost_ic = 128
+			build_cost_ic = 64
 			fuel_consumption = 0.64
 		}
-xp_cost = 0
+
 		multiply_stats = {
 			maximum_speed = 0.30
 		}
@@ -272,10 +316,10 @@ xp_cost = 0
 
 		add_stats = {
 			thrust = 90
-			build_cost_ic = 184
+			build_cost_ic = 92
 			fuel_consumption = 0.8
 		}
-xp_cost = 0
+
 		multiply_stats = {
 			maximum_speed = 0.30
 		}
@@ -291,10 +335,10 @@ xp_cost = 0
 		category = plane_engine_type
 		sfx = sfx_ui_sd_module_engine
 		parent = engine_3_1x
-xp_cost = 0
+
 		add_stats = {
 			thrust = 30
-			build_cost_ic = 40
+			build_cost_ic = 18
 			fuel_consumption = 0.16
 		}
 
@@ -313,10 +357,10 @@ xp_cost = 0
 		category = twin_plane_engine_type
 		sfx = sfx_ui_sd_module_engine
 		parent = engine_3_2x
-xp_cost = 0
+
 		add_stats = {
 			thrust = 45
-			build_cost_ic = 72
+			build_cost_ic = 36
 			fuel_consumption = 0.32
 		}
 
@@ -335,10 +379,10 @@ xp_cost = 0
 		category = medium_plane_engine_type
 		sfx = sfx_ui_sd_module_engine
 		parent = engine_3_3x
-xp_cost = 0
+
 		add_stats = {
 			thrust = 60
-			build_cost_ic = 108
+			build_cost_ic = 54
 			fuel_consumption = 0.48
 		}
 
@@ -360,10 +404,10 @@ xp_cost = 0
 
 		add_stats = {
 			thrust = 75
-			build_cost_ic = 144
+			build_cost_ic = 72
 			fuel_consumption = 0.64
 		}
-xp_cost = 0
+
 		multiply_stats = {
 			maximum_speed = 0.45
 		}
@@ -379,10 +423,10 @@ xp_cost = 0
 		category = large_plane_engine_type
 		sfx = sfx_ui_sd_module_engine
 		parent = engine_3_6x
-xp_cost = 0
+
 		add_stats = {
 			thrust = 105
-			build_cost_ic = 216
+			build_cost_ic = 108
 			fuel_consumption = 0.8
 		}
 
@@ -404,10 +448,10 @@ xp_cost = 0
 
 		add_stats = {
 			thrust = 25
-			build_cost_ic = 30
+			build_cost_ic = 14
 			fuel_consumption = 0.3
 		}
-xp_cost = 0
+
 		multiply_stats = {
 			air_range = -0.35
 			maximum_speed = 0.6
@@ -432,10 +476,10 @@ xp_cost = 0
 
 		add_stats = {
 			thrust = 38
-			build_cost_ic = 56
+			build_cost_ic = 28
 			fuel_consumption = 0.6
 		}
-xp_cost = 0
+
 		multiply_stats = {
 			air_range = -0.35
 			maximum_speed = 0.6
@@ -460,10 +504,10 @@ xp_cost = 0
 
 		add_stats = {
 			thrust = 51
-			build_cost_ic = 84
+			build_cost_ic = 42
 			fuel_consumption = 0.9
 		}
-xp_cost = 0
+
 		multiply_stats = {
 			air_range = -0.35
 			maximum_speed = 0.6
@@ -485,10 +529,10 @@ xp_cost = 0
 		category = quad_large_plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
 		parent = engine_4_4x
-xp_cost = 0
+
 		add_stats = {
 			thrust = 64
-			build_cost_ic = 112
+			build_cost_ic = 56
 			fuel_consumption = 1.2
 		}
 
@@ -512,10 +556,10 @@ xp_cost = 0
 		category = large_plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
 		parent = engine_4_6x
-xp_cost = 0
+
 		add_stats = {
 			thrust = 90
-			build_cost_ic = 200
+			build_cost_ic = 100
 			fuel_consumption = 1.8
 		}
 
@@ -539,10 +583,10 @@ xp_cost = 0
 		category = plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
 		parent = jet_engine_1x
-xp_cost = 0
+
 		add_stats = {
 			thrust = 30
-			build_cost_ic = 40
+			build_cost_ic = 20
 			fuel_consumption = 0.4
 		}
 
@@ -567,10 +611,10 @@ xp_cost = 0
 		category = twin_plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
 		parent = jet_engine_2x
-xp_cost = 0
+
 		add_stats = {
 			thrust = 45
-			build_cost_ic = 80
+			build_cost_ic = 40
 			fuel_consumption = 0.8
 		}
 
@@ -595,10 +639,10 @@ xp_cost = 0
 		category = medium_plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
 		parent = jet_engine_3x
-xp_cost = 0
+
 		add_stats = {
 			thrust = 60
-			build_cost_ic = 120
+			build_cost_ic = 60
 			fuel_consumption = 1.2
 		}
 
@@ -623,10 +667,10 @@ xp_cost = 0
 		category = quad_large_plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
 		parent = jet_engine_4x
-xp_cost = 0
+
 		add_stats = {
 			thrust = 75
-			build_cost_ic = 160
+			build_cost_ic = 80
 			fuel_consumption = 1.6
 		}
 
@@ -651,10 +695,10 @@ xp_cost = 0
 		category = large_plane_jet_engine_type
 		sfx = sfx_ui_sd_module_engine
 		parent = jet_engine_6x
-xp_cost = 0
+
 		add_stats = {
 			thrust = 105
-			build_cost_ic = 240
+			build_cost_ic = 120
 			fuel_consumption = 2.4
 		}
 
@@ -678,10 +722,10 @@ xp_cost = 0
 		abbreviation = "re1"
 		category = plane_rocket_engine_type
 		sfx = sfx_ui_sd_module_engine
-xp_cost = 0
+
 		add_stats = {
 			thrust = 20
-			build_cost_ic = 20
+			build_cost_ic = 12
 
 		}
 		multiply_stats = {
@@ -707,10 +751,10 @@ xp_cost = 0
 		abbreviation = "re2"
 		category = plane_rocket_engine_type
 		sfx = sfx_ui_sd_module_engine
-xp_cost = 0
+
 		add_stats = {
 			thrust = 25
-			build_cost_ic = 25
+			build_cost_ic = 13
 		}
 		multiply_stats = {
 			air_range = -0.65
@@ -735,11 +779,11 @@ xp_cost = 0
 		abbreviation = "re3"
 		category = plane_rocket_engine_type
 		sfx = sfx_ui_sd_module_engine
-xp_cost = 0
+
 		add_stats = {
 
 			thrust = 30
-			build_cost_ic = 30
+			build_cost_ic = 14
 		}
 		multiply_stats = {
 			air_range = -0.6
@@ -775,24 +819,17 @@ xp_cost = 0
 		add_equipment_type = { fighter heavy_fighter }
 
 		add_stats = {
-			weight = 1
+			air_attack = 5
 			build_cost_ic = 1
+			weight = 1
 		}
-		xp_cost = 0
+		
 		allow_mission_type = {
 			air_superiority
 			interception
 		}
-		mission_type_stats = {
-		limit = {
-			air_superiority
-			interception
-			}
-		add_stats = {	
-				air_attack = 6
-			}
-		}
 	}
+
 	light_mg_4x = {
 		abbreviation = "lmg4"
 		category = fighter_weapon
@@ -800,22 +837,15 @@ xp_cost = 0
 		add_equipment_type = { fighter heavy_fighter }
 
 		add_stats = {
-			build_cost_ic = 2
+			air_attack = 10
+			build_cost_ic = 2.2
 			weight = 2
+			reliability = -0.025
 		}
-		xp_cost = 0
+		
 		allow_mission_type = {
 			air_superiority
 			interception
-		}
-				mission_type_stats = {
-			limit = {
-			air_superiority
-			interception
-			}
-			add_stats = {	
-				air_attack = 8
-			}
 		}
 		can_convert_from = {
 			module = light_mg_2x
@@ -830,24 +860,17 @@ xp_cost = 0
 		add_equipment_type = { fighter heavy_fighter }
 
 		add_stats = {
-			build_cost_ic = 1.5
+			air_attack = 9
+			build_cost_ic = 1.8
 			weight = 2.5
 		}
-		xp_cost = 0
+		
 		allow_mission_type = {
 			air_superiority
 			interception
 		}
-		mission_type_stats = {
-			limit = {
-			air_superiority
-			interception
-			}
-			add_stats = {	
-				air_attack = 10
-			}
-		}
 	}
+
 	heavy_mg_4x = {
 		abbreviation = "hmg4"
 		category = fighter_weapon
@@ -855,21 +878,22 @@ xp_cost = 0
 		add_equipment_type = { fighter heavy_fighter }
 
 		add_stats = {
-			build_cost_ic = 3
+			air_attack = 18
+			build_cost_ic = 3.9
 			weight = 5
+			reliability = -0.025
 		}
-		xp_cost = 0
+		
 		allow_mission_type = {
 			air_superiority
 			interception
 		}
 		mission_type_stats = {
 			limit = {
-			air_superiority
-			interception
+				attack_logistics
 			}
 			add_stats = {
-			air_attack = 12
+				air_ground_attack = 1
 			}
 		}
 		can_convert_from = {
@@ -885,23 +909,15 @@ xp_cost = 0
 		add_equipment_type = { fighter heavy_fighter }
 
 		add_stats = {
+			air_attack = 10
 			build_cost_ic = 2.5
 			air_agility = -1
 			weight = 3
 		}
-		xp_cost = 0
+		
 		allow_mission_type = {
 			air_superiority
 			interception
-		}
-		mission_type_stats = {
-			limit = {
-			air_superiority
-			interception
-			}
-			add_stats = {	
-				air_attack = 10
-			}
 		}
 	}
 
@@ -912,22 +928,22 @@ xp_cost = 0
 		add_equipment_type = { fighter heavy_fighter }
 
 		add_stats = {
+			air_attack = 20
 			build_cost_ic = 5
 			air_agility = -2
 			weight = 6
 		}
-		xp_cost = 0
+		
 		allow_mission_type = {
 			air_superiority
 			interception
 		}
 		mission_type_stats = {
 			limit = {
-			air_superiority
-			interception
+				attack_logistics
 			}
 			add_stats = {
-				air_attack = 20
+				air_ground_attack = 2
 			}
 		}
 		can_convert_from = {
@@ -943,25 +959,15 @@ xp_cost = 0
 		parent = aircraft_cannon_1_1x
 		add_equipment_type = { fighter heavy_fighter }
 		add_stats = {
+			air_attack = 12
 			build_cost_ic = 3
 			air_agility = -0.5
 			weight = 3
 		}
-		xp_cost = 0
-
-			allow_mission_type = {
-				air_superiority
-				interception
-			}
-				mission_type_stats = {
-			limit = {
+		
+		allow_mission_type = {
 			air_superiority
 			interception
-			}
-	
-			add_stats = {	
-				air_attack = 12
-			}
 		}
 	}
 
@@ -972,22 +978,22 @@ xp_cost = 0
 		parent = aircraft_cannon_1_2x
 		add_equipment_type = { fighter heavy_fighter }
 		add_stats = {
+			air_attack = 24
 			build_cost_ic = 6
 			air_agility = -1
 			weight = 6
 		}
-		xp_cost = 0
+		
 		allow_mission_type = {
 			air_superiority
 			interception
 		}
 		mission_type_stats = {
 			limit = {
-			air_superiority
-			interception
+				attack_logistics
 			}
-			add_stats = {	
-				air_attack = 24
+			add_stats = {
+				air_ground_attack = 2
 			}
 		}
 		can_convert_from = {
@@ -1003,23 +1009,15 @@ xp_cost = 0
 		parent = aircraft_cannon_1_1x
 		add_equipment_type = { fighter heavy_fighter }
 		add_stats = {
+			air_attack = 12
 			build_cost_ic = 3
 			air_agility = -2
 			weight = 4
 		}
-		xp_cost = 0
+		
 		allow_mission_type = {
-				air_superiority
-				interception
-				}
-					mission_type_stats = {
-			limit = {
 			air_superiority
 			interception
-			}
-			add_stats = {	
-				air_attack = 12
-			}
 		}
 	}
 
@@ -1030,22 +1028,22 @@ xp_cost = 0
 		parent = aircraft_cannon_1_2x
 		add_equipment_type = { fighter heavy_fighter }
 		add_stats = {
+			air_attack = 24
 			build_cost_ic = 6
 			air_agility = -4
 			weight = 8
 		}
-		xp_cost = 0
+		
 		allow_mission_type = {
 			air_superiority
 			interception
 		}
 		mission_type_stats = {
 			limit = {
-				air_superiority
-				interception
+				attack_logistics
 			}
-			add_stats = {	
-				air_attack = 24
+			add_stats = {
+				air_ground_attack = 2
 			}
 		}
 		can_convert_from = {
@@ -1063,7 +1061,7 @@ xp_cost = 0
 		add_stats = {
 			build_cost_ic = 1
 		}
-		xp_cost = 0
+		
 		allow_mission_type = {
 			cas
 			attack_logistics
@@ -1105,7 +1103,7 @@ xp_cost = 0
 		add_stats = {
 			build_cost_ic = 1
 		}
-		xp_cost = 0
+		
 		allow_mission_type = {
 			cas
 			attack_logistics
@@ -1147,7 +1145,7 @@ xp_cost = 0
 		add_stats = {
 			build_cost_ic = 1
 		}
-		xp_cost = 0
+		
 		allow_mission_type = {
 			cas
 			attack_logistics
@@ -1189,7 +1187,7 @@ xp_cost = 0
 		add_stats = {
 			build_cost_ic = 1
 		}
-		xp_cost = 0
+		
 		allow_mission_type = {
 			cas
 			attack_logistics
@@ -1218,7 +1216,7 @@ xp_cost = 0
 			weight = 2
 			
 		}
-		xp_cost = 0
+		
 		allow_mission_type = {
 			cas
 			attack_logistics
@@ -1261,7 +1259,7 @@ xp_cost = 0
 			build_cost_ic = 6
 			weight = 1
 		}
-		xp_cost = 0
+		
 		allow_mission_type = {
 			cas
 			attack_logistics
@@ -1313,7 +1311,7 @@ xp_cost = 0
 			air_agility = -15
 			weight = 2
 		}
-		xp_cost = 0
+		
 		allow_mission_type = {
 			strategic_bomber
 			port_strike
@@ -1346,12 +1344,12 @@ xp_cost = 0
 		add_equipment_type = cas
 
 		add_stats = {
-			air_ground_attack = 22
+			air_ground_attack = 8
 			build_cost_ic = 5
 			weight = 8
 			air_agility = -15
 		}
-		xp_cost = 0
+		
 		allow_mission_type = {
 			cas
 			attack_logistics
@@ -1366,12 +1364,12 @@ xp_cost = 0
 		add_equipment_type = cas
 
 		add_stats = {
-			air_ground_attack = 30
+			air_ground_attack = 15
 			build_cost_ic = 8
 			weight = 12
 			air_agility = -20
 		}
-		xp_cost = 0
+		
 		allow_mission_type = {
 			cas
 			attack_logistics
@@ -1388,7 +1386,7 @@ xp_cost = 0
 		add_stats = {
 			build_cost_ic = 4
 		}
-		xp_cost = 0
+		
 		allow_mission_type = {
 			naval_bomber
 			port_strike
@@ -1414,13 +1412,14 @@ xp_cost = 0
 	torpedo_mounting_2 = {
 		abbreviation = "tpm"
 		category = nav_bomber_weapon
+		parent = torpedo_mounting
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { naval_bomber maritime_patrol_plane }
 
 		add_stats = {
 			build_cost_ic = 4
 		}
-		xp_cost = 0
+		
 		allow_mission_type = {
 			naval_bomber
 			port_strike
@@ -1446,13 +1445,14 @@ xp_cost = 0
 	torpedo_mounting_3 = {
 		abbreviation = "tpm"
 		category = nav_bomber_weapon
+		parent = torpedo_mounting_2
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { naval_bomber maritime_patrol_plane }
 
 		add_stats = {
 			build_cost_ic = 4
 		}
-		xp_cost = 0
+		
 		allow_mission_type = {
 			naval_bomber
 			port_strike
@@ -1492,7 +1492,7 @@ xp_cost = 0
 			build_cost_ic = 1
 			weight = 1
 		}
-		xp_cost = 0
+		
 		allow_mission_type = {
 			recon
 		}
@@ -1506,8 +1506,9 @@ xp_cost = 0
 		add_stats = {
 			build_cost_ic = 2
 			weight = 2
+			mines_planting = 0.05
 		}
-		xp_cost = 0
+		
 		allow_mission_type = {
 			naval_mines_planting
 		}
@@ -1516,13 +1517,14 @@ xp_cost = 0
 	guided_anti_ship_missile = {
 		abbreviation = "asm"
 		category = nav_bomber_weapon
+		parent = torpedo_mounting_3
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { naval_bomber maritime_patrol_plane }
 
 		add_stats = {	
 			build_cost_ic = 15
 		}
-		xp_cost = 5
+		
 		allow_mission_type = {
 			naval_bomber
 			port_strike
@@ -1556,7 +1558,7 @@ xp_cost = 0
 			air_agility = -10
 			air_defence = -5
 		}
-		xp_cost = 5
+		
 		allow_mission_type = {
 			naval_kamikaze
 		}
@@ -1584,7 +1586,7 @@ xp_cost = 0
 			build_cost_ic = 9
 			weight = 1
 		}
-		xp_cost = 0
+		
 		allow_mission_type = {
 			strategic_bomber
 			port_strike
@@ -1626,7 +1628,7 @@ xp_cost = 0
 			air_agility = -15
 			air_defence = 2
 		}
-		xp_cost = 0
+		
 		allow_mission_type = {
 			strategic_bomber
 			port_strike
@@ -1646,7 +1648,7 @@ xp_cost = 0
 			}
 			add_stats = {
 				naval_strike_attack = 12
-				weight = 2
+				weight = 12
 			}
 		}
 		dismantle_cost_ic = 12
@@ -1663,7 +1665,7 @@ xp_cost = 0
 			air_agility = -18
 			air_defence = 2
 		}
-		xp_cost = 0
+		
 		allow_mission_type = {
 			strategic_bomber
 			port_strike
@@ -1713,7 +1715,7 @@ xp_cost = 0
 		multiply_stats = {
 			air_range = -0.1
 		}
-		xp_cost = 0
+		
 		dismantle_cost_ic = 0.5
 	}
 
@@ -1731,7 +1733,7 @@ xp_cost = 0
 		multiply_stats = {
 			air_range = 0.5
 		}
-		xp_cost = 0
+		
 		dismantle_cost_ic = 0.5
 	}
 
@@ -1748,7 +1750,7 @@ xp_cost = 0
 		build_cost_resources = {
 			rubber = 1
 		}
-		xp_cost = 0
+		
 		dismantle_cost_ic = 0.5
 	}
 
@@ -1758,10 +1760,10 @@ xp_cost = 0
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			air_defence = -6
 			build_cost_ic = 0
 		}
 		multiply_stats = {
+			air_defence = -0.25
 			build_cost_ic = -0.075
 		}
 		build_cost_resources = {
@@ -1771,25 +1773,9 @@ xp_cost = 0
 		dismantle_cost_resources = {
 			aluminium = 2
 		}
-		xp_cost = 0
+		
 	}
-	low_al = {
-		abbreviation = "lal"
-		category = plane_special_module_small
-		sfx = sfx_ui_sd_module_turret
 
-		multiply_stats = {
-			air_defence  = -0.1
-		}
-		build_cost_resources = {
-			aluminium = -1
-		}
-		dismantle_cost_ic = 7
-		dismantle_cost_resources = {
-			aluminium = 1
-		}
-		xp_cost = 0
-	}
 	drop_tanks = {
 		abbreviation = "dpt"
 		category = plane_special_module_small
@@ -1803,7 +1789,7 @@ xp_cost = 0
 		multiply_stats = {
 			air_range = 0.25
 		}
-		xp_cost = 0
+		
 	}
 
 	dive_brakes_small = {
@@ -1832,7 +1818,7 @@ xp_cost = 0
 			}
 		}
 		dismantle_cost_ic = 2 #you essentially have to redesign part of the wing
-		xp_cost = 0
+		
 	}
 
 	floats = { 
@@ -1851,7 +1837,7 @@ xp_cost = 0
 			maximum_speed = -0.3
 		}
 		dismantle_cost_ic = 2.5
-		xp_cost = 0
+		
 	}
 
  ######  ########  ########  ######  ####    ###    ##          ##     ##  #######  ########  ##     ## ##       ########  ######                ##     ## ######## ########  #### ##     ## ##     ## 
@@ -1875,7 +1861,7 @@ xp_cost = 0
 		multiply_stats = {
 			air_range = -0.1
 		}
-		xp_cost = 0
+		
 		dismantle_cost_ic = 1
 	}
 
@@ -1892,7 +1878,7 @@ xp_cost = 0
 		multiply_stats = {
 			air_range = 0.5
 		}
-		xp_cost = 0
+		
 		dismantle_cost_ic = 1
 	}
 
@@ -1910,7 +1896,7 @@ xp_cost = 0
 			rubber = 2
 		}
 		dismantle_cost_ic = 1
-		xp_cost = 0
+		
 	}
 
 	non_strategic_materials_medium = {
@@ -1929,7 +1915,7 @@ xp_cost = 0
 		build_cost_resources = {
 			aluminium = -2
 		}
-		xp_cost = 0
+		
 		dismantle_cost_ic = 12
 		dismantle_cost_resources = {
 			aluminium = 2
@@ -1950,7 +1936,7 @@ xp_cost = 0
 			maximum_speed = -0.4
 		}
 		dismantle_cost_ic = 2
-		xp_cost = 0
+		
 	}
 
 	demining_coil = {
@@ -1962,8 +1948,9 @@ xp_cost = 0
 			build_cost_ic = 3
 			weight = 20
 			air_agility = -5
+			mines_sweeping = 0.1
 		}
-		xp_cost = 0
+		
 		allow_mission_type = {
 			naval_mines_sweeping
 		}
@@ -1991,7 +1978,7 @@ xp_cost = 0
 		multiply_stats = {
 			air_range = -0.1
 		}
-		xp_cost = 0
+		
 		dismantle_cost_ic = 1
 	}
 
@@ -2008,7 +1995,7 @@ xp_cost = 0
 		multiply_stats = {
 			air_range = 0.50
 		}
-		xp_cost = 0
+		
 		dismantle_cost_ic = 1.5
 	}
 
@@ -2026,7 +2013,7 @@ xp_cost = 0
 			rubber = 2
 		}
 		dismantle_cost_ic = 1.5
-		xp_cost = 0
+		
 	}
 
 	non_strategic_materials_large = {
@@ -2049,7 +2036,7 @@ xp_cost = 0
 		dismantle_cost_resources = {
 			aluminium = 3
 		}
-		xp_cost = 0
+		
 	}
 
 	flying_boat_large = { 
@@ -2065,7 +2052,7 @@ xp_cost = 0
 		multiply_stats = {
 			maximum_speed = -0.4
 		}
-		xp_cost = 0
+		
 		dismantle_cost_ic = 5
 	}
 
@@ -2089,7 +2076,7 @@ xp_cost = 0
 			build_cost_ic = 1.5
 			weight = 1
 		}
-		xp_cost = 0
+		
 	}
 
 	bomb_sights_2 = {
@@ -2104,7 +2091,7 @@ xp_cost = 0
 			build_cost_ic = 2
 			weight = 1
 		}
-		xp_cost = 0
+		
 	}
 
 	radio_navigation_1 = {
@@ -2119,7 +2106,7 @@ xp_cost = 0
 			weight = 1
 			night_penalty = -0.1
 		}
-		xp_cost = 0
+		
 	}
 
 	radio_navigation_2 = {
@@ -2135,7 +2122,7 @@ xp_cost = 0
 			weight = 1
 			night_penalty = -0.2
 		}
-		xp_cost = 0
+		
 	}
 
 	air_ground_radar_1 = {
@@ -2163,7 +2150,7 @@ xp_cost = 0
 				sub_detection = 5
 			}
 		}
-		xp_cost = 0
+		
 	}
 
 	air_ground_radar_2 = {
@@ -2192,7 +2179,7 @@ xp_cost = 0
 				sub_detection = 10
 			}
 		}
-		xp_cost = 0
+		
 	}
 
 	air_air_radar_1 = {
@@ -2213,7 +2200,7 @@ xp_cost = 0
 				night_penalty = -0.2
 			}
 		}
-		xp_cost = 0
+		
 	}
 
 	air_air_radar_2 = {
@@ -2235,7 +2222,7 @@ xp_cost = 0
 				night_penalty = -0.4
 			}
 		}
-		xp_cost = 0
+		
 	}
 
 ########  ######## ######## ######## ##    ##  ######  #### ##     ## ########    ######## ##     ## ########  ########  ######## ########  ######  
@@ -2291,7 +2278,7 @@ xp_cost = 0
 			module = cannon_defense_turret
 			convert_cost_ic = 1
 		}
-		xp_cost = 0
+		
 	}
 
 	lmg_defense_turret_2x = {
@@ -2340,7 +2327,7 @@ xp_cost = 0
 			module = cannon_defense_turret_2x
 			convert_cost_ic = 2.25
 		}
-		xp_cost = 0
+		
 	}
 
 	hmg_defense_turret = {
@@ -2388,7 +2375,7 @@ xp_cost = 0
 			module = cannon_defense_turret
 			convert_cost_ic = 2
 		}
-		xp_cost = 0
+		
 	}
 
 	hmg_defense_turret_2x = {
@@ -2436,7 +2423,7 @@ xp_cost = 0
 			module = cannon_defense_turret_2x
 			convert_cost_ic = 3
 		}
-		xp_cost = 0
+		
 	}
 
 	cannon_defense_turret = {
@@ -2480,7 +2467,7 @@ xp_cost = 0
 			module = hmg_defense_turret
 			convert_cost_ic = 2.5
 		}
-		xp_cost = 0
+		
 	}
 
 	cannon_defense_turret_2x = {
@@ -2524,7 +2511,7 @@ xp_cost = 0
 			module = hmg_defense_turret_2x
 			convert_cost_ic = 5
 		}
-		xp_cost = 0
+		
 	}
 
 }

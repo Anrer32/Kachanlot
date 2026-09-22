@@ -2843,6 +2843,7 @@
 		available_if_capitulated = yes
 
 		available = {
+			has_tech = paratroopers
 			NOT = {
 			any_enemy_country = {
 			controls_state = 1
@@ -2858,15 +2859,8 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 		set_country_flag = para_inrease_2
-		if = {
-			limit ={
-			has_tech = paras_keystone_2
-			}
-			set_division_template_cap = {  division_template = "Paratroopers" division_cap = 4 }
-		}
-		else = {
-			set_division_template_cap = {  division_template = "Paratroopers" division_cap = 3 }
-		}
+		add_to_variable = {para_limit = 2}
+		set_division_template_cap = {  division_template = "Paratroopers" division_cap = para_limit }
 		add_ideas = FRA_para
 		}
 	}	

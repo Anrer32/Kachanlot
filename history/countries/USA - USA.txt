@@ -294,11 +294,6 @@ if = {
 		state = 361 
 	}
 
-	complete_special_project = {
-		project = sp:sp_air_radar
-		scientist = USA_vannevar_bush
-		state = 386
-	}
 
 	IF = {
 		limit = {

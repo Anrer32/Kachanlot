@@ -72,6 +72,7 @@ equipments = {
 				allowed_module_categories = {
 					recon_camera
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
 					kamikaze_bomber_weapon
 				}
@@ -123,10 +124,7 @@ equipments = {
 			module = self_sealing_fuel_tanks_small
 			count < 2
 		}
-module_count_limit = {
-			module = low_al
-			count < 2
-		}
+
 		module_count_limit = {
 			module = non_strategic_materials_small
 			count < 2
@@ -266,6 +264,7 @@ module_count_limit = {
 				allowed_module_categories = {
 					recon_camera
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
 					kamikaze_bomber_weapon
@@ -342,6 +341,7 @@ module_count_limit = {
 				allowed_module_categories = {
 					recon_camera
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
 					kamikaze_bomber_weapon
@@ -352,6 +352,7 @@ module_count_limit = {
 				allowed_module_categories = {
 					recon_camera
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
 					kamikaze_bomber_weapon
@@ -416,7 +417,7 @@ module_count_limit = {
 		parent = small_plane_airframe_2
 		priority = 5
 
-		air_range = 1000
+		air_range = 750
 		maximum_speed = 475
 		air_agility = 50
 		air_defence = 12
@@ -444,6 +445,7 @@ module_count_limit = {
 				allowed_module_categories = {
 					recon_camera
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
 					kamikaze_bomber_weapon
@@ -454,6 +456,7 @@ module_count_limit = {
 				allowed_module_categories = {
 					recon_camera
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
 					kamikaze_bomber_weapon
@@ -464,6 +467,7 @@ module_count_limit = {
 				required = no
 				allowed_module_categories = {
 					recon_camera
+					cas_weapon
 				}
 			}
 
@@ -536,7 +540,7 @@ module_count_limit = {
 		parent = small_plane_airframe_3
 		priority = 5
 
-		air_range = 1400
+		air_range = 900
 		maximum_speed = 500
 		air_agility = 55
 		air_defence = 18
@@ -564,6 +568,7 @@ module_count_limit = {
 				allowed_module_categories = {
 					recon_camera
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
 					kamikaze_bomber_weapon
@@ -574,6 +579,7 @@ module_count_limit = {
 				allowed_module_categories = {
 					recon_camera
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
 					kamikaze_bomber_weapon
@@ -584,6 +590,7 @@ module_count_limit = {
 				allowed_module_categories = {
 					recon_camera
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
 					kamikaze_bomber_weapon
@@ -659,7 +666,7 @@ module_count_limit = {
 		parent = small_plane_airframe_4
 		priority = 5
 
-		air_range = 1800
+		air_range = 1400
 		maximum_speed = 900
 		air_agility = 65
 		air_defence = 25
@@ -687,6 +694,7 @@ module_count_limit = {
 				allowed_module_categories = {
 					recon_camera
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
 					kamikaze_bomber_weapon
@@ -697,6 +705,7 @@ module_count_limit = {
 				allowed_module_categories = {
 					recon_camera
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
 					kamikaze_bomber_weapon
@@ -707,6 +716,7 @@ module_count_limit = {
 				allowed_module_categories = {
 					recon_camera
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
 					kamikaze_bomber_weapon
@@ -718,6 +728,7 @@ module_count_limit = {
 				allowed_module_categories = {
 					recon_camera
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
 					kamikaze_bomber_weapon
@@ -861,6 +872,7 @@ module_count_limit = {
 				allowed_module_categories = {
 					recon_camera
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
 					kamikaze_bomber_weapon
 				}
@@ -1055,6 +1067,7 @@ module_count_limit = {
 				allowed_module_categories = {
 					recon_camera
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
 					kamikaze_bomber_weapon
 				}
@@ -1130,6 +1143,7 @@ module_count_limit = {
 				allowed_module_categories = {
 					recon_camera
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
 					kamikaze_bomber_weapon
@@ -1140,6 +1154,7 @@ module_count_limit = {
 				allowed_module_categories = {
 					recon_camera
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
 					kamikaze_bomber_weapon
@@ -1203,7 +1218,7 @@ module_count_limit = {
 		parent = cv_small_plane_airframe_2
 		priority = 5
 
-		air_range = 1000
+		air_range = 750
 		maximum_speed = 475
 		air_agility = 45
 		air_defence = 12
@@ -1231,6 +1246,7 @@ module_count_limit = {
 				allowed_module_categories = {
 					recon_camera
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
 					kamikaze_bomber_weapon
@@ -1241,6 +1257,7 @@ module_count_limit = {
 				allowed_module_categories = {
 					recon_camera
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
 					kamikaze_bomber_weapon
@@ -1251,6 +1268,7 @@ module_count_limit = {
 				required = no
 				allowed_module_categories = {
 					recon_camera
+					cas_weapon
 				}
 			}
 
@@ -1309,7 +1327,7 @@ module_count_limit = {
 		parent = cv_small_plane_airframe_3
 		priority = 5
 
-		air_range = 1600
+		air_range = 900
 		maximum_speed = 500
 		air_agility = 50
 		air_defence = 18
@@ -1337,6 +1355,7 @@ module_count_limit = {
 				allowed_module_categories = {
 					recon_camera
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
 					kamikaze_bomber_weapon
@@ -1347,6 +1366,7 @@ module_count_limit = {
 				allowed_module_categories = {
 					recon_camera
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
 					kamikaze_bomber_weapon
@@ -1357,6 +1377,7 @@ module_count_limit = {
 				allowed_module_categories = {
 					recon_camera
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
 					kamikaze_bomber_weapon
@@ -1486,7 +1507,9 @@ module_count_limit = {
 				allowed_module_categories = {
 					mine_warfare_offense
 					recon_camera
+					tac_weapon
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
 				}
 			}
@@ -1495,7 +1518,9 @@ module_count_limit = {
 				allowed_module_categories = {
 					mine_warfare_offense
 					recon_camera
+					tac_weapon
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
 				}
 			}
@@ -1615,10 +1640,7 @@ module_count_limit = {
 			module = medium_bomb_bay
 			count < 3
 		}
-module_count_limit = {
-			module = low_al
-			count < 2
-		}
+
 		module_count_limit = {
 			module = demining_coil
 			count < 2
@@ -1729,7 +1751,9 @@ module_count_limit = {
 				required = no
 				allowed_module_categories = {
 					recon_camera
+					tac_weapon
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
 				}
@@ -1738,7 +1762,9 @@ module_count_limit = {
 				required = no
 				allowed_module_categories = {
 					recon_camera
+					tac_weapon
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
 				}
@@ -1856,7 +1882,9 @@ module_count_limit = {
 				required = no
 				allowed_module_categories = {
 					recon_camera
+					tac_weapon
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
 				}
@@ -1865,7 +1893,9 @@ module_count_limit = {
 				required = no
 				allowed_module_categories = {
 					recon_camera
+					tac_weapon
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
 				}
@@ -1963,7 +1993,7 @@ module_count_limit = {
 		parent = medium_plane_airframe_2
 		priority = 5
 
-		air_range = 2000
+		air_range = 1300
 		maximum_speed = 425
 		air_agility = 40
 		air_defence = 24
@@ -2001,6 +2031,8 @@ module_count_limit = {
 				allowed_module_categories = {
 					recon_camera
 					fighter_weapon
+					tac_weapon
+					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
 				}
@@ -2010,6 +2042,8 @@ module_count_limit = {
 				allowed_module_categories = {
 					recon_camera
 					fighter_weapon
+					tac_weapon
+					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
 				}
@@ -2020,6 +2054,8 @@ module_count_limit = {
 				allowed_module_categories = {
 					recon_camera
 					fighter_weapon
+					tac_weapon
+					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
 				}
@@ -2117,7 +2153,7 @@ module_count_limit = {
 		parent = medium_plane_airframe_3
 		priority = 5
 
-		air_range = 2500
+		air_range = 1500
 		maximum_speed = 500
 		air_agility = 45
 		air_defence = 24
@@ -2155,7 +2191,9 @@ module_count_limit = {
 				allowed_module_categories = {
 					recon_camera
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
+					tac_weapon
 					mine_warfare_offense
 				}
 			}
@@ -2164,7 +2202,9 @@ module_count_limit = {
 				allowed_module_categories = {
 					recon_camera
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
+					tac_weapon
 					mine_warfare_offense
 				}
 			}
@@ -2174,7 +2214,9 @@ module_count_limit = {
 				allowed_module_categories = {
 					recon_camera
 					fighter_weapon
+					cas_weapon
 					nav_bomber_weapon
+					tac_weapon
 					mine_warfare_offense
 				}
 			}
@@ -2459,10 +2501,7 @@ module_count_limit = {
 			module = demining_coil
 			count < 2
 		}
-module_count_limit = {
-			module = low_al
-			count < 2
-		}
+
 		module_count_limit = {
 			module = torpedo_mounting
 			count < 4

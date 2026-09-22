@@ -175,7 +175,7 @@ mountaineers_2 = {
 			artillery = {
 				battalion_mult = {
 					category = category_mountaineers
-					breakthrough = 0.15
+					breakthrough = 0.1
 				}
 			}		
 			rangers_support = {
@@ -195,7 +195,7 @@ mountaineers_2 = {
 		}
 		reward_5 = {
 			mastery = 60
-			special_forces_attack_factor = 0.1
+			special_forces_attack_factor = 0.04
 		}
     }
 }
@@ -415,7 +415,7 @@ marines_2 = {
 		}
 		reward_5 = {
 			mastery = 60
-			special_forces_attack_factor = 0.10
+			special_forces_attack_factor = 0.04
 		}
     }
 }
@@ -653,8 +653,8 @@ rangers_1 = {
 	    ranger_battalion = {
 			acclimatization_cold_climate_gain_factor = 0.25
 			forest = {
-				attack = 0.1
-				defence = 0.1
+				attack = 0.05
+				defence = 0.05
 				movement = 0.05
 			}
 		}
@@ -780,11 +780,6 @@ rangers_2 = {
 					defence = 0.05
 					movement = 0.05
 				}
-				forest = {
-					attack = 0.05
-					defence = 0.05
-					movement = 0.05
-				}
 			}
 		}
 		reward_2 = {
@@ -809,7 +804,7 @@ rangers_2 = {
 		}
 		reward_5 = {
 			mastery = 60
-			special_forces_attack_factor = 0.1
+			special_forces_attack_factor = 0.04
 		}
     }
 }
