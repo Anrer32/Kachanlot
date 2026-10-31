@@ -10281,7 +10281,113 @@ focus = {
 			}
 		}
 	}
+	focus = { #All related content and local will be in Czech related files and local locations
+		id = GER_integrate_czech_manufacturers
+		icon = GFX_focus_PER_czech_tanks
+		prerequisite = { focus = GER_integrate_czechoslovakia  focus = GER_fate_of_czechoslovakia }
 
+		x = -3
+		y = 1
+		relative_position_id = GER_fate_of_czechoslovakia
+		cost = 5
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				is_historical_focus_on = no
+				add = 1
+			}
+		}
+
+		allow_branch = {
+			has_dlc = "Peace For Our Time"
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = {
+					has_completed_focus = GER_oppose_hitler
+					has_completed_focus = GER_oppose_hitler_ww
+				}
+			}
+		}
+
+		available = {
+			9 = {
+				state_is_fully_controlled_by_ROOT_or_subject = yes
+			}
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			GER_modify_industrial_modifier = yes
+			add_to_variable = { 
+				GER_industrial_equipment_conversion_speed = 0.05
+				tooltip = equipment_conversion_speed_tt
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			if = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				unlock_military_industrial_organization_tooltip = mio:CZE_skoda_works_german_organization
+				mio:CZE_skoda_works_german_organization = {
+					add_mio_size = 2
+					add_mio_funds_gain_factor = 0.25
+				}
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+
+				unlock_military_industrial_organization_tooltip = mio:CZE_ceska_zbrojovka_uhersky_brod_organization
+				mio:CZE_ceska_zbrojovka_uhersky_brod_organization = {
+					add_mio_size = 2
+					add_mio_funds_gain_factor = 0.25
+				}
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+
+				unlock_military_industrial_organization_tooltip = mio:CZE_bohmische_mahrische_maschinenfabrik_ag_german_organization
+				mio:CZE_bohmische_mahrische_maschinenfabrik_ag_german_organization = {
+					add_mio_size = 2
+					add_mio_funds_gain_factor = 0.25
+				}
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+
+				unlock_military_industrial_organization_tooltip = mio:CZE_avia_german_organization
+				mio:CZE_avia_german_organization = {
+					add_mio_size = 2
+					add_mio_funds_gain_factor = 0.25
+				}
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+
+				add_timed_idea = { idea = CZE_integrate_czech_manufacturers_GER_idea_aat days = 180 }
+			}
+			else = {
+				custom_effect_tooltip = GER_integrate_czech_manufacturers_no_aat_tt
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+
+				# custom_effect_tooltip = available_industrial_concern
+				# show_ideas_tooltip = CZE_skoda_works_german_manufacturer
+				# custom_effect_tooltip = available_industrial_concern
+				# show_ideas_tooltip = CZE_ceska_zbrojovka_uhersky_brod
+				# custom_effect_tooltip = available_industrial_concern
+				# show_ideas_tooltip = CZE_zlin_aircraft
+				# custom_effect_tooltip = available_industrial_concern
+				# show_ideas_tooltip = CZE_bohmische_mahrische_maschinenfabrik_ag_german_manufacturer
+
+				add_timed_idea = { idea = CZE_integrate_czech_manufacturers_GER_idea_no_aat days = 180 }
+			}
+		}
+	}
 	focus = {
 		id = GER_demonstration_of_military_achievements
 		icon = GFX_focus_GER_demonstration_of_military_achievements
@@ -10506,7 +10612,52 @@ focus = {
 		}
 	}
 
+focus = {
+		id = GER_support_a_coup_in_liechtenstein
+		icon = GFX_focus_generic_liechtenstein_coa
+		prerequisite = { focus = GER_anschluss }
 
+		x = 8
+		y = 1
+		relative_position_id = GER_anschluss
+		cost = 5
+
+		available = {
+			is_subject = no
+			AUS = {
+				all_core_state = {
+					is_owned_and_controlled_by = ROOT
+				}
+			}
+			has_full_control_of_state = 848
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			add_victory_points = {
+				province = 6680
+				value = 1
+			}
+			848 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					controls_province = 9655
+				}
+				build_railway = { #Lietchenstein connected to Supply depot West of München
+					level = 2
+					path = { 6680 9655 }
+				}
+			}
+		}
+	}
 
 	focus = {
 		id = GER_reassert_eastern_claims

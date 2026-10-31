@@ -6221,8 +6221,10 @@ ideas = {
 			picture = PLACEHOLDER_idea_icon
 			
 			modifier = {
-				production_speed_industrial_complex_factor = 0.05
-				production_speed_infrastructure_factor = 0.05
+				production_speed_industrial_complex_factor = 0.025
+				production_speed_infrastructure_factor = 0.025
+				industrial_capacity_factory = 0.02
+				industrial_capacity_dockyard = 0.02
 				economy_cost_factor = 0.1
 			}
 		}
@@ -6241,8 +6243,10 @@ ideas = {
 			picture = PLACEHOLDER_idea_icon
 			
 			modifier = {
-				production_speed_industrial_complex_factor = 0.1
-				production_speed_infrastructure_factor = 0.1
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
+				industrial_capacity_factory = 0.04
+				industrial_capacity_dockyard = 0.04
 				economy_cost_factor = 0.2
 			}
 		}
@@ -6261,8 +6265,10 @@ ideas = {
 			picture = PLACEHOLDER_idea_icon
 			
 			modifier = {
-				production_speed_industrial_complex_factor = 0.15
-				production_speed_infrastructure_factor = 0.15
+				production_speed_industrial_complex_factor = 0.075
+				production_speed_infrastructure_factor = 0.075
+				industrial_capacity_factory = 0.06
+				industrial_capacity_dockyard = 0.06
 				economy_cost_factor = 0.3
 			}
 		}
@@ -6281,9 +6287,11 @@ ideas = {
 			picture = PLACEHOLDER_idea_icon
 			
 			modifier = {
-				production_speed_industrial_complex_factor = 0.2
-				production_speed_infrastructure_factor = 0.2
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
 				economy_cost_factor = 0.4
+				industrial_capacity_factory = 0.08
+				industrial_capacity_dockyard = 0.08
 			}
 		}
 		
@@ -6307,10 +6315,7 @@ ideas = {
 			picture = PLACEHOLDER_idea_icon
 			
 			modifier = {
-				stability_factor = 0.05
-				war_support_factor = -0.05
-				conscription_factor = -0.025
-				trade_laws_cost_factor = 0.4
+				consumer_goods_factor = -0.2
 			}
 		}
 	
@@ -6328,11 +6333,8 @@ ideas = {
 			picture = PLACEHOLDER_idea_icon
 			
 			modifier = {
-				political_power_gain = 0.05
-				stability_factor = 0.05
-				war_support_factor = -0.1
-				conscription_factor = -0.05
-				trade_laws_cost_factor = 0.25
+				compliance_growth = 0.1
+				consumer_goods_factor = -0.1
 			}
 		}
 	
@@ -6350,11 +6352,7 @@ ideas = {
 			picture = PLACEHOLDER_idea_icon
 			
 			modifier = {
-				political_power_gain = 0.1
-				stability_factor = 0.1
-				war_support_factor = -0.15
-				conscription_factor = -0.075
-				trade_laws_cost_factor = -0.15
+				compliance_growth = 0.2
 			}
 		}
 	
@@ -6372,11 +6370,8 @@ ideas = {
 			picture = PLACEHOLDER_idea_icon
 			
 			modifier = {
-				political_power_gain = 0.15
-				stability_factor = 0.15
-				war_support_factor = -0.2
-				conscription_factor = -0.1
-				trade_laws_cost_factor = -0.25
+				compliance_growth = 0.35
+				consumer_goods_factor = 0.15
 			}
 		}
 	}

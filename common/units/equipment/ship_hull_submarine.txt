@@ -301,13 +301,13 @@ equipments = {
 			rear_1_custom_slot = empty
 		}
 		
-		sub_visibility = 20
+		sub_visibility = 22
 		naval_speed = 16
 		reliability = 0.75
 		naval_dominance_factor = 10
 		naval_range = 5000
 		
-		max_strength = 30
+		max_strength = 20
 
 
 		
@@ -361,13 +361,13 @@ equipments = {
 			rear_1_custom_slot = empty
 		}
 
-		sub_visibility = 18
+		sub_visibility = 20
 		naval_speed = 18
 		reliability = 0.75
 		
 		naval_range = 6500
 		naval_dominance_factor = 12
-		max_strength = 40
+		max_strength = 25
 
 
 		
@@ -393,7 +393,7 @@ equipments = {
 			fixed_ship_engine_slot = inherit
 		}
 		
-		sub_visibility = 15
+		sub_visibility = 25
 		naval_speed = 8.3
 		reliability = 0.60
 		
@@ -521,7 +521,7 @@ equipments = {
 		
 		naval_range = 6500
 		
-		max_strength = 50
+		max_strength = 30
 		manpower = 350
 
 		naval_dominance_factor = 14

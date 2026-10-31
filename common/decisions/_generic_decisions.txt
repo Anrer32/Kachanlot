@@ -292,7 +292,6 @@ propaganda_efforts = {
 		icon = generic_prepare_civil_war
 
 		available = {
-			NOT = { has_country_flag = war_propaganda_campaign_running }
 			
 			if = {
 				limit = {
@@ -327,20 +326,19 @@ propaganda_efforts = {
 
 		fire_only_once = no
 
-		days_remove = 180
+		days_remove = -1
 
-		cost = 125
+		cost = 0
 
 		modifier = {
 			stability_weekly = 0.0015
-			war_support_weekly = 0.005
+			war_support_weekly = 0.0015
+			political_power_cost = 0.5
 		}
-
-		complete_effect = {
-			set_country_flag = war_propaganda_campaign_running
+				complete_effect = {
+		hidden_effect = {
+		remove_decision = war_propaganda_delete
 		}
-		remove_effect = {
-			clr_country_flag = war_propaganda_campaign_running
 		}
 
 		ai_will_do = {
@@ -352,7 +350,40 @@ propaganda_efforts = {
 			}
 		}
 	}
-	
+	war_propaganda_delete = {
+
+    	icon = generic_prepare_civil_war
+
+    	allowed = {
+            always = yes
+        }
+
+        available = {
+			has_decision = war_propaganda
+        }
+        visible = {
+			has_decision = war_propaganda
+        }
+
+        fire_only_once = no
+
+		days_remove = 0
+
+		cost = 0
+
+		
+
+		ai_will_do = {
+			factor = -100
+
+		}
+
+
+		complete_effect = {
+		remove_decision = war_propaganda
+		}
+    }
+
 	war_propaganda_casualties = { 
 
 		icon = generic_prepare_civil_war
@@ -1976,9 +2007,9 @@ war_measures = {
 		}
 
 		modifier = {
-			fuel_gain_factor = 0.3
-			stability_weekly = -0.001
-			war_support_weekly = -0.001
+			fuel_gain_factor = 0.2
+			stability_weekly = -0.0015
+			war_support_weekly = -0.0015
 		}
 	}
 	war_fuel_cancel = {
@@ -2233,9 +2264,58 @@ foreign_politics = {
 		}
 	}
 }
-
 economy_decisions = {
+	# Само скрытое решение-цикл
+	five_year_plan = {
 
+    	icon = generic_industry
+
+    	allowed = {
+            always = yes
+        }
+		cost = 100
+        available = {
+			NOT ={original_tag = SOV}
+			has_government = communism
+            has_war = no
+			OR = {
+			has_idea = war_economy
+			has_idea = tot_economic_mobilisation
+			has_idea = totaler_krieg_economy
+			}
+        }
+        visible = {
+			has_government = communism
+            NOT = { original_tag = SOV }
+        }
+        fire_only_once = no
+		days_remove = 720
+		cancel_trigger = {
+			OR= {
+			has_war = yes
+		}
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				has_political_power < 100
+				factor = 0 #use as pp dump
+			}
+		}
+		modifier = {
+			political_power_cost = 0.25
+			consumer_goods_factor = -0.1
+			stability_weekly = 0.0015
+			war_support_weekly = 0.0015
+		}
+		cancel_effect = {
+			add_stability = -0.2
+			add_war_support = -0.2
+		}
+		complete_effect = {
+		
+		}
+	}
 	infrastructure_building_slot = {
 
 		icon = generic_construction
@@ -2358,10 +2438,113 @@ economy_decisions = {
 				increase_state_category = yes
 				remove_building = {
 					type = infrastructure
-					level = 2
+					level = 1
 				}
 			}
 		}
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 1.5
+				all_owned_state = { free_building_slots = { building = industrial_complex size < 1 include_locked = no } }
+			}
+		}
+    }
+	oil_in_coal = {
+
+		icon = generic_construction
+
+        allowed = {
+            always = yes
+        }
+
+        cost = 50
+        fire_only_once = no
+
+        days_re_enable = 3
+
+		available = {
+			any_owned_state = {
+				energy_infrastructure > 2
+				NOT = {
+					has_state_flag = oil_is_energy
+				}
+			}
+			oil > 80
+		}
+	
+		visible = {
+			any_owned_state = {
+				energy_infrastructure > 2
+				NOT = {
+					has_state_flag = oil_is_energy
+				}
+			}
+			oil > 80
+		}
+
+        complete_effect = {
+			random_owned_state = {
+				limit = {
+			energy_infrastructure > 2
+			oil < 160
+			oil > 80
+				}
+			add_resource = {
+    	type = coal
+   	 	amount = 15
+		}
+		set_state_flag = oil_is_energy
+			}
+		random_owned_state = {
+				limit = {
+			energy_infrastructure > 2
+			oil < 240
+			oil > 160
+				}
+			add_resource = {
+    	type = coal
+   	 	amount = 25
+		}
+		set_state_flag = oil_is_energy
+			}
+		
+		random_owned_state = {
+				limit = {
+			energy_infrastructure > 2
+			oil < 400
+			oil > 240
+				}
+			add_resource = {
+    	type = coal
+   	 	amount = 50
+		}
+		set_state_flag = oil_is_energy
+			}
+		random_owned_state = {
+				limit = {
+			energy_infrastructure > 2
+			oil < 600
+			oil > 400
+				}
+			add_resource = {
+    	type = coal
+   	 	amount = 80
+		}
+		set_state_flag = oil_is_energy
+			}
+		random_owned_state = {
+				limit = {
+			energy_infrastructure > 2
+			oil > 600
+				}
+			add_resource = {
+    	type = coal
+   	 	amount = 110
+		}
+		set_state_flag = oil_is_energy
+			}
+		}	
 		ai_will_do = {
 			base = 1
 			modifier = {

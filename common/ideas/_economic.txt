@@ -108,7 +108,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				stability_weekly = 0.002
+				stability_weekly = 0.0005
 				consumer_goods_expected_value = 0.4
 				production_speed_infrastructure_factor = 0.45
 				production_speed_arms_factory_factor = -0.3
@@ -443,6 +443,9 @@ ideas = {
 				production_speed_arms_factory_factor = 0.2
 				conversion_cost_civ_to_mil_factor= -0.2
 				conversion_cost_mil_to_civ_factor = -0.2
+				factory_energy_consumption = 0.25
+				max_fuel_factor = 0.1
+				fuel_gain_factor = 0.1
 			}
 
 			cancel_if_invalid = no
@@ -618,8 +621,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				industrial_capacity_dockyard = 0.25
-				industrial_capacity_factory = 0.25
+				industrial_capacity_dockyard = 0.15
+				industrial_capacity_factory = 0.15
 				stability_weekly = -0.005
 				war_support_weekly = -0.005
 				consumer_goods_expected_value = 0.15
@@ -627,6 +630,9 @@ ideas = {
 				production_speed_arms_factory_factor = 0.3
 				conversion_cost_civ_to_mil_factor= -0.3
 				conversion_cost_mil_to_civ_factor = -0.3
+				factory_energy_consumption = 0.5
+				max_fuel_factor = 0.25
+				fuel_gain_factor = 0.25
 			}
 
 			cancel_if_invalid = no
@@ -647,15 +653,17 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				industrial_capacity_factory = 0.5
-				industrial_capacity_dockyard = 0.5
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
 				stability_weekly = -0.01
 				war_support_weekly = -0.01
-				consumer_goods_expected_value = 0.1
+				factory_energy_consumption = 0.75
 				conscription = -0.02
 				production_speed_arms_factory_factor = 0.4
-				conversion_cost_civ_to_mil_factor= -0.3
-				conversion_cost_mil_to_civ_factor = -0.3
+				conversion_cost_civ_to_mil_factor= -0.5
+				conversion_cost_mil_to_civ_factor = -0.5
+								max_fuel_factor = 0.5
+				fuel_gain_factor = 0.5
 			}
 			cancel_if_invalid = no
 		}
@@ -718,6 +726,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				stability_weekly = -0.0025
+				war_support_weekly = -0.0025
 				consumer_goods_expected_value = 0.15
 				production_speed_arms_factory_factor = 0.05
 				production_speed_dockyard_factor = 0.5
@@ -1354,7 +1364,7 @@ ideas = {
 				production_speed_buildings_factor = 0.15
 				production_speed_industrial_infrastructure_factor = 0.5
 				research_speed_factor = 0.10
-				production_speed_synthetic_refinery_factor = 0.5
+				production_speed_synthetic_refinery_factor = 1.0
 				civilian_intel_to_others = 40.0
 				navy_intel_to_others = 20.0
 				local_resources_factor = 0.6

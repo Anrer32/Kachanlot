@@ -25,6 +25,10 @@ NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.01
 NDefines.NMilitary.COHESION_IMMOBILE_PLANNING_SPEED_MULTIPLIER = 1
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE = 0.55	       -- more AA attack will approach this amount of help (diminishing returns)
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE_STEEPNESS = 625 -- how quickly defense approaches the max impact diminishing returns curve
+
+
+
+
 NDefines.NAir.PORT_STRIKE_DAMAGE_FACTOR = 1.7
 NDefines.NAir.PORT_STRIKE_DAMAGE_FACTOR = 1.7
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.7 -- бафф морбобров по дамагу
@@ -63,6 +67,11 @@ NDefines.NMilitary.SPEED_REINFORCEMENT_BONUS = 0.7
 NDefines.NMilitary.ARMY_INITIATIVE_REINFORCE_FACTOR = 0.15
 NDefines.NMilitary.PLANNING_DECAY = 0.1
 NDefines.NMilitary.PLAN_STICKINESS_FACTOR = 20.0
+NDefines.NMilitary.RELIABILITY_ORG_REGAIN = -0.65
+NDefines.NMilitary.RELIABILITY_ORG_MOVING = -1.5
+NDefines.NMilitary.RELIABILITY_WEATHER = 4.0
+NDefines.NMilitary.HOURLY_ORG_MOVEMENT_IMPACT = -0.4
+
 
 NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.036
 NDefines.NAir.AIR_WING_MAX_STATS_BOMBING = 50000
@@ -109,8 +118,8 @@ NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1
 
 
-NDefines.NMilitary.COMBAT_STACKING_START = 3						-- ваниль - 8 -- при каком из делений начинается штраф за накопление
-NDefines.NMilitary.COMBAT_STACKING_EXTRA = 1                      -- ваниль 4 -- дополнительное наложение из указаний
+NDefines.NMilitary.COMBAT_STACKING_START = 5						-- ваниль - 8 -- при каком из делений начинается штраф за накопление
+NDefines.NMilitary.COMBAT_STACKING_EXTRA = 2                      -- ваниль 4 -- дополнительное наложение из указаний
 NDefines.NMilitary.COMBAT_STACKING_PENALTY = -0.1              -- ваниль -0,02 — сколько штрафов за деление
 
 NDefines.NGame.GAME_SPEED_SECONDS = { 6000.0, 0.4, 0.2, 0.1, 0.0  }

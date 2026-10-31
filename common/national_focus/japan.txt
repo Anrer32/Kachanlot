@@ -25228,27 +25228,6 @@ focus_tree = {
 
 		completion_reward = {
 
-			random_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					NOT = {
-						has_state_category = small_island
-						has_state_category = tiny_island
-					}
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}	
-				prioritize = { 531 532 528 }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}	
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -25293,27 +25272,6 @@ focus_tree = {
 
 		completion_reward = {
 
-			random_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					NOT = {
-						has_state_category = small_island
-						has_state_category = tiny_island
-					}
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}	
-				prioritize = { 531 532 528 }
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}	
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -25431,26 +25389,6 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			random_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					NOT = {
-						has_state_category = small_island
-						has_state_category = tiny_island
-					}
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}	
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -25534,26 +25472,6 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			random_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					NOT = {
-						has_state_category = small_island
-						has_state_category = tiny_island
-					}
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}	
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			
@@ -25625,27 +25543,6 @@ focus_tree = {
 			JAP_small_zaibatsu_faction_gain = yes
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-
-			random_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					NOT = {
-						has_state_category = small_island
-						has_state_category = tiny_island
-					}
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}	
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			
@@ -25719,26 +25616,6 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			random_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					NOT = {
-						has_state_category = small_island
-						has_state_category = tiny_island
-					}
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}	
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			
@@ -28259,6 +28136,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {
+			add_ideas = tot_economic_mobilisation
 			custom_effect_tooltip = JAP_first_strike_principle_tt
 			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = JAP_kantai_kessen_tt
@@ -30359,9 +30237,6 @@ focus_tree = {
 			factor = 3
 		}
 
-		available = {
-			has_war = yes
-		}
 
 		bypass = {
 			

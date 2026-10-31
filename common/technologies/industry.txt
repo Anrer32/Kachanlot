@@ -781,7 +781,7 @@ technologies = {
 
 		enable_building = {
 			building = fuel_silo
-			level = 3
+			level = 6
 		}
 				
 		path = {
@@ -875,9 +875,9 @@ technologies = {
 
 	fuel_refining = {
 
-		fuel_gain_factor = 0.2
+		fuel_gain_factor = 0.3
 		fuel_gain_factor_from_states = 0.1
-					
+		production_speed_fuel_silo_factor = 0.1
 		path = {
 			leads_to_tech = fuel_refining2 
 			research_cost_coeff = 1
@@ -940,9 +940,9 @@ technologies = {
 
 	fuel_refining2 = {
 		
-		fuel_gain_factor = 0.2
+		fuel_gain_factor = 0.3
 		fuel_gain_factor_from_states = 0.1
-
+		production_speed_fuel_silo_factor = 0.1
 		path = {
 			leads_to_tech = fuel_refining3 
 			research_cost_coeff = 1
@@ -997,9 +997,9 @@ technologies = {
 
 	fuel_refining3 = {
 		
-		fuel_gain_factor = 0.2
+		fuel_gain_factor = 0.3
 		fuel_gain_factor_from_states = 0.1
-
+		production_speed_fuel_silo_factor = 0.1
 		path = {
 			leads_to_tech = fuel_refining4 
 			research_cost_coeff = 1
@@ -1044,9 +1044,9 @@ technologies = {
 
 	fuel_refining4 = {
 		
-		fuel_gain_factor = 0.20
+		fuel_gain_factor = 0.3
 		fuel_gain_factor_from_states = 0.1
-
+		production_speed_fuel_silo_factor = 0.1
 		path = {
 			leads_to_tech = fuel_refining5
 			research_cost_coeff = 1
@@ -1091,9 +1091,9 @@ technologies = {
 
 	fuel_refining5 = {
 		
-		fuel_gain_factor = 0.20
+		fuel_gain_factor = 0.3
 		fuel_gain_factor_from_states = 0.1
-
+		production_speed_fuel_silo_factor = 0.1
 		research_cost = 3
 		start_year = 1943
 		folder = {
@@ -1136,7 +1136,7 @@ technologies = {
 
 		enable_building = {
 			building = synthetic_refinery
-			level = 3
+			level = 4
 		}
 				
 		path = {
@@ -1206,7 +1206,7 @@ technologies = {
 	oil_processing = {
 		
 		fuel_gain_factor_from_states = 0.5
-
+		production_speed_synthetic_refinery_factor = 0.2 
 		start_year = 1937
 
 		path = {
@@ -1214,7 +1214,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 3
 		
 		folder = {
 			name = industry_folder
@@ -1267,13 +1267,13 @@ technologies = {
 	improved_oil_processing = {
 		
 		fuel_gain_factor_from_states = 0.5
-
+		production_speed_synthetic_refinery_factor = 0.2 
 		path = {
 			leads_to_tech = advanced_oil_processing
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 3
 		start_year = 1939
 		
 		folder = {
@@ -1327,13 +1327,13 @@ technologies = {
 	advanced_oil_processing = {
 
 		fuel_gain_factor_from_states = 0.5
-
+		production_speed_synthetic_refinery_factor = 0.2 
 		path = {
 			leads_to_tech = modern_oil_processing
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 3.5
 		start_year = 1941
 		
 		folder = {
@@ -1382,8 +1382,8 @@ technologies = {
 	modern_oil_processing = {
 
 		fuel_gain_factor_from_states = 0.5
-		
-		research_cost = 1.5
+		production_speed_synthetic_refinery_factor = 0.2 
+		research_cost = 3.5
 		start_year = 1943
 		
 		folder = {
@@ -1422,7 +1422,7 @@ technologies = {
 
 	#####################################
 	rubber_processing = {
-
+		production_speed_synthetic_refinery_factor = 0.2 
 		on_research_complete = {
 			modify_building_resources = {
 				building = synthetic_refinery
@@ -1436,7 +1436,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 3
 		start_year = 1937
 		
 		folder = {
@@ -1487,7 +1487,7 @@ technologies = {
 	}
 	
 	improved_rubber_processing = {
-
+		production_speed_synthetic_refinery_factor = 0.2 
 		on_research_complete = {
 			modify_building_resources = {
 				building = synthetic_refinery
@@ -1501,7 +1501,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 3
 		start_year = 1939
 		
 		folder = {
@@ -1547,7 +1547,7 @@ technologies = {
 	}
 	
 	advanced_rubber_processing = {
-
+		production_speed_synthetic_refinery_factor = 0.2 
 		on_research_complete = {
 			modify_building_resources = {
 				building = synthetic_refinery
@@ -1561,7 +1561,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 4.5
 		start_year = 1941
 		
 		folder = {
@@ -1607,7 +1607,7 @@ technologies = {
 	}
 
 	modern_rubber_processing = {
-
+		production_speed_synthetic_refinery_factor = 0.2 
 		on_research_complete = {
 			modify_building_resources = {
 				building = synthetic_refinery
@@ -1616,7 +1616,7 @@ technologies = {
 			}
 		}
 		
-		research_cost = 1.5
+		research_cost = 4.5
 		start_year = 1943
 		
 		folder = {

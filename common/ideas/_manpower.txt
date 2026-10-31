@@ -15,6 +15,7 @@ ideas = {
 			}
 
 			modifier = {
+				stability_factor = 0.1
 				conscription = 0.01
 			}
 
@@ -129,6 +130,7 @@ ideas = {
 			}
 
 			modifier = {
+				stability_factor = 0.05
 				conscription = 0.015
 			}
 
@@ -318,6 +320,7 @@ ideas = {
 			}
 
 			modifier = {
+				stability_factor = 0.025
 				conscription = 0.025
 			}
 
@@ -1009,6 +1012,8 @@ ideas = {
 			level = 3
 
 			modifier = {
+				stability_weekly = -0.0005
+				war_support_weekly = -0.0005
 				conscription = 0.1
 				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = -0.1
@@ -1299,6 +1304,8 @@ ideas = {
 			level = 2
 
 			modifier = {
+								stability_weekly = -0.001
+				war_support_weekly = -0.001
 				conscription = 0.2
 				industrial_capacity_factory = -0.3
 				industrial_capacity_dockyard = -0.3
@@ -1548,6 +1555,8 @@ ideas = {
 			level = 1
 
 			modifier = {
+				stability_weekly = -0.0015
+				war_support_weekly = -0.0015
 				conscription = 0.25
 				industrial_capacity_factory = -0.4
 				industrial_capacity_dockyard = -0.4

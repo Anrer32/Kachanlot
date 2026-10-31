@@ -154,7 +154,8 @@ ideas = {
 			}
 			modifier = {
 				army_leader_cost_factor = -0.5
-				party_popularity_stability_factor = 0.10
+				stability_weekly = 0.00075
+				war_support_weekly = 0.00075
 				custom_modifier_tooltip = political_loyalty_spirit_tt
 			}
 			ai_will_do = {

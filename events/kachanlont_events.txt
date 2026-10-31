@@ -1,6 +1,33 @@
 add_namespace = indonesia_events
+add_namespace = econmic_events
+country_event = { 
+	id = econmic_events.1
+	hidden = yes
+	trigger = {
+		has_idea = partial_economic_mobilisation
+		NOT = {has_war =yes
+	has_idea = partial_economic_mobilisation_comp}
+	date < 1939.01.01
+		}
+	immediate = {
+		add_ideas = partial_economic_mobilisation_comp
+	}
 
+}
+country_event = { 
+	id = econmic_events.2
+	hidden = yes
+	trigger = {
+		has_idea = war_economy
+		NOT = {has_war =yes
+	has_idea = war_economy_comp}
+	date < 1939.01.01
+	}
+	immediate = {
+		add_ideas = war_economy_comp
+	}
 
+}
 country_event = { 
 	id = indonesia_events.88
 	title = indonesia_events.88.t
