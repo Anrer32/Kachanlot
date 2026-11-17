@@ -1,0 +1,21 @@
+# Owns only the six stage-1 spirits. Does not replace vanilla country history.
+# Never reset this flag on load or re-add spirits after a reform.
+IRE_KLN_effect_initialize_spirits_1936 = {
+    if = {
+        limit = {
+            tag = IRE
+            date > 1935.12.31
+            date < 1936.1.2
+            NOT = { has_country_flag = IRE_KLN_flag_spirits_1936_initialized }
+        }
+        add_ideas = {
+            IRE_KLN_idea_economic_war
+            IRE_KLN_idea_underfunded_defence
+            IRE_KLN_idea_agrarian_economy
+            IRE_KLN_idea_civil_war_legacy
+            IRE_KLN_idea_incomplete_sovereignty
+            IRE_KLN_idea_state_industrial_policy
+        }
+        set_country_flag = IRE_KLN_flag_spirits_1936_initialized
+    }
+}

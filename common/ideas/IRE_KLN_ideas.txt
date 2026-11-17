@@ -1,0 +1,61 @@
+# Stage 1 provisional balance. Historical scope and limitations:
+# docs/ireland/START_1936.md. These are country spirits, not economic laws.
+ideas = {
+    country = {
+        IRE_KLN_idea_economic_war = {
+            picture = generic_production_bonus
+            allowed = { original_tag = IRE }
+            allowed_civil_war = { tag = IRE }
+            removal_cost = -1
+            modifier = {
+                consumer_goods_factor = 0.10
+            }
+        }
+        IRE_KLN_idea_underfunded_defence = {
+            picture = generic_army_problems
+            allowed = { original_tag = IRE }
+            allowed_civil_war = { tag = IRE }
+            removal_cost = -1
+            modifier = {
+                army_org_factor = -0.05
+                training_time_army_factor = 0.10
+            }
+        }
+        IRE_KLN_idea_agrarian_economy = {
+            picture = generic_production_bonus
+            allowed = { original_tag = IRE }
+            allowed_civil_war = { tag = IRE }
+            removal_cost = -1
+            modifier = {
+                industrial_capacity_factory = -0.10
+            }
+        }
+        IRE_KLN_idea_civil_war_legacy = {
+            picture = generic_pp_unity_bonus
+            allowed = { original_tag = IRE }
+            allowed_civil_war = { tag = IRE }
+            removal_cost = -1
+            modifier = {
+                stability_factor = -0.05
+            }
+        }
+        IRE_KLN_idea_incomplete_sovereignty = {
+            picture = generic_pp_unity_bonus
+            allowed = { original_tag = IRE }
+            allowed_civil_war = { tag = IRE }
+            removal_cost = -1
+            modifier = {
+                political_power_gain = -0.10
+            }
+        }
+        IRE_KLN_idea_state_industrial_policy = {
+            picture = generic_production_bonus
+            allowed = { original_tag = IRE }
+            allowed_civil_war = { tag = IRE }
+            removal_cost = -1
+            modifier = {
+                production_speed_industrial_complex_factor = 0.05
+            }
+        }
+    }
+}

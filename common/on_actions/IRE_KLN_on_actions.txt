@@ -1,0 +1,12 @@
+# Additive integration until the original country history is available.
+# No player-country condition, no monthly/daily reinitialization.
+on_actions = {
+    on_startup = {
+        effect = {
+            every_country = {
+                limit = { tag = IRE }
+                IRE_KLN_effect_initialize_spirits_1936 = yes
+            }
+        }
+    }
+}
