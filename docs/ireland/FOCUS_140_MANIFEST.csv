@@ -1,141 +1,141 @@
 code,planned_id,direction,title_ru,title_en,design_note,prerequisite_groups,mutually_exclusive,available,bypass,relative_position_id,x,y,cost,icon,effect_spec,effect_status,design_status
-P01,IRE_KLN_focus_P01,politics,,,,,,,,,,,,,,awaiting_design,awaiting_design
-P02,IRE_KLN_focus_P02,politics,,,,,,,,,,,,,,awaiting_design,awaiting_design
-P03,IRE_KLN_focus_P03,politics,,,,,,,,,,,,,,awaiting_design,awaiting_design
-P04,IRE_KLN_focus_P04,politics,,,,,,,,,,,,,,awaiting_design,awaiting_design
-P05,IRE_KLN_focus_P05,politics,,,,,,,,,,,,,,awaiting_design,awaiting_design
-P06,IRE_KLN_focus_P06,politics,,,,,,,,,,,,,,awaiting_design,awaiting_design
-P07,IRE_KLN_focus_P07,politics,,,,,,,,,,,,,,awaiting_design,awaiting_design
-P08,IRE_KLN_focus_P08,politics,,,,,,,,,,,,,,awaiting_design,awaiting_design
-P09,IRE_KLN_focus_P09,politics,,,,,,,,,,,,,,awaiting_design,awaiting_design
-P10,IRE_KLN_focus_P10,politics,,,,,,,,,,,,,,awaiting_design,awaiting_design
-P11,IRE_KLN_focus_P11,politics,,,,,,,,,,,,,,awaiting_design,awaiting_design
-P12,IRE_KLN_focus_P12,politics,,,,,,,,,,,,,,awaiting_design,awaiting_design
-P13,IRE_KLN_focus_P13,politics,,,,,,,,,,,,,,awaiting_design,awaiting_design
-P14,IRE_KLN_focus_P14,politics,,,,,,,,,,,,,,awaiting_design,awaiting_design
-P15,IRE_KLN_focus_P15,politics,,,,,,,,,,,,,,awaiting_design,awaiting_design
-P16,IRE_KLN_focus_P16,politics,,,,,,,,,,,,,,awaiting_design,awaiting_design
-P17,IRE_KLN_focus_P17,politics,,,,,,,,,,,,,,awaiting_design,awaiting_design
-P18,IRE_KLN_focus_P18,politics,,,,,,,,,,,,,,awaiting_design,awaiting_design
-P19,IRE_KLN_focus_P19,politics,,,,,,,,,,,,,,awaiting_design,awaiting_design
-P20,IRE_KLN_focus_P20,politics,,,,,,,,,,,,,,awaiting_design,awaiting_design
-P21,IRE_KLN_focus_P21,politics,,,,,,,,,,,,,,awaiting_design,awaiting_design
-P22,IRE_KLN_focus_P22,politics,,,,,,,,,,,,,,awaiting_design,awaiting_design
-P23,IRE_KLN_focus_P23,politics,,,,,,,,,,,,,,awaiting_design,awaiting_design
-P24,IRE_KLN_focus_P24,politics,,,,,,,,,,,,,,awaiting_design,awaiting_design
-P25,IRE_KLN_focus_P25,politics,,,,,,,,,,,,,,awaiting_design,awaiting_design
-P26,IRE_KLN_focus_P26,politics,,,,,,,,,,,,,,awaiting_design,awaiting_design
-P27,IRE_KLN_focus_P27,politics,,,,,,,,,,,,,,awaiting_design,awaiting_design
-P28,IRE_KLN_focus_P28,politics,,,,,,,,,,,,,,awaiting_design,awaiting_design
-E01,IRE_KLN_focus_E01,economy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-E02,IRE_KLN_focus_E02,economy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-E03,IRE_KLN_focus_E03,economy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-E04,IRE_KLN_focus_E04,economy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-E05,IRE_KLN_focus_E05,economy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-E06,IRE_KLN_focus_E06,economy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-E07,IRE_KLN_focus_E07,economy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-E08,IRE_KLN_focus_E08,economy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-E09,IRE_KLN_focus_E09,economy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-E10,IRE_KLN_focus_E10,economy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-E11,IRE_KLN_focus_E11,economy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-E12,IRE_KLN_focus_E12,economy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-E13,IRE_KLN_focus_E13,economy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-E14,IRE_KLN_focus_E14,economy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-E15,IRE_KLN_focus_E15,economy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-E16,IRE_KLN_focus_E16,economy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-E17,IRE_KLN_focus_E17,economy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-E18,IRE_KLN_focus_E18,economy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-E19,IRE_KLN_focus_E19,economy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-E20,IRE_KLN_focus_E20,economy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-E21,IRE_KLN_focus_E21,economy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-E22,IRE_KLN_focus_E22,economy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-E23,IRE_KLN_focus_E23,economy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-E24,IRE_KLN_focus_E24,economy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-E25,IRE_KLN_focus_E25,economy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-E26,IRE_KLN_focus_E26,economy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-E27,IRE_KLN_focus_E27,economy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-E28,IRE_KLN_focus_E28,economy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-M01,IRE_KLN_focus_M01,military,,,,,,,,,,,,,,awaiting_design,awaiting_design
-M02,IRE_KLN_focus_M02,military,,,,,,,,,,,,,,awaiting_design,awaiting_design
-M03,IRE_KLN_focus_M03,military,,,,,,,,,,,,,,awaiting_design,awaiting_design
-M04,IRE_KLN_focus_M04,military,,,,,,,,,,,,,,awaiting_design,awaiting_design
-M05,IRE_KLN_focus_M05,military,,,,,,,,,,,,,,awaiting_design,awaiting_design
-M06,IRE_KLN_focus_M06,military,,,,,,,,,,,,,,awaiting_design,awaiting_design
-M07,IRE_KLN_focus_M07,military,,,,,,,,,,,,,,awaiting_design,awaiting_design
-M08,IRE_KLN_focus_M08,military,,,,,,,,,,,,,,awaiting_design,awaiting_design
-M09,IRE_KLN_focus_M09,military,,,,,,,,,,,,,,awaiting_design,awaiting_design
-M10,IRE_KLN_focus_M10,military,,,,,,,,,,,,,,awaiting_design,awaiting_design
-M11,IRE_KLN_focus_M11,military,,,,,,,,,,,,,,awaiting_design,awaiting_design
-M12,IRE_KLN_focus_M12,military,,,,,,,,,,,,,,awaiting_design,awaiting_design
-M13,IRE_KLN_focus_M13,military,,,,,,,,,,,,,,awaiting_design,awaiting_design
-M14,IRE_KLN_focus_M14,military,,,,,,,,,,,,,,awaiting_design,awaiting_design
-M15,IRE_KLN_focus_M15,military,,,,,,,,,,,,,,awaiting_design,awaiting_design
-M16,IRE_KLN_focus_M16,military,,,,,,,,,,,,,,awaiting_design,awaiting_design
-M17,IRE_KLN_focus_M17,military,,,,,,,,,,,,,,awaiting_design,awaiting_design
-M18,IRE_KLN_focus_M18,military,,,,,,,,,,,,,,awaiting_design,awaiting_design
-M19,IRE_KLN_focus_M19,military,,,,,,,,,,,,,,awaiting_design,awaiting_design
-M20,IRE_KLN_focus_M20,military,,,,,,,,,,,,,,awaiting_design,awaiting_design
-M21,IRE_KLN_focus_M21,military,,,,,,,,,,,,,,awaiting_design,awaiting_design
-M22,IRE_KLN_focus_M22,military,,,,,,,,,,,,,,awaiting_design,awaiting_design
-M23,IRE_KLN_focus_M23,military,,,,,,,,,,,,,,awaiting_design,awaiting_design
-M24,IRE_KLN_focus_M24,military,,,,,,,,,,,,,,awaiting_design,awaiting_design
-M25,IRE_KLN_focus_M25,military,,,,,,,,,,,,,,awaiting_design,awaiting_design
-M26,IRE_KLN_focus_M26,military,,,,,,,,,,,,,,awaiting_design,awaiting_design
-M27,IRE_KLN_focus_M27,military,,,,,,,,,,,,,,awaiting_design,awaiting_design
-M28,IRE_KLN_focus_M28,military,,,,,,,,,,,,,,awaiting_design,awaiting_design
-D01,IRE_KLN_focus_D01,diplomacy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-D02,IRE_KLN_focus_D02,diplomacy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-D03,IRE_KLN_focus_D03,diplomacy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-D04,IRE_KLN_focus_D04,diplomacy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-D05,IRE_KLN_focus_D05,diplomacy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-D06,IRE_KLN_focus_D06,diplomacy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-D07,IRE_KLN_focus_D07,diplomacy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-D08,IRE_KLN_focus_D08,diplomacy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-D09,IRE_KLN_focus_D09,diplomacy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-D10,IRE_KLN_focus_D10,diplomacy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-D11,IRE_KLN_focus_D11,diplomacy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-D12,IRE_KLN_focus_D12,diplomacy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-D13,IRE_KLN_focus_D13,diplomacy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-D14,IRE_KLN_focus_D14,diplomacy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-D15,IRE_KLN_focus_D15,diplomacy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-D16,IRE_KLN_focus_D16,diplomacy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-D17,IRE_KLN_focus_D17,diplomacy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-D18,IRE_KLN_focus_D18,diplomacy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-D19,IRE_KLN_focus_D19,diplomacy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-D20,IRE_KLN_focus_D20,diplomacy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-D21,IRE_KLN_focus_D21,diplomacy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-D22,IRE_KLN_focus_D22,diplomacy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-D23,IRE_KLN_focus_D23,diplomacy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-D24,IRE_KLN_focus_D24,diplomacy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-D25,IRE_KLN_focus_D25,diplomacy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-D26,IRE_KLN_focus_D26,diplomacy,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A01,IRE_KLN_focus_A01,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A02,IRE_KLN_focus_A02,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A03,IRE_KLN_focus_A03,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A04,IRE_KLN_focus_A04,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A05,IRE_KLN_focus_A05,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A06,IRE_KLN_focus_A06,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A07,IRE_KLN_focus_A07,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A08,IRE_KLN_focus_A08,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A09,IRE_KLN_focus_A09,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A10,IRE_KLN_focus_A10,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A11,IRE_KLN_focus_A11,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A12,IRE_KLN_focus_A12,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A13,IRE_KLN_focus_A13,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A14,IRE_KLN_focus_A14,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A15,IRE_KLN_focus_A15,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A16,IRE_KLN_focus_A16,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A17,IRE_KLN_focus_A17,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A18,IRE_KLN_focus_A18,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A19,IRE_KLN_focus_A19,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A20,IRE_KLN_focus_A20,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A21,IRE_KLN_focus_A21,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A22,IRE_KLN_focus_A22,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A23,IRE_KLN_focus_A23,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A24,IRE_KLN_focus_A24,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A25,IRE_KLN_focus_A25,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A26,IRE_KLN_focus_A26,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A27,IRE_KLN_focus_A27,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A28,IRE_KLN_focus_A28,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A29,IRE_KLN_focus_A29,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
-A30,IRE_KLN_focus_A30,alternate_history,,,,,,,,,,,,,,awaiting_design,awaiting_design
+P01,IRE_KLN_focus_P01,politics,Незавершённая независимость,Unfinished Independence,Нет (стартовый),[],[],preview only; mandate/government implementation deferred,always = no,,12,0,3,GFX_goal_generic_political_pressure,Старт национальной истории; открыть конституционные дебаты и категории решений.,deferred,approved_concept_graph_checked
+P02,IRE_KLN_focus_P02,politics,Наследие войны за независимость,Legacy of the War of Independence,P01,"[[""IRE_KLN_focus_P01""]]",[],preview only; mandate/government implementation deferred,always = no,IRE_KLN_focus_P01,0,1,3,GFX_goal_generic_political_pressure,"Ветераны, память и решения о примирении.",deferred,approved_concept_graph_checked
+P03,IRE_KLN_focus_P03,politics,Наследие гражданской войны,Legacy of the Civil War,P02,"[[""IRE_KLN_focus_P02""]]",[],preview only; mandate/government implementation deferred,always = no,IRE_KLN_focus_P02,0,1,3,GFX_goal_generic_political_pressure,Активировать политическое равновесие и выбор между примирением и безопасностью.,deferred,approved_concept_graph_checked
+P04,IRE_KLN_focus_P04,politics,Восьмой Dáil,The Eighth Dáil,P03,"[[""IRE_KLN_focus_P03""]]",[],preview only; mandate/government implementation deferred,always = no,IRE_KLN_focus_P03,0,1,3,GFX_goal_generic_political_pressure,Парламентская поддержка и переговоры по законопроектам.,deferred,approved_concept_graph_checked
+P05,IRE_KLN_focus_P05,politics,Мандат Fianna Fáil,The Fianna Fáil Mandate,P04,"[[""IRE_KLN_focus_P04""]]",[],preview only; mandate/government implementation deferred,always = no,IRE_KLN_focus_P04,0,1,3,GFX_goal_generic_political_pressure,Закрепить стартовое историческое правительство и конституционные инициативы.,deferred,approved_concept_graph_checked
+P06,IRE_KLN_focus_P06,politics,Спор о республиканском будущем,Debating the Republican Future,P05,"[[""IRE_KLN_focus_P05""]]",[],preview only; mandate/government implementation deferred,always = no,IRE_KLN_focus_P05,0,1,3,GFX_goal_generic_political_pressure,Начать дебаты о форме государства и подготовке реформы.,deferred,approved_concept_graph_checked
+P07,IRE_KLN_focus_P07,politics,Общественный порядок,Public Order,P06,"[[""IRE_KLN_focus_P06""]]",[],preview only; mandate/government implementation deferred,always = no,IRE_KLN_focus_P06,0,1,3,GFX_goal_generic_political_pressure,Решения по политическому насилию и незаконным вооружённым группам.,deferred,approved_concept_graph_checked
+P08,IRE_KLN_focus_P08,politics,Будущее ирландской демократии,The Future of Irish Democracy,P07,"[[""IRE_KLN_focus_P07""]]",[],preview only; mandate/government implementation deferred,always = no,IRE_KLN_focus_P07,0,1,3,GFX_goal_generic_political_pressure,Шлюз к демократическим вариантам либо политическому кризису.,deferred,approved_concept_graph_checked
+P09,IRE_KLN_focus_P09,politics,Продолжить курс де Валеры,Continue de Valera’s Course,P08; соответствующий демократический мандат,"[[""IRE_KLN_focus_P08""]]","[""IRE_KLN_focus_P14"", ""IRE_KLN_focus_P19"", ""IRE_KLN_focus_P24"", ""IRE_KLN_focus_A01"", ""IRE_KLN_focus_A07"", ""IRE_KLN_focus_A13"", ""IRE_KLN_focus_A19"", ""IRE_KLN_focus_A25""]",preview only; mandate/government implementation deferred,always = no,IRE_KLN_focus_P08,-12,2,5,GFX_goal_generic_political_pressure,Конституционная программа и легитимный парламентский мандат.,deferred,approved_concept_graph_checked
+P10,IRE_KLN_focus_P10,politics,Ограничить влияние короны,Limit the Influence of the Crown,P09,"[[""IRE_KLN_focus_P09""]]",[],preview only; mandate/government implementation deferred,always = no,IRE_KLN_focus_P09,0,1,5,GFX_goal_generic_political_pressure,Решения о конституционных поправках и функциях короны.,deferred,approved_concept_graph_checked
+P11,IRE_KLN_focus_P11,politics,Разработать новую Конституцию,Draft a New Constitution,P10,"[[""IRE_KLN_focus_P10""]]",[],preview only; mandate/government implementation deferred,always = no,IRE_KLN_focus_P10,0,1,5,GFX_goal_generic_political_pressure,"Подготовка текста, консультации и мобилизация поддержки.",deferred,approved_concept_graph_checked
+P12,IRE_KLN_focus_P12,politics,Референдум о будущем государства,A Referendum on the Future of the State,P11,"[[""IRE_KLN_focus_P11""]]",[],preview only; mandate/government implementation deferred,always = no,IRE_KLN_focus_P11,0,1,5,GFX_goal_generic_political_pressure,"Плебисцит с условным исходом, не гарантированной победой.",deferred,approved_concept_graph_checked
+P13,IRE_KLN_focus_P13,politics,Суверенная Ирландия,Sovereign Ireland,P12,"[[""IRE_KLN_focus_P12""]]",[],preview only; mandate/government implementation deferred,always = no,IRE_KLN_focus_P12,0,1,5,GFX_goal_generic_political_pressure,Конституционный переход и трансформация духа о суверенитете.,deferred,approved_concept_graph_checked
+P14,IRE_KLN_focus_P14,politics,Возвращение конституционной оппозиции,The Return of Constitutional Opposition,P08; соответствующий демократический мандат,"[[""IRE_KLN_focus_P08""]]","[""IRE_KLN_focus_P09"", ""IRE_KLN_focus_P19"", ""IRE_KLN_focus_P24"", ""IRE_KLN_focus_A01"", ""IRE_KLN_focus_A07"", ""IRE_KLN_focus_A13"", ""IRE_KLN_focus_A19"", ""IRE_KLN_focus_A25""]",preview only; mandate/government implementation deferred,always = no,IRE_KLN_focus_P08,-4,2,5,GFX_goal_generic_political_pressure,Избирательная кампания Fine Gael.,deferred,approved_concept_graph_checked
+P15,IRE_KLN_focus_P15,politics,Наследие Косгрейва,The Cosgrave Legacy,P14,"[[""IRE_KLN_focus_P14""]]",[],preview only; mandate/government implementation deferred,always = no,IRE_KLN_focus_P14,0,1,5,GFX_goal_generic_political_pressure,Консервативные советники и коалиционная работа.,deferred,approved_concept_graph_checked
+P16,IRE_KLN_focus_P16,politics,Коалиция собственников и фермеров,A Coalition of Owners and Farmers,P15,"[[""IRE_KLN_focus_P15""]]",[],preview only; mandate/government implementation deferred,always = no,IRE_KLN_focus_P15,0,1,5,GFX_goal_generic_political_pressure,Партнёрства и аграрная поддержка.,deferred,approved_concept_graph_checked
+P17,IRE_KLN_focus_P17,politics,Пересмотреть экономическое противостояние,Reconsider the Economic Confrontation,P16,"[[""IRE_KLN_focus_P16""]]",[],preview only; mandate/government implementation deferred,always = no,IRE_KLN_focus_P16,0,1,5,GFX_goal_generic_political_pressure,Переговоры с Великобританией о торговле.,deferred,approved_concept_graph_checked
+P18,IRE_KLN_focus_P18,politics,Конституционное правительство,Constitutional Government,P17,"[[""IRE_KLN_focus_P17""]]",[],preview only; mandate/government implementation deferred,always = no,IRE_KLN_focus_P17,0,1,5,GFX_goal_generic_political_pressure,Демократическая реформа без автоматического отказа от суверенитета.,deferred,approved_concept_graph_checked
+P19,IRE_KLN_focus_P19,politics,Голос рабочего движения,The Voice of Labour,P08; соответствующий демократический мандат,"[[""IRE_KLN_focus_P08""]]","[""IRE_KLN_focus_P09"", ""IRE_KLN_focus_P14"", ""IRE_KLN_focus_P24"", ""IRE_KLN_focus_A01"", ""IRE_KLN_focus_A07"", ""IRE_KLN_focus_A13"", ""IRE_KLN_focus_A19"", ""IRE_KLN_focus_A25""]",preview only; mandate/government implementation deferred,always = no,IRE_KLN_focus_P08,4,2,5,GFX_goal_generic_political_pressure,Рост лейбористской поддержки и переговоры с профсоюзами.,deferred,approved_concept_graph_checked
+P20,IRE_KLN_focus_P20,politics,Национальный трудовой договор,A National Labour Agreement,P19,"[[""IRE_KLN_focus_P19""]]",[],preview only; mandate/government implementation deferred,always = no,IRE_KLN_focus_P19,0,1,5,GFX_goal_generic_political_pressure,Переговоры о зарплатах и стачках.,deferred,approved_concept_graph_checked
+P21,IRE_KLN_focus_P21,politics,Расширение социальных гарантий,Extend Social Guarantees,P20,"[[""IRE_KLN_focus_P20""]]",[],preview only; mandate/government implementation deferred,always = no,IRE_KLN_focus_P20,0,1,5,GFX_goal_generic_political_pressure,Законодательные реформы с бюджетными издержками.,deferred,approved_concept_graph_checked
+P22,IRE_KLN_focus_P22,politics,Представительство трудящихся,Representation for Working People,P21,"[[""IRE_KLN_focus_P21""]]",[],preview only; mandate/government implementation deferred,always = no,IRE_KLN_focus_P21,0,1,5,GFX_goal_generic_political_pressure,Трудовое законодательство и консультационные советы.,deferred,approved_concept_graph_checked
+P23,IRE_KLN_focus_P23,politics,Социальная республика,A Social Republic,P22,"[[""IRE_KLN_focus_P22""]]",[],preview only; mandate/government implementation deferred,always = no,IRE_KLN_focus_P22,0,1,5,GFX_goal_generic_political_pressure,"Левоцентристская демократическая модель, не революция.",deferred,approved_concept_graph_checked
+P24,IRE_KLN_focus_P24,politics,Над партийными разногласиями,Above Party Differences,P08; соответствующий демократический мандат,"[[""IRE_KLN_focus_P08""]]","[""IRE_KLN_focus_P09"", ""IRE_KLN_focus_P14"", ""IRE_KLN_focus_P19"", ""IRE_KLN_focus_A01"", ""IRE_KLN_focus_A07"", ""IRE_KLN_focus_A13"", ""IRE_KLN_focus_A19"", ""IRE_KLN_focus_A25""]",preview only; mandate/government implementation deferred,always = no,IRE_KLN_focus_P08,12,2,5,GFX_goal_generic_political_pressure,Попытка межпартийной коалиции.,deferred,approved_concept_graph_checked
+P25,IRE_KLN_focus_P25,politics,Всеирландский оборонный комитет,An All-Ireland Defence Committee,P24,"[[""IRE_KLN_focus_P24""]]",[],preview only; mandate/government implementation deferred,always = no,IRE_KLN_focus_P24,0,1,5,GFX_goal_generic_political_pressure,Совместное оборонное планирование.,deferred,approved_concept_graph_checked
+P26,IRE_KLN_focus_P26,politics,Примирение ветеранов,Reconciliation of Veterans,P25,"[[""IRE_KLN_focus_P25""]]",[],preview only; mandate/government implementation deferred,always = no,IRE_KLN_focus_P25,0,1,5,GFX_goal_generic_political_pressure,Решения по социальному примирению.,deferred,approved_concept_graph_checked
+P27,IRE_KLN_focus_P27,politics,Чрезвычайные полномочия парламента,Emergency Powers of Parliament,P26,"[[""IRE_KLN_focus_P26""]]",[],preview only; mandate/government implementation deferred,always = no,IRE_KLN_focus_P26,0,1,5,GFX_goal_generic_political_pressure,Временные чрезвычайные меры и их ограничения.,deferred,approved_concept_graph_checked
+P28,IRE_KLN_focus_P28,politics,Национальное согласие,National Concord,P27,"[[""IRE_KLN_focus_P27""]]",[],preview only; mandate/government implementation deferred,always = no,IRE_KLN_focus_P27,0,1,5,GFX_goal_generic_political_pressure,Устойчивые демократические институты и оборонное сотрудничество.,deferred,approved_concept_graph_checked
+E01,IRE_KLN_focus_E01,economy,Нация земледельцев,,Нет,[],[],,,,,,,,Категория аграрной политики и региональных проектов.,deferred,approved_concept_graph_checked
+E02,IRE_KLN_focus_E02,economy,Экономическая война,,E01,"[[""IRE_KLN_focus_E01""]]",[],,,,,,,,Механизм торгового противостояния с Британией.,deferred,approved_concept_graph_checked
+E03,IRE_KLN_focus_E03,economy,Наследие протекционизма,,E02,"[[""IRE_KLN_focus_E02""]]",[],,,,,,,,Тарифные меры и защита новых производств.,deferred,approved_concept_graph_checked
+E04,IRE_KLN_focus_E04,economy,Индустриальная программа Лемасса,,E03,"[[""IRE_KLN_focus_E03""]]",[],,,,,,,,Промышленная стратегия и исторический советник.,deferred,approved_concept_graph_checked
+E05,IRE_KLN_focus_E05,economy,Промышленное кредитование,,E04,"[[""IRE_KLN_focus_E04""]]",[],,,,,,,,Кредиты и субсидии с затратами.,deferred,approved_concept_graph_checked
+E06,IRE_KLN_focus_E06,economy,Государственная энергетика,,E05,"[[""IRE_KLN_focus_E05""]]",[],,,,,,,,Проекты ESB и электрификации.,deferred,approved_concept_graph_checked
+E07,IRE_KLN_focus_E07,economy,Железнодорожная сеть,,E06,"[[""IRE_KLN_focus_E06""]]",[],,,,,,,,"Транспорт, инфраструктура и снабжение.",deferred,approved_concept_graph_checked
+E08,IRE_KLN_focus_E08,economy,Экономический выбор Ирландии,,E07,"[[""IRE_KLN_focus_E07""]]",[],,,,,,,,Стратегическая развилка промышленных моделей.,deferred,approved_concept_graph_checked
+E09,IRE_KLN_focus_E09,economy,Промышленная самостоятельность,,E08,"[[""IRE_KLN_focus_E08""]]","[""IRE_KLN_focus_E14""]",,,,,,,,Приоритет импортозамещения.,deferred,approved_concept_graph_checked
+E10,IRE_KLN_focus_E10,economy,Программа отечественных предприятий,,E09,"[[""IRE_KLN_focus_E09""]]",[],,,,,,,,Региональные фабричные проекты по инвестиционным решениям.,deferred,approved_concept_graph_checked
+E11,IRE_KLN_focus_E11,economy,Шеннонская энергетическая система,,E10,"[[""IRE_KLN_focus_E10""]]",[],,,,,,,,Расширение доступности электроэнергии.,deferred,approved_concept_graph_checked
+E12,IRE_KLN_focus_E12,economy,Развитие торфяного топлива,,E11,"[[""IRE_KLN_focus_E11""]]",[],,,,,,,,Снижение зависимости от импортного топлива.,deferred,approved_concept_graph_checked
+E13,IRE_KLN_focus_E13,economy,Новая индустриальная Ирландия,,E12,"[[""IRE_KLN_focus_E12""]]",[],,,,,,,,Оборонная производственная база при выполнении условий.,deferred,approved_concept_graph_checked
+E14,IRE_KLN_focus_E14,economy,Возвращение на международные рынки,,E08,"[[""IRE_KLN_focus_E08""]]","[""IRE_KLN_focus_E09""]",,,,,,,,Поиск торговых партнёров.,deferred,approved_concept_graph_checked
+E15,IRE_KLN_focus_E15,economy,Переговоры с британскими импортёрами,,E14,"[[""IRE_KLN_focus_E14""]]",[],,,,,,,,Торговые квоты по результатам переговоров.,deferred,approved_concept_graph_checked
+E16,IRE_KLN_focus_E16,economy,Порты Атлантической торговли,,E15,"[[""IRE_KLN_focus_E15""]]",[],,,,,,,,Гражданские порты и транспорт.,deferred,approved_concept_graph_checked
+E17,IRE_KLN_focus_E17,economy,Иностранные промышленные инвестиции,,E16,"[[""IRE_KLN_focus_E16""]]",[],,,,,,,,Контракты с иностранными производителями.,deferred,approved_concept_graph_checked
+E18,IRE_KLN_focus_E18,economy,Ирландия — атлантический торговый посредник,,E17,"[[""IRE_KLN_focus_E17""]]",[],,,,,,,,Торговые возможности и риски военной блокады.,deferred,approved_concept_graph_checked
+E19,IRE_KLN_focus_E19,economy,Реформа сельского хозяйства,,E08,"[[""IRE_KLN_focus_E08""]]","[""IRE_KLN_focus_E24""]",,,,,,,,Региональные аграрные проекты.,deferred,approved_concept_graph_checked
+E20,IRE_KLN_focus_E20,economy,Механизация ферм,,E19,"[[""IRE_KLN_focus_E19""]]",[],,,,,,,,Техника и производительность.,deferred,approved_concept_graph_checked
+E21,IRE_KLN_focus_E21,economy,Кооперативные молочные предприятия,,E20,"[[""IRE_KLN_focus_E20""]]",[],,,,,,,,Агропереработка.,deferred,approved_concept_graph_checked
+E22,IRE_KLN_focus_E22,economy,Сахарная промышленность,,E21,"[[""IRE_KLN_focus_E21""]]",[],,,,,,,,Irish Sugar Company.,deferred,approved_concept_graph_checked
+E23,IRE_KLN_focus_E23,economy,Современное ирландское село,,E22,"[[""IRE_KLN_focus_E22""]]",[],,,,,,,,Инфраструктура и уменьшение аграрного кризиса.,deferred,approved_concept_graph_checked
+E24,IRE_KLN_focus_E24,economy,Спасти животноводческие хозяйства,,E08,"[[""IRE_KLN_focus_E08""]]","[""IRE_KLN_focus_E19""]",,,,,,,,Экстренные субсидии.,deferred,approved_concept_graph_checked
+E25,IRE_KLN_focus_E25,economy,Сельскохозяйственные кредитные соглашения,,E24,"[[""IRE_KLN_focus_E24""]]",[],,,,,,,,Льготное финансирование и долг.,deferred,approved_concept_graph_checked
+E26,IRE_KLN_focus_E26,economy,Новые рынки ирландского скота,,E25,"[[""IRE_KLN_focus_E25""]]",[],,,,,,,,Торговые миссии и квоты.,deferred,approved_concept_graph_checked
+E27,IRE_KLN_focus_E27,economy,Пересмотр сельскохозяйственных тарифов,,E26,"[[""IRE_KLN_focus_E26""]]",[],,,,,,,,Переговоры об ограничениях.,deferred,approved_concept_graph_checked
+E28,IRE_KLN_focus_E28,economy,Процветание сельских общин,,E27,"[[""IRE_KLN_focus_E27""]]",[],,,,,,,,Меры против бедности и недовольства.,deferred,approved_concept_graph_checked
+M01,IRE_KLN_focus_M01,military,Вооружённые силы Свободного государства,,Нет,[],[],,,,,,,,Система оборонной готовности.,deferred,approved_concept_graph_checked
+M02,IRE_KLN_focus_M02,military,Доклад генерала Бреннана,,M01,"[[""IRE_KLN_focus_M01""]]",[],,,,,,,,Обследование армии и штабные реформы.,deferred,approved_concept_graph_checked
+M03,IRE_KLN_focus_M03,military,Недостаток вооружения,,M02,"[[""IRE_KLN_focus_M02""]]",[],,,,,,,,"Закупки, ремонт, норматив запасов.",deferred,approved_concept_graph_checked
+M04,IRE_KLN_focus_M04,military,Военный колледж,,M03,"[[""IRE_KLN_focus_M03""]]",[],,,,,,,,Офицерская подготовка.,deferred,approved_concept_graph_checked
+M05,IRE_KLN_focus_M05,military,Пересмотр оборонного бюджета,,M04,"[[""IRE_KLN_focus_M04""]]",[],,,,,,,,Финансирование за счёт гражданского бюджета.,deferred,approved_concept_graph_checked
+M06,IRE_KLN_focus_M06,military,Реорганизация штабной системы,,M05,"[[""IRE_KLN_focus_M05""]]",[],,,,,,,,Планирование и связь.,deferred,approved_concept_graph_checked
+M07,IRE_KLN_focus_M07,military,Обеспечение военного снабжения,,M06,"[[""IRE_KLN_focus_M06""]]",[],,,,,,,,Резервные склады.,deferred,approved_concept_graph_checked
+M08,IRE_KLN_focus_M08,military,Как защитить независимость?,,M07,"[[""IRE_KLN_focus_M07""]]",[],,,,,,,,Развилка между профессионалами и территориальной обороной.,deferred,approved_concept_graph_checked
+M09,IRE_KLN_focus_M09,military,"Небольшая, но профессиональная армия",,M08,"[[""IRE_KLN_focus_M08""]]","[""IRE_KLN_focus_M14""]",,,,,,,,Укрепление кадровых соединений.,deferred,approved_concept_graph_checked
+M10,IRE_KLN_focus_M10,military,Контрактная подготовка офицеров,,M09,"[[""IRE_KLN_focus_M09""]]",[],,,,,,,,Учебные миссии.,deferred,approved_concept_graph_checked
+M11,IRE_KLN_focus_M11,military,Моторизация штабных частей,,M10,"[[""IRE_KLN_focus_M10""]]",[],,,,,,,,Автотранспорт и снабжение.,deferred,approved_concept_graph_checked
+M12,IRE_KLN_focus_M12,military,Артиллерия современной войны,,M11,"[[""IRE_KLN_focus_M11""]]",[],,,,,,,,Лицензии и закупки.,deferred,approved_concept_graph_checked
+M13,IRE_KLN_focus_M13,military,Ирландские регулярные дивизии,,M12,"[[""IRE_KLN_focus_M12""]]",[],,,,,,,,Ограниченное создание регулярных частей.,deferred,approved_concept_graph_checked
+M14,IRE_KLN_focus_M14,military,Народная добровольческая оборона,,M08,"[[""IRE_KLN_focus_M08""]]","[""IRE_KLN_focus_M09""]",,,,,,,,Расширение Volunteer Force.,deferred,approved_concept_graph_checked
+M15,IRE_KLN_focus_M15,military,Местные оборонные подразделения,,M14,"[[""IRE_KLN_focus_M14""]]",[],,,,,,,,Региональные резервные формирования.,deferred,approved_concept_graph_checked
+M16,IRE_KLN_focus_M16,military,Подготовка резервистов,,M15,"[[""IRE_KLN_focus_M15""]]",[],,,,,,,,Учения и подготовленный резерв.,deferred,approved_concept_graph_checked
+M17,IRE_KLN_focus_M17,military,Укрепление городов и портов,,M16,"[[""IRE_KLN_focus_M16""]]",[],,,,,,,,Оборонные строительные решения.,deferred,approved_concept_graph_checked
+M18,IRE_KLN_focus_M18,military,"Нация, готовая к обороне",,M17,"[[""IRE_KLN_focus_M17""]]",[],,,,,,,,Быстрая мобилизация при угрозе.,deferred,approved_concept_graph_checked
+M19,IRE_KLN_focus_M19,military,Корпус воздушных наблюдателей,,M05,"[[""IRE_KLN_focus_M05""]]",[],,,,,,,,Наблюдение и предупреждение.,deferred,approved_concept_graph_checked
+M20,IRE_KLN_focus_M20,military,Расширить аэродром Балдоннел,,M19,"[[""IRE_KLN_focus_M19""]]",[],,,,,,,,Авиабаза и инфраструктура.,deferred,approved_concept_graph_checked
+M21,IRE_KLN_focus_M21,military,Закупка современных самолётов,,M20,"[[""IRE_KLN_focus_M20""]]",[],,,,,,,,Контракты по доступности поставщиков.,deferred,approved_concept_graph_checked
+M22,IRE_KLN_focus_M22,military,Ирландские лётные школы,,M21,"[[""IRE_KLN_focus_M21""]]",[],,,,,,,,Пилоты и учебные мощности.,deferred,approved_concept_graph_checked
+M23,IRE_KLN_focus_M23,military,Воздушный щит острова,,M22,"[[""IRE_KLN_focus_M22""]]",[],,,,,,,,ПВО и перехват нарушителей.,deferred,approved_concept_graph_checked
+M24,IRE_KLN_focus_M24,military,Наши воды — наша ответственность,,M05,"[[""IRE_KLN_focus_M05""]]",[],,,,,,,,Береговая служба.,deferred,approved_concept_graph_checked
+M25,IRE_KLN_focus_M25,military,План берегового наблюдения,,M24,"[[""IRE_KLN_focus_M24""]]",[],,,,,,,,Сеть наблюдательных постов.,deferred,approved_concept_graph_checked
+M26,IRE_KLN_focus_M26,military,Подразделения военной разведки G2,,M25,"[[""IRE_KLN_focus_M25""]]",[],,,,,,,,"Разведка, Archer и Bryan.",deferred,approved_concept_graph_checked
+M27,IRE_KLN_focus_M27,military,Программа военных патрульных судов,,M26,"[[""IRE_KLN_focus_M26""]]",[],,,,,,,,"Переоборудование и закупки, не дарить эсминцы.",deferred,approved_concept_graph_checked
+M28,IRE_KLN_focus_M28,military,Защита ирландских морских коммуникаций,,M27,"[[""IRE_KLN_focus_M27""]]",[],,,,,,,,Патрули и охрана торговли.,deferred,approved_concept_graph_checked
+D01,IRE_KLN_focus_D01,diplomacy,Ирландия среди наций,,Нет,[],[],,,,,,,,Дипломатическая система.,deferred,approved_concept_graph_checked
+D02,IRE_KLN_focus_D02,diplomacy,Голос малого государства,,D01,"[[""IRE_KLN_focus_D01""]]",[],,,,,,,,Международные инициативы.,deferred,approved_concept_graph_checked
+D03,IRE_KLN_focus_D03,diplomacy,Спор о договорных портах,,D02,"[[""IRE_KLN_focus_D02""]]",[],,,,,,,,"Переговоры по Cobh, Berehaven, Lough Swilly.",deferred,approved_concept_graph_checked
+D04,IRE_KLN_focus_D04,diplomacy,Вопрос шести графств,,D03,"[[""IRE_KLN_focus_D03""]]",[],,,,,,,,Отношения общин и мирные инициативы.,deferred,approved_concept_graph_checked
+D05,IRE_KLN_focus_D05,diplomacy,Дипломатическая сеть,,D04,"[[""IRE_KLN_focus_D04""]]",[],,,,,,,,Политические и торговые миссии.,deferred,approved_concept_graph_checked
+D06,IRE_KLN_focus_D06,diplomacy,Перед лицом европейской войны,,D05,"[[""IRE_KLN_focus_D05""]]",[],,,,,,,,Выбор внешней стратегии.,deferred,approved_concept_graph_checked
+D07,IRE_KLN_focus_D07,diplomacy,Ирландия вне великих конфликтов,,D06,"[[""IRE_KLN_focus_D06""]]","[""IRE_KLN_focus_D12"", ""IRE_KLN_focus_D17"", ""IRE_KLN_focus_D22""]",,,,,,,,Политика невмешательства.,deferred,approved_concept_graph_checked
+D08,IRE_KLN_focus_D08,diplomacy,Дипломатические гарантии нейтралитета,,D07,"[[""IRE_KLN_focus_D07""]]",[],,,,,,,,Переговоры с державами.,deferred,approved_concept_graph_checked
+D09,IRE_KLN_focus_D09,diplomacy,Защита нейтральных вод,,D08,"[[""IRE_KLN_focus_D08""]]",[],,,,,,,,Береговая охрана.,deferred,approved_concept_graph_checked
+D10,IRE_KLN_focus_D10,diplomacy,Дипломатия воюющих держав,,D09,"[[""IRE_KLN_focus_D09""]]",[],,,,,,,,Запросы сторон и реакция.,deferred,approved_concept_graph_checked
+D11,IRE_KLN_focus_D11,diplomacy,Сохранить мир на острове,,D10,"[[""IRE_KLN_focus_D10""]]",[],,,,,,,,Устойчивость и оборонная нейтральность.,deferred,approved_concept_graph_checked
+D12,IRE_KLN_focus_D12,diplomacy,Переговоры с Лондоном,,D06,"[[""IRE_KLN_focus_D06""]]","[""IRE_KLN_focus_D07"", ""IRE_KLN_focus_D17"", ""IRE_KLN_focus_D22""]",,,,,,,,Торговые предложения.,deferred,approved_concept_graph_checked
+D13,IRE_KLN_focus_D13,diplomacy,Атлантическая безопасность,,D12,"[[""IRE_KLN_focus_D12""]]",[],,,,,,,,Совместное планирование.,deferred,approved_concept_graph_checked
+D14,IRE_KLN_focus_D14,diplomacy,Британское военное сотрудничество,,D13,"[[""IRE_KLN_focus_D13""]]",[],,,,,,,,Закупки и инструкторы.,deferred,approved_concept_graph_checked
+D15,IRE_KLN_focus_D15,diplomacy,Ирландский вклад в оборону Атлантики,,D14,"[[""IRE_KLN_focus_D14""]]",[],,,,,,,,Морское сотрудничество.,deferred,approved_concept_graph_checked
+D16,IRE_KLN_focus_D16,diplomacy,Союз свободных государств,,D15,"[[""IRE_KLN_focus_D15""]]",[],,,,,,,,Возможное вступление в Союзники по согласию.,deferred,approved_concept_graph_checked
+D17,IRE_KLN_focus_D17,diplomacy,Партнёры на континенте,,D06,"[[""IRE_KLN_focus_D06""]]","[""IRE_KLN_focus_D07"", ""IRE_KLN_focus_D12"", ""IRE_KLN_focus_D22""]",,,,,,,,Связи с Францией и Европой.,deferred,approved_concept_graph_checked
+D18,IRE_KLN_focus_D18,diplomacy,Европейские торговые миссии,,D17,"[[""IRE_KLN_focus_D17""]]",[],,,,,,,,Альтернативные рынки.,deferred,approved_concept_graph_checked
+D19,IRE_KLN_focus_D19,diplomacy,Военные закупки в Европе,,D18,"[[""IRE_KLN_focus_D18""]]",[],,,,,,,,Контракты вне Британии.,deferred,approved_concept_graph_checked
+D20,IRE_KLN_focus_D20,diplomacy,Дипломатический манёвр,,D19,"[[""IRE_KLN_focus_D19""]]",[],,,,,,,,Особые соглашения и недоверие Лондона.,deferred,approved_concept_graph_checked
+D21,IRE_KLN_focus_D21,diplomacy,Континентальный выбор,,D20,"[[""IRE_KLN_focus_D20""]]",[],,,,,,,,Союз при соответствующей политике и согласии.,deferred,approved_concept_graph_checked
+D22,IRE_KLN_focus_D22,diplomacy,Поддержать Лигу Наций,,D06,"[[""IRE_KLN_focus_D06""]]","[""IRE_KLN_focus_D07"", ""IRE_KLN_focus_D12"", ""IRE_KLN_focus_D17""]",,,,,,,,Дипломатические конференции.,deferred,approved_concept_graph_checked
+D23,IRE_KLN_focus_D23,diplomacy,Права малых государств,,D22,"[[""IRE_KLN_focus_D22""]]",[],,,,,,,,Сотрудничество и гарантии.,deferred,approved_concept_graph_checked
+D24,IRE_KLN_focus_D24,diplomacy,Международный арбитраж,,D23,"[[""IRE_KLN_focus_D23""]]",[],,,,,,,,Урегулирование споров.,deferred,approved_concept_graph_checked
+D25,IRE_KLN_focus_D25,diplomacy,Коалиция малых нейтральных стран,,D24,"[[""IRE_KLN_focus_D24""]]",[],,,,,,,,Встречи и соглашения.,deferred,approved_concept_graph_checked
+D26,IRE_KLN_focus_D26,diplomacy,Европейская дипломатическая конференция,,D25,"[[""IRE_KLN_focus_D25""]]",[],,,,,,,,Попытка независимого дипломатического блока.,deferred,approved_concept_graph_checked
+A01,IRE_KLN_focus_A01,alternate_history,Предательство договорных идеалов,,P08; соответствующий кризис/мандат,"[[""IRE_KLN_focus_P08""]]","[""IRE_KLN_focus_P09"", ""IRE_KLN_focus_P14"", ""IRE_KLN_focus_P19"", ""IRE_KLN_focus_P24"", ""IRE_KLN_focus_A07"", ""IRE_KLN_focus_A13"", ""IRE_KLN_focus_A19"", ""IRE_KLN_focus_A25""]",,,,,,,,Рост подпольной оппозиции.,deferred,approved_concept_graph_checked
+A02,IRE_KLN_focus_A02,alternate_history,Республиканское подполье,,A01,"[[""IRE_KLN_focus_A01""]]",[],,,,,,,,Вербовка и политическая мобилизация.,deferred,approved_concept_graph_checked
+A03,IRE_KLN_focus_A03,alternate_history,Революция против раздела,,A02,"[[""IRE_KLN_focus_A02""]]",[],,,,,,,,"Политический кризис, возможный конфликт.",deferred,approved_concept_graph_checked
+A04,IRE_KLN_focus_A04,alternate_history,Революционный республиканский совет,,A03,"[[""IRE_KLN_focus_A03""]]",[],,,,,,,,Новый режим при успехе.,deferred,approved_concept_graph_checked
+A05,IRE_KLN_focus_A05,alternate_history,За освобождение шести графств,,A04,"[[""IRE_KLN_focus_A04""]]",[],,,,,,,,Кризис вокруг Северной Ирландии.,deferred,approved_concept_graph_checked
+A06,IRE_KLN_focus_A06,alternate_history,Единая Ирландская Республика,,A05,"[[""IRE_KLN_focus_A05""]]",[],,,,,,,,Интеграция только после контроля и условий.,deferred,approved_concept_graph_checked
+A07,IRE_KLN_focus_A07,alternate_history,Возрождение движения синерубашечников,,P08; соответствующий кризис/мандат,"[[""IRE_KLN_focus_P08""]]","[""IRE_KLN_focus_P09"", ""IRE_KLN_focus_P14"", ""IRE_KLN_focus_P19"", ""IRE_KLN_focus_P24"", ""IRE_KLN_focus_A01"", ""IRE_KLN_focus_A13"", ""IRE_KLN_focus_A19"", ""IRE_KLN_focus_A25""]",,,,,,,,Рост движения О’Даффи.,deferred,approved_concept_graph_checked
+A08,IRE_KLN_focus_A08,alternate_history,Корпоративная альтернатива,,A07,"[[""IRE_KLN_focus_A07""]]",[],,,,,,,,Радикальная антиправительственная кампания.,deferred,approved_concept_graph_checked
+A09,IRE_KLN_focus_A09,alternate_history,Марш на Дублин,,A08,"[[""IRE_KLN_focus_A08""]]",[],,,,,,,,Путч/провал/кризис.,deferred,approved_concept_graph_checked
+A10,IRE_KLN_focus_A10,alternate_history,Национальное корпоративное государство,,A09,"[[""IRE_KLN_focus_A09""]]",[],,,,,,,,Авторитарное устройство.,deferred,approved_concept_graph_checked
+A11,IRE_KLN_focus_A11,alternate_history,Ирландская бригада в Испании,,A10,"[[""IRE_KLN_focus_A10""]]",[],,,,,,,,Добровольцы при гражданской войне.,deferred,approved_concept_graph_checked
+A12,IRE_KLN_focus_A12,alternate_history,Новое место Ирландии в Европе,,A11,"[[""IRE_KLN_focus_A11""]]",[],,,,,,,,Выбор внешнеполитической позиции.,deferred,approved_concept_graph_checked
+A13,IRE_KLN_focus_A13,alternate_history,Пересмотреть англо-ирландское наследие,,P08; соответствующий кризис/мандат,"[[""IRE_KLN_focus_P08""]]","[""IRE_KLN_focus_P09"", ""IRE_KLN_focus_P14"", ""IRE_KLN_focus_P19"", ""IRE_KLN_focus_P24"", ""IRE_KLN_focus_A01"", ""IRE_KLN_focus_A07"", ""IRE_KLN_focus_A19"", ""IRE_KLN_focus_A25""]",,,,,,,,Новые дебаты о Содружестве.,deferred,approved_concept_graph_checked
+A14,IRE_KLN_focus_A14,alternate_history,Конференция о статусе государства,,A13,"[[""IRE_KLN_focus_A13""]]",[],,,,,,,,Переговоры о суверенитете.,deferred,approved_concept_graph_checked
+A15,IRE_KLN_focus_A15,alternate_history,Совместный атлантический оборонный совет,,A14,"[[""IRE_KLN_focus_A14""]]",[],,,,,,,,Оборонные консультации.,deferred,approved_concept_graph_checked
+A16,IRE_KLN_focus_A16,alternate_history,Особый статус в Содружестве,,A15,"[[""IRE_KLN_focus_A15""]]",[],,,,,,,,Соглашение с Британией.,deferred,approved_concept_graph_checked
+A17,IRE_KLN_focus_A17,alternate_history,Атлантическая оборонная конвенция,,A16,"[[""IRE_KLN_focus_A16""]]",[],,,,,,,,Военный союз без автоматической аннексии.,deferred,approved_concept_graph_checked
+A18,IRE_KLN_focus_A18,alternate_history,Новое соглашение двух островов,,A17,"[[""IRE_KLN_focus_A17""]]",[],,,,,,,,Возможный конфедеративный проект.,deferred,approved_concept_graph_checked
+A19,IRE_KLN_focus_A19,alternate_history,Незавершённое дело Коннолли,,P08; соответствующий кризис/мандат,"[[""IRE_KLN_focus_P08""]]","[""IRE_KLN_focus_P09"", ""IRE_KLN_focus_P14"", ""IRE_KLN_focus_P19"", ""IRE_KLN_focus_P24"", ""IRE_KLN_focus_A01"", ""IRE_KLN_focus_A07"", ""IRE_KLN_focus_A13"", ""IRE_KLN_focus_A25""]",,,,,,,,Революционное движение.,deferred,approved_concept_graph_checked
+A20,IRE_KLN_focus_A20,alternate_history,Объединить рабочие комитеты,,A19,"[[""IRE_KLN_focus_A19""]]",[],,,,,,,,Политическая агитация и организация.,deferred,approved_concept_graph_checked
+A21,IRE_KLN_focus_A21,alternate_history,Общенациональная забастовка,,A20,"[[""IRE_KLN_focus_A20""]]",[],,,,,,,,"Кризис, мирный исход или конфликт.",deferred,approved_concept_graph_checked
+A22,IRE_KLN_focus_A22,alternate_history,Рабочая республика,,A21,"[[""IRE_KLN_focus_A21""]]",[],,,,,,,,Социалистический режим при успехе.,deferred,approved_concept_graph_checked
+A23,IRE_KLN_focus_A23,alternate_history,Национализация ключевых отраслей,,A22,"[[""IRE_KLN_focus_A22""]]",[],,,,,,,,"Госуправление, падение доверия инвесторов.",deferred,approved_concept_graph_checked
+A24,IRE_KLN_focus_A24,alternate_history,Международная рабочая солидарность,,A23,"[[""IRE_KLN_focus_A23""]]",[],,,,,,,,Независимый социализм или международная ориентация.,deferred,approved_concept_graph_checked
+A25,IRE_KLN_focus_A25,alternate_history,Возрождение панкельтской идеи,,P08; соответствующий кризис/мандат,"[[""IRE_KLN_focus_P08""]]","[""IRE_KLN_focus_P09"", ""IRE_KLN_focus_P14"", ""IRE_KLN_focus_P19"", ""IRE_KLN_focus_P24"", ""IRE_KLN_focus_A01"", ""IRE_KLN_focus_A07"", ""IRE_KLN_focus_A13"", ""IRE_KLN_focus_A19""]",,,,,,,,Панкельтское движение.,deferred,approved_concept_graph_checked
+A26,IRE_KLN_focus_A26,alternate_history,Культурные связи через море,,A25,"[[""IRE_KLN_focus_A25""]]",[],,,,,,,,Связи с регионами.,deferred,approved_concept_graph_checked
+A27,IRE_KLN_focus_A27,alternate_history,Конгресс кельтских народов,,A26,"[[""IRE_KLN_focus_A26""]]",[],,,,,,,,Политическая конференция.,deferred,approved_concept_graph_checked
+A28,IRE_KLN_focus_A28,alternate_history,Поддержка права на самоопределение,,A27,"[[""IRE_KLN_focus_A27""]]",[],,,,,,,,Автономистские дипломатические решения.,deferred,approved_concept_graph_checked
+A29,IRE_KLN_focus_A29,alternate_history,Проект Кельтской федерации,,A28,"[[""IRE_KLN_focus_A28""]]",[],,,,,,,,Конституционный проект и переговоры.,deferred,approved_concept_graph_checked
+A30,IRE_KLN_focus_A30,alternate_history,Федерация кельтских народов,,A29,"[[""IRE_KLN_focus_A29""]]",[],,,,,,,,Создание только по реальным условиям и согласию.,deferred,approved_concept_graph_checked

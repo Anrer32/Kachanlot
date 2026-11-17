@@ -20,3 +20,25 @@
 Токены картинок и modifiers имеют образцы в существующем common/ideas; спрайты
 и фактическая поддержка движком требуют vanilla/игры. Не добавлены персонажи,
 события, ID регионов, OOB или ссылки на предполагаемые отсутствующие объекты.
+
+## Политический каркас по утверждённому дизайну
+
+Полный реестр фокусов и отложенных действий:
+[FOCUS_140_MANIFEST.csv](ireland/FOCUS_140_MANIFEST.csv).
+Определены только `IRE_KLN_focus_P01`–`IRE_KLN_focus_P28`; остальные 112 ID
+остаются резервом. Названия и родители получены из утверждённого источника.
+
+| ID / семейство | Владелец | Состояние |
+| --- | --- | --- |
+| `IRE_KLN_tree_main` | `common/national_focus/IRE_KLN_focus.txt` | opt-in политический предпросмотр |
+| `IRE_KLN_focus_P01`–`IRE_KLN_focus_P28` | тот же файл | определены связи, gameplay-эффекты deferred |
+| `IRE_KLN_rule_focus_preview` | `common/game_rules/IRE_KLN_rules.txt` | правило, по умолчанию DISABLED |
+| `IRE_KLN_rule_group` | RU/EN focus localisation | локализованная группа правила |
+| `IRE_KLN_preview_disabled`, `IRE_KLN_preview_enabled` и `_desc` | RU/EN focus localisation | варианты правила |
+| `IRE_KLN_tt_focus_preview` | RU/EN focus localisation | честное предупреждение вместо награды |
+
+Параметры `DISABLED`/`ENABLED` — значения локального правила, не глобальные ID
+маршрутов. У фокусов есть RU/EN ключи имени и `_desc`. Внешняя GFX-зависимость:
+`GFX_goal_generic_political_pressure`, ранее используется в `usa.txt`.
+Ни один выполненный preview-фокус не означает реальное принятие закона или
+смену правительства. [Отчёт и ограничения](ireland/FOCUS_GRAPH_REPORT.md).

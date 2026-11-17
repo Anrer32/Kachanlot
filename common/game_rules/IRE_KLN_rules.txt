@@ -1,0 +1,15 @@
+# Opt-in inspection only. Default gameplay keeps the existing IRE tree.
+IRE_KLN_rule_focus_preview = {
+    name = IRE_KLN_rule_focus_preview
+    group = IRE_KLN_rule_group
+    default = {
+        name = DISABLED
+        text = IRE_KLN_preview_disabled
+        desc = IRE_KLN_preview_disabled_desc
+    }
+    option = {
+        name = ENABLED
+        text = IRE_KLN_preview_enabled
+        desc = IRE_KLN_preview_enabled_desc
+    }
+}
