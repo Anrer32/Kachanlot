@@ -1,4 +1,76 @@
+update_oil_factories = {
+    	# 1. Точка полураспада (при скольких заводах бонус падает ровно вдвое - до 50%)
+	set_temp_variable = { scale_base = 10 }
+	
+	# 2. Максимальный коэффициент для самых бедных стран (1.0 = 100%, 1.5 = 150%)
+	set_temp_variable = { max_efficiency = 0.8 }
+	
+	# 3. Минимальный коэффициент для сверхдержав (0.05 = 5%, 0.1 = 10%)
+	set_temp_variable = { min_efficiency = 0.05 }
+	
+	# 4. Множитель для марионеток (0.5 = марионетки получают вдвое меньше фабрик, 0 = не получают вообще)
+	set_temp_variable = { subject_multiplier = 0.5 }
+	
+	# 5. Бонус за каждый изученный уровень технологий добычи (0.05 = +5% за уровень)
+	set_temp_variable = { tech_bonus_per_level = 0 }
 
+	# ==========================================
+	# РАСЧЕТЫ (ниже можно ничего не трогать)
+	# ==========================================
+
+	# 1. Считаем только реальные построенные на карте заводы
+	set_variable = { real_industry = 0 }
+	every_controlled_state = {
+		add_to_variable = { PREV.real_industry = industrial_complex_level }
+		add_to_variable = { PREV.real_industry = arms_factory_level }
+	}
+
+	# 2. Считаем базовый плавный коэффициент: scale_base / (scale_base + real_industry)
+	set_temp_variable = { denominator = scale_base }
+	add_to_temp_variable = { denominator = real_industry }
+	
+	set_variable = { oil_efficiency = scale_base }
+	divide_variable = { oil_efficiency = denominator }
+
+	# 3. Прибавляем бонус за технологии раскопок (Excavation)
+
+	# 4. Применяем штраф, если страна является марионеткой
+	if = {
+		limit = { is_subject = yes }
+		multiply_variable = { oil_efficiency = subject_multiplier }
+	}
+
+	# 5. Зажимаем итоговый коэффициент в заданные рамки
+	clamp_variable = {
+		var = oil_efficiency
+		min = min_efficiency
+		max = max_efficiency
+	}
+
+	# 6. Сохраняем процент для красивого вывода в интерфейсе (например, 0.66 -> 66%)
+	set_variable = { oil_efficiency_percent = oil_efficiency }
+	multiply_variable = { oil_efficiency_percent = 100 }
+	round_variable = oil_efficiency_percent
+
+	# 7. Умножаем добытую нефть на коэффициент и округляем фабрики
+	set_variable = { oil_cic_count = resource_exported@oil }
+	multiply_variable = { oil_cic_count = oil_efficiency }
+	round_variable = oil_cic_count
+	
+    # Если нефти меньше 0, ставим 0 (защита от багов)
+    clamp_variable = {
+        var = oil_cic_count
+        min = 0
+    }
+    
+    # Выдаем модификатор стране, если его еще нет
+    if = {
+        limit = {
+            NOT = { has_dynamic_modifier = { modifier = oil_industry_modifier } }
+        }
+        add_dynamic_modifier = { modifier = oil_industry_modifier }
+    }
+}
 generic_bonus_1 = {
 	add_tech_bonus = { 
 	name = "Generic 50 Bonus" bonus = 0.5 uses = 1

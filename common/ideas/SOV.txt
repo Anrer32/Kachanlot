@@ -104,8 +104,8 @@ ideas = {
 				has_government = communism
 			}
 			modifier = {
-				stability_weekly = 0.0035
-				war_support_weekly = 0.0035
+				stability_weekly = 0.001
+				war_support_weekly = 0.001
 				drift_defence_factor = 0.5
 				min_export = 0.1
 				industrial_capacity_factory = 0.15

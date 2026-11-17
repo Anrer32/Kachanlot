@@ -290,7 +290,6 @@ grand_battleplan = {
     
     max_planning = 0.15
     command_power_gain = 0.25
-
     milestones = {
         {
             #Infantry 
@@ -407,7 +406,9 @@ mass_assault = {
     enable_tactic = tactic_relentless_assault
     army_core_attack_factor = 0.08
     army_core_defence_factor = 0.08
-
+    infantry = {
+                combat_width = -0.4
+            }
     milestones = {
         {
             #Infantry

@@ -1,9 +1,17 @@
 on_actions = {
-	on_startup = {
-		effect = {
-		every_country = {
-		add_ideas = tank_limit
-		}
-	}
-}
+    # Срабатывает на старте игры для всех стран
+    on_startup = {
+        effect = {
+            every_country = {
+                update_oil_factories = yes
+            }
+        }
+    }
+    
+    # Обновляется раз в неделю для каждой страны (оптимально для производительности)
+    on_monthly = {
+        effect = {
+            update_oil_factories = yes
+        }
+    }
 }

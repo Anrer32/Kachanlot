@@ -32,6 +32,8 @@ FRA_maginot_line_dynamic_modifier = { #State Modifer
 
 	icon = GFX_modifiers_generic_defense
     state_bunker_max_level_terrain_limit = 6
+	land_bunker_effectiveness_factor = 0.8
+	max_dig_in = 5
 }
 
 

@@ -729,7 +729,7 @@ buildings = {
 		base_cost = 12000
 		icon_frame = 31
 		value = 1
-		per_level_extra_cost = 8000
+		per_level_extra_cost = 12000
 		show_modifier = yes
 
 

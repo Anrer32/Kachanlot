@@ -9,6 +9,7 @@ NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 1.0
 NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2
 NDefines.NMilitary.RELIABILTY_RECOVERY = 0.0 -- нерф абуза снаряги
 NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.7
+
 NDefines.NCountry.EQUIPMENT_UPGRADE_CHUNK_MAX_SIZE = 100
 NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 100
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 200.0
@@ -21,6 +22,7 @@ NDefines.NMilitary.TRAINING_ATTRITION = 0.00
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.15
 NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.49
 NDefines.NMilitary.PLANNING_MAX = 0.15
+NDefines.NMilitary.BASE_FORT_PENALTY = -0.1
 NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.01
 NDefines.NMilitary.COHESION_IMMOBILE_PLANNING_SPEED_MULTIPLIER = 1
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE = 0.55	       -- more AA attack will approach this amount of help (diminishing returns)
@@ -59,7 +61,7 @@ NDefines.NAir.DISRUPTION_DEFENCE_SPEED_FACTOR = 500
 NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.05
 NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_DEFLECTION_FACTOR = 0.5 -- damage reduction if armor outclassing enemy, will look at increasing if AT is too deadly to org. 
 NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_DEFLECTION_FACTOR = 0.8
-NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.098 -- 0.06
+NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.128 -- 0.06
 NDefines.NMilitary.REINFORCEMENT_REQUEST_MAX_WAITING_DAYS = 1  -- Every X days the equipment will be sent, regardless if still didn't produced all that has been requested.
 NDefines.NMilitary.REINFORCEMENT_REQUEST_DAYS_FREQUENCY = 1
 NDefines.NMilitary.REINFORCE_CHANCE = 0.05
@@ -67,9 +69,6 @@ NDefines.NMilitary.SPEED_REINFORCEMENT_BONUS = 0.7
 NDefines.NMilitary.ARMY_INITIATIVE_REINFORCE_FACTOR = 0.15
 NDefines.NMilitary.PLANNING_DECAY = 0.1
 NDefines.NMilitary.PLAN_STICKINESS_FACTOR = 20.0
-NDefines.NMilitary.RELIABILITY_ORG_REGAIN = -0.65
-NDefines.NMilitary.RELIABILITY_ORG_MOVING = -1.5
-NDefines.NMilitary.RELIABILITY_WEATHER = 4.0
 NDefines.NMilitary.HOURLY_ORG_MOVEMENT_IMPACT = -0.4
 
 

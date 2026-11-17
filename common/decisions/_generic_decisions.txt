@@ -2386,21 +2386,16 @@ economy_decisions = {
             always = yes
         }
 
-        cost = 100
+        cost = 20
         fire_only_once = no
 
         days_re_enable = 3
 
 		available = {
 			any_owned_state = {
-				NOT = { has_state_category = megalopolis }
 				is_fully_controlled_by = ROOT
 				free_building_slots = {
 					building = infrastructure
-					size < 1
-				}
-				free_building_slots = {
-					building = industrial_complex
 					size < 1
 				}
 			}
@@ -2408,34 +2403,34 @@ economy_decisions = {
 	
 		visible = {
 			any_owned_state = {
-				NOT = { has_state_category = megalopolis }
 				is_fully_controlled_by = ROOT
 				free_building_slots = {
 					building = infrastructure
-					size < 1
-				}
-				free_building_slots = {
-					building = industrial_complex
 					size < 1
 				}
 			}
 		}
 
-        complete_effect = {
+		complete_effect = {
 			random_owned_state = {
 				limit = {
-					NOT = { has_state_category = megalopolis }
-				is_fully_controlled_by = ROOT
-				free_building_slots = {
-					building = infrastructure
-					size < 1
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = infrastructure
+						size < 1
+					}
 				}
-				free_building_slots = {
-					building = industrial_complex
-					size < 1
+				if = {
+					limit = {
+						has_state_category = megalopolis
+					}
+					# Если категория уже максимальная — добавляем 1 ячейку (можно поменять на 2)
+					add_extra_state_shared_building_slots = 2
 				}
+				else = {
+					# Если категория ниже мегаполиса — повышаем уровень региона
+					increase_state_category = yes
 				}
-				increase_state_category = yes
 				remove_building = {
 					type = infrastructure
 					level = 1
@@ -2445,7 +2440,7 @@ economy_decisions = {
 		ai_will_do = {
 			base = 1
 			modifier = {
-				factor = 1.5
+				factor = 2.5
 				all_owned_state = { free_building_slots = { building = industrial_complex size < 1 include_locked = no } }
 			}
 		}

@@ -43,7 +43,13 @@ sabotaged_resources = {
 	temporary_state_resource_steel = sabotaged_steel
 	temporary_state_resource_chromium = sabotaged_chromium
 }
-
+oil_industry_modifier = {
+    enable = { always = yes }
+    icon = GFX_idea_generic_exploit_mines
+    
+    # Выдает внекартные фабрики в количестве, равном значению переменной
+    industrial_factory_donations = oil_cic_count
+}
 autonomous_state = {
 	enable = { always = yes }
 

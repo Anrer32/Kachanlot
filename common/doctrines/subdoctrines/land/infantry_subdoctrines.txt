@@ -114,13 +114,16 @@ defensive_postures = {
     category_all_infantry = {
         entrenchment = 0.2
     }
-
+    dig_in_speed_factor = 0.5
+    land_bunker_effectiveness_factor = 0.1
     rewards = {
         improvised_fighting_position = {
-            dig_in_speed_factor = 0.05
 			fire_support = {
-                supply_consumption = -0.01	
-                soft_attack = 0.2			
+                supply_consumption = -0.03	
+                soft_attack = 0.2
+                defense = 0.1
+                entrenchment = 0.1
+                max_organisation = 10			
 			}
         }
         elastic_operations = {
@@ -138,12 +141,20 @@ defensive_postures = {
             category_all_infantry = {
                 soft_attack = 0.1
             }
+            infantry = {
+                entrenchment = 0.2
+            }
 			category_regimental_support_artillery = {
                 soft_attack = 0.2				
 			}
         }
         field_construction_training = {
-            dig_in_speed_factor = 0.15
+            max_dig_in_factor = 0.1
+            fire_support = {
+                soft_attack = 0.4
+                hard_attack = 1.0
+                defense = 0.1	
+			}
         }
 
     }
@@ -426,32 +437,30 @@ mounted_infantry = {
                 breakthrough = 0.20
                 defense = 0.1
             }
+            cavalry = {
+                breakthrough = 0.25
+                defense = 0.25
+            }
         }
 		
         mounted_skirmish_groups = {
             recon = {
-                max_organisation = 10
-                soft_attack = 0.2
-                battalion_mult = {
-                    category = category_light_infantry
-                    soft_attack = 0.1
-                    defense = 0.1
+                max_organisation = 25
+                recon = 1
                 }
-                battalion_mult = {
-                    category = category_light_infantry
-                    max_organisation = 5
-                    add = yes
-                }
-            } 
+        
             category_cavalry = {
-                max_organisation = 5
+                max_organisation = 10
             }
         }
-		
         anti_mechanized_cavalry_groups = {
             category_cavalry = {
                 hard_attack = 0.2
                 ap_attack = 0.2
+            }
+            cavalry = {
+                hard_attack = 0.25
+                soft_attack = 0.25
             }        
 		}    
 		

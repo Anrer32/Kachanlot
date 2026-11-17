@@ -16,7 +16,11 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				conscription_factor = -0.15
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.05
+				conscription_factor = -0.3
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
 			}
 		}
 		
@@ -104,8 +108,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_factory = -0.25
-				consumer_goods_expected_value = 0.07
+				industrial_capacity_factory = -0.2
+				consumer_goods_expected_value = 0.02
 				production_speed_infrastructure_factor = 0.15
 				production_speed_buildings_factor = -0.03
 			}
@@ -125,8 +129,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_factory = -0.5
-				consumer_goods_expected_value = 0.14
+				industrial_capacity_factory = -0.4
+				consumer_goods_expected_value = 0.04
 				production_speed_infrastructure_factor = 0.3
 				production_speed_buildings_factor = -0.06
 			}
@@ -1400,7 +1404,7 @@ ideas = {
 			
 			modifier = {
 				conscription = -0.003
-				war_support_factor = -0.40
+				war_support_factor = -0.05
 				land_doctrine_cost_factor = 0.5
 				land_mastery_gain_factor = -0.35
 			}
@@ -1484,6 +1488,10 @@ ideas = {
 			picture = generic_wall_line
 			
 			modifier = {
+			land_bunker_effectiveness_factor = -0.4
+			land_mastery_gain_factor = -0.25
+			experience_gain_army_factor = -0.25
+			land_doctrine_cost_factor = 0.2
 			conversion_cost_civ_to_mil_factor = 3.0
 			}
 		}
